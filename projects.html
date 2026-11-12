@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projetos (45) — Paulo Ribeiro</title>
+<meta name="description" content="Catálogo completo de 45 projetos e repositórios de Paulo Ribeiro: investigação de doutoramento (AEGIS), grafos de conhecimento, plataformas GRC/NIST, agentes de IA, benchmarks de LLMs, apps Android cifradas e Arch Linux ARM em telemóveis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" class="brand" id="nav-brand">
+      <span class="brand-name">Paulo Ribeiro</span>
+      <span class="brand-tag">Cybersecurity · AI Systems · PhD</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" id="nav-home"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
+      <a href="projects.html" id="nav-projects" aria-current="page"><span lang="en">Projects (45)</span><span lang="pt">Projetos (45)</span></a>
+      <a href="research.html" id="nav-research"><span lang="en">Research &amp; Thesis</span><span lang="pt">Investigação &amp; Tese</span></a>
+      <a href="about.html" id="nav-about"><span lang="en">About, CV &amp; Interests</span><span lang="pt">Sobre, CV &amp; Gostos</span></a>
+      <a href="contact.html" id="nav-contact"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
+    </nav>
+    <div class="controls">
+      <div class="switch" role="group" aria-label="Language">
+        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="theme-btn" id="theme-toggle" aria-label="Toggle theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow">
+      <span lang="en">Complete Engineering &amp; Research Directory</span>
+      <span lang="pt">Catálogo Completo de Engenharia &amp; Investigação</span>
+    </span>
+    <h1>
+      <span lang="en">All Projects &amp; Repositories</span>
+      <span lang="pt">Todos os Projetos &amp; Repositórios</span>
+    </h1>
+    <p class="lede" lang="en">Every system, research pipeline, benchmark suite, mobile app, and lab across my GitHub — organised into five domains so recruiters and engineers can inspect what I build, how I structure code, and which technologies I use.</p>
+    <p class="lede" lang="pt">Todos os sistemas, pipelines de investigação, benchmarks de IA, aplicações móveis e laboratórios do meu GitHub — organizados em cinco áreas temáticas para facilitar a consulta por recrutadores, investigadores e engenheiros.</p>
+  </div>
+</div>
+
+<div class="filter-bar" role="region" aria-label="Project filters">
+  <div class="wrap filter-controls">
+    <div class="filter-tabs" role="group" aria-label="Category filter">
+      <button type="button" class="filter-btn" id="filter-all" data-filter="all" aria-pressed="true">
+        <span lang="en">All (<span id="visible-project-count">45</span>)</span>
+        <span lang="pt">Todos (45)</span>
+      </button>
+      <button type="button" class="filter-btn" id="filter-research" data-filter="research" aria-pressed="false">
+        <span lang="en">I. PhD &amp; Knowledge Graphs (7)</span>
+        <span lang="pt">I. Tese &amp; Grafos (7)</span>
+      </button>
+      <button type="button" class="filter-btn" id="filter-grc" data-filter="grc" aria-pressed="false">
+        <span lang="en">II. GRC &amp; Security Tools (9)</span>
+        <span lang="pt">II. GRC &amp; Cibersegurança (9)</span>
+      </button>
+      <button type="button" class="filter-btn" id="filter-agents" data-filter="agents" aria-pressed="false">
+        <span lang="en">III. AI Agents &amp; Benchmarks (11)</span>
+        <span lang="pt">III. Agentes IA &amp; Benchmarks (11)</span>
+      </button>
+      <button type="button" class="filter-btn" id="filter-mobile" data-filter="mobile" aria-pressed="false">
+        <span lang="en">IV. Mobile &amp; Linux (4)</span>
+        <span lang="pt">IV. Mobile &amp; Linux (4)</span>
+      </button>
+      <button type="button" class="filter-btn" id="filter-archive" data-filter="archive" aria-pressed="false">
+        <span lang="en">V. Full-Stack &amp; Labs (14)</span>
+        <span lang="pt">V. Full-Stack &amp; Arquivo (14)</span>
+      </button>
+    </div>
+    <div class="search-box">
+      <input type="search" id="project-search" class="search-input" placeholder="Filtrar por tecnologia, nome, tema..." aria-label="Search projects">
+    </div>
+  </div>
+</div>
+
+<section class="full-width">
+  <div class="wrap">
+
+    <!-- ==================== GROUP I: PHD RESEARCH & KNOWLEDGE GRAPHS ==================== -->
+    <div class="group" data-group="research">
+      <div class="group-header">
+        <h3><span lang="en">I. PhD Research &amp; Security Knowledge Graphs (AEGIS Ecosystem)</span><span lang="pt">I. Investigação de Doutoramento &amp; Grafos de Conhecimento (Ecossistema AEGIS)</span></h3>
+        <span class="group-count">7 <span lang="en">projects</span><span lang="pt">projetos</span></span>
+      </div>
+
+      <article class="proj" data-category="research" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/aegis-mvp" target="_blank" rel="noopener">aegis-mvp</a></h4>
+          <p lang="en">Minimal viable pipeline for <strong>AEGIS Phase 1 — Contextual Definition</strong>. One 5-section plain-prose company description goes in; a complete compliance context, applicable EU regulations, and adjusted security objectives across 38 sub-domains (<code>D-XX.Y</code> in 10 security domains) come out, anchored to verbatim regulatory articles and 7 NIST/OWASP control referentials (NIST CSF 2.0, Privacy Framework 1.1, AI RMF).</p>
+          <p lang="pt">Pipeline mínima viável da <strong>Fase 1 do AEGIS — Definição Contextual</strong>. Entra uma descrição em prosa da empresa em 5 secções; sai o perfil contextual, os regulamentos aplicáveis e os objetivos de segurança ajustados nos 38 subdomínios (<code>D-XX.Y</code> em 10 domínios), com cada afirmação ancorada aos artigos originais e a 7 referenciais NIST/OWASP (NIST CSF 2.0, PF 1.1, AI RMF).</p>
+          <div class="proj-tags"><span>Python</span><span>AEGIS Methodology</span><span>ADR-001..012</span><span>NIST CSF 2.0 / AI RMF</span><span>Traceability</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · Markdown<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="research" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/aegis-phase1" target="_blank" rel="noopener">aegis-phase1</a></h4>
+          <p lang="en">Standalone executable LangGraph state machine for AEGIS Phase 1 Compliance Context Assessment. Reduces LLM invocations from ~150 down to 7–9 structured calls by executing coverage aggregation, clause mapping, and matrix assembly in deterministic zero-LLM Python nodes. Produces four formal audit documents: Doc 04 (Company Context), Doc 05 (Regulatory Applicability), Doc 06 (Clause Mapping Matrix), and Doc 07 (Structured Compliance Matrix).</p>
+          <p lang="pt">Máquina de estados executável em LangGraph para a Fase 1 do AEGIS. Reduz as chamadas ao LLM de ~150 para apenas 7–9 chamadas estruturadas, executando toda a agregação de cobertura e construção de matrizes em nós Python determinísticos (zero-LLM). Produz os documentos formais Doc 04, Doc 05, Doc 06 e Doc 07 com validação Pydantic e testes unitários.</p>
+          <div class="proj-tags"><span>Python</span><span>LangGraph</span><span>Pydantic</span><span>Ollama</span><span>Pytest · Ruff · Mypy</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · LangGraph<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="research" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/aegis-kg-unified" target="_blank" rel="noopener">aegis-kg-unified</a></h4>
+          <p lang="en">Canonical regulatory compliance Knowledge Graph in Neo4j 5.18 and OWL/Turtle (<code>aegis_rca_ontology.ttl</code>). Maps 150+ atomic normative clauses across 5 European regulations — GDPR (99 articles), CRA (58 articles), NIS 2 (41 articles), DORA (51 articles), and the EU AI Act (113 articles) — to the 10×38 AEGIS security taxonomy, exposed via a 14-endpoint Flask REST API supporting gap analysis, regulatory timelines, and complementarity queries.</p>
+          <p lang="pt">Grafo de Conhecimento canónico de conformidade regulamentar em Neo4j 5.18 e OWL/Turtle (<code>aegis_rca_ontology.ttl</code>). Mapeia mais de 150 cláusulas normativas atómicas de 5 regulamentos europeus — GDPR (99 artigos), CRA (58 artigos), NIS 2 (41 artigos), DORA (51 artigos) e AI Act (113 artigos) — para a taxonomia 10×38 do AEGIS, exposto através de uma API REST Flask com 14 endpoints para análise de lacunas e complementaridade.</p>
+          <div class="proj-tags"><span>Neo4j 5.18</span><span>Cypher</span><span>OWL / Turtle</span><span>Python · Flask API</span><span>Docker</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Neo4j · Cypher · Python<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="research" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/Methodology_compact" target="_blank" rel="noopener">Methodology_compact</a></h4>
+          <p lang="en">Compact working document corpus and multi-agent orchestrator setup (Orchestrator / Executor / Validator) for the 3-phase AEGIS regulatory compliance methodology. Houses the baseline regulatory definitions, case study workspaces, knowledge graph schemas, and validation scripts.</p>
+          <p lang="pt">Corpus documental compacto e configuração de orquestração multiagente (Orchestrator / Executor / Validator) da metodologia AEGIS em 3 fases. Reúne a baseline regulamentar, casos de estudo, esquemas do grafo de conhecimento e scripts de validação.</p>
+          <div class="proj-tags"><span>AEGIS Corpus</span><span>Multi-Agent Orchestrator</span><span>EU Compliance</span><span>Validation</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Markdown · Python · HTML<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="research" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a></h4>
+          <p lang="en">Semantic Graph Explorer for Threat Intelligence. Replaces slow, hallucination-prone "System 2" LLM text generation with sub-50ms probabilistic "System 1" micro-judgements (<code>Noul</code> boolean stopping criterion, <code>Choice</code> deterministic branch selection, and <code>Score</code> heuristic $h(n)$ for A* and Beam Search) over a Neo4j graph uniting 969 CWE weaknesses, 836 MITRE ATT&amp;CK techniques, 615 CAPEC attack patterns, 466 D3FEND countermeasures, MITRE ATLAS, and 9,838 cross-framework edges.</p>
+          <p lang="pt">Explorador Semântico de Grafos para Threat Intelligence. Substitui a geração lenta "System 2" de LLMs convencionais por micro-julgamentos probabilísticos "System 1" em menos de 50ms (<code>Noul</code> para critério de paragem, <code>Choice</code> para seleção de ramos e <code>Score</code> heurístico $h(n)$ para pesquisa A* e Beam Search) sobre um grafo Neo4j com 969 fraquezas CWE, 836 técnicas ATT&amp;CK, 615 padrões CAPEC, 466 contramedidas D3FEND, MITRE ATLAS e 9.838 relações cross-framework.</p>
+          <div class="proj-tags"><span>Python</span><span>Neo4j</span><span>TypeSafe AI (Jev)</span><span>A* &amp; Beam Search</span><span>CWE · CAPEC · ATT&amp;CK · D3FEND · ATLAS</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · Neo4j<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="research" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a></h4>
+          <p lang="en">5-container Unified Threat Graph evaluation environment (Ontotext GraphDB RDF + Neo4j + Node.js API + Nginx visualizer + automated STIX 2.1 Python data initializer). Aggregates CAPEC, CWE, MITRE ATT&amp;CK (Enterprise &amp; Mobile), MITRE ATLAS, and the D3FEND ontology with interactive kill-chain dashboards and SPARQL query suites.</p>
+          <p lang="pt">Ambiente containerizado (5 contentores Docker: Ontotext GraphDB RDF, Neo4j, API Node.js, frontend Nginx e inicializador automático STIX 2.1 em Python) que agrega CAPEC, CWE, MITRE ATT&amp;CK (Enterprise &amp; Mobile), MITRE ATLAS e a ontologia D3FEND com visualização interativa de kill-chains e queries SPARQL.</p>
+          <div class="proj-tags"><span>Ontotext GraphDB</span><span>SPARQL · RDF</span><span>Neo4j</span><span>STIX 2.1</span><span>Docker Compose</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · SPARQL · Node.js<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="research" data-vis="priv">
+        <div>
+          <h4>aegis-inspector</h4>
+          <p lang="en">Read-only observability and audit web application for inspecting AEGIS pipeline runs: step-by-step execution trace, every model call with its exact prompt and output, rendered compliance deliverables, and side-by-side comparison between two pipeline runs.</p>
+          <p lang="pt">Aplicação web só de leitura para inspecionar e auditar corridas da pipeline AEGIS: cada etapa, cada chamada ao modelo com o prompt e resposta exatos, o documento final gerado e comparação lado a lado entre duas execuções.</p>
+          <div class="proj-tags"><span>React</span><span>Express</span><span>Pipeline Observability</span><span>Audit Diffing</span></div>
+        </div>
+        <div class="meta"><span class="vis priv"><span lang="en">private</span><span lang="pt">privado</span></span><br>React · Express<br>2026</div>
+      </article>
+    </div>
+
+    <!-- ==================== GROUP II: GRC, COMPLIANCE & SECURITY TOOLS ==================== -->
+    <div class="group" data-group="grc">
+      <div class="group-header">
+        <h3><span lang="en">II. GRC, Compliance Platforms &amp; Security Engineering Tools</span><span lang="pt">II. Plataformas de GRC, Conformidade &amp; Ferramentas de Cibersegurança</span></h3>
+        <span class="group-count">9 <span lang="en">projects</span><span lang="pt">projetos</span></span>
+      </div>
+
+      <article class="proj" data-category="grc" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/NIST_Assessment" target="_blank" rel="noopener">NIST_Assessment</a></h4>
+          <p lang="en">Enterprise Cybersecurity Maturity Assessment platform aligned with <strong>NIST CSF 2.0</strong> across all 6 core functions (Govern, Identify, Protect, Detect, Respond, Recover). Features drill-down executive radar dashboards, category audit grids with 0–4 scoring, instant bottom-up score rollup, contextual auditor guidance panels, CSRF/rate-limit hardening, and a persistent AI Copilot sidebar powered by a custom NIST Model Context Protocol (MCP) server and Ollama.</p>
+          <p lang="pt">Plataforma empresarial de auditoria e gestão de maturidade alinhada com o <strong>NIST CSF 2.0</strong> (Govern, Identify, Protect, Detect, Respond, Recover). Inclui painéis executivos radar, grelhas de auditoria com pontuação 0–4, propagação (rollup) instantânea de scores, ajuda contextual por subcategoria e um Copiloto de IA lateral ligado a um servidor MCP (Model Context Protocol) e Ollama.</p>
+          <div class="proj-tags"><span>FastAPI</span><span>JavaScript</span><span>NIST CSF 2.0</span><span>MCP Server</span><span>Ollama RAG</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>JavaScript · FastAPI<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="grc" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/CyberResilience" target="_blank" rel="noopener">CyberResilience</a></h4>
+          <p lang="en">Web-based risk management and compliance workflow framework replacing static spreadsheets with a gated 3-phase methodology (Phase 1: Context Establishment → Phase 2: Goal Definition → Phase 3: Risk Process). Includes multi-project management, PlantUML visual process modelling, automated compliance reports, and an integrated regulatory library mapping GDPR, DORA, NIS 2, and ISO 27001 to NIST controls.</p>
+          <p lang="pt">Aplicação web de gestão de risco e resiliência cibernética que substitui folhas de cálculo estáticas por uma metodologia faseada com bloqueio progressivo (Fase 1: Contexto → Fase 2: Objetivos → Fase 3: Processo de Risco). Inclui gestão multi-projeto, diagramas interativos PlantUML e biblioteca de regulamentos (GDPR, DORA, NIS 2, ISO 27001) mapeados para controlos NIST.</p>
+          <div class="proj-tags"><span>React · Vite</span><span>Node.js · Express</span><span>PlantUML</span><span>NIST · ISO 27001 · DORA · NIS2</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>React · Node.js<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="grc" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/MultiLLMs" target="_blank" rel="noopener">MultiLLMs</a></h4>
+          <p lang="en">AI-driven regulatory compliance platform combining context-aware RAG QA (LlamaIndex + Qdrant vector store over AI Act, CRA, DORA, GDPR, and NIS 2), a 3-step Multi-Expert Assessor (Criteria Extraction → Auditor View Evaluation → Boolean Applicability Matrix), and a multi-model consensus &amp; debate mechanism across local LLMs (<code>phi4</code>, <code>gemma</code>, <code>llama3</code>) to suppress legal hallucinations.</p>
+          <p lang="pt">Plataforma de conformidade regulamentar baseada em IA que combina RAG QA (LlamaIndex + Qdrant sobre os textos integrais do AI Act, CRA, DORA, GDPR e NIS 2), um avaliador Multi-Perito em 3 passos (Extração de Critérios → Vista de Auditor → Decisão Booleana de Aplicabilidade) e um mecanismo de consenso e debate entre múltiplos modelos locais (<code>phi4</code>, <code>gemma</code>, <code>llama3</code>).</p>
+          <div class="proj-tags"><span>Python · FastAPI</span><span>LlamaIndex · Qdrant</span><span>Multi-LLM Consensus</span><span>Ollama</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · FastAPI · Qdrant<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="grc" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/The_Scribe" target="_blank" rel="noopener">The_Scribe</a></h4>
+          <p lang="en">An AI Co-Pilot and Decision Support System (DSS) for Secure Software Requirements. Embeds the two-phased <strong>SPIDESOFT methodology</strong> in a Socratic conversational dialogue, backed by an LLM multi-document router, hybrid retrieval (metadata filtering + query expansion), and per-source cross-encoder reranking across CWE, CAPEC, D3FEND, NIST SP 800-53, NIST CSF, ISO 27002, GDPR, DORA, and NIS 2 to generate traceable Security &amp; Privacy Requirements Specifications (S&amp;PRS).</p>
+          <p lang="pt">Co-Piloto de IA e Sistema de Apoio à Decisão (DSS) para engenharia de requisitos de software seguro. Incorpora a metodologia <strong>SPIDESOFT</strong> num diálogo socrático apoiado por um router multi-documento, pesquisa híbrida e re-ranking cross-encoder sobre CWE, CAPEC, D3FEND, NIST SP 800-53, ISO 27002, GDPR, DORA e NIS 2 para produzir especificações S&amp;PRS rastreáveis.</p>
+          <div class="proj-tags"><span>Python</span><span>SPIDESOFT DSS</span><span>Hybrid RAG · Cross-Encoder</span><span>NIST 800-53 · ISO 27002</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · Hybrid RAG<br>2025</div>
+      </article>
+
+      <article class="proj" data-category="grc" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/DockerVulnManager" target="_blank" rel="noopener">DockerVulnManager</a></h4>
+          <p lang="en">CLI security tool (<code>dockervuln</code>) to scan, analyse, and harden Docker images and containers. Integrates Trivy for fast CVE detection, computes 0–100 image risk scores, performs automated CIS Docker Benchmark compliance checks, detects Dockerfile security anti-patterns (privileged containers, root users, missing healthchecks), tracks historical vulnerability trends in SQLite, and exports HTML/Markdown/JSON/CSV audit reports.</p>
+          <p lang="pt">Ferramenta CLI (<code>dockervuln</code>) para análise de vulnerabilidades e hardening de contentores Docker. Integra o Trivy para deteção rápida de CVEs, calcula pontuações de risco (0–100), executa verificações de conformidade CIS Docker Benchmark, deteta anti-padrões em Dockerfiles, guarda histórico de tendências em SQLite e exporta relatórios em HTML, Markdown, JSON e CSV.</p>
+          <div class="proj-tags"><span>Python · Click CLI</span><span>Trivy · CVE</span><span>CIS Docker Benchmark</span><span>SQLAlchemy · Pydantic</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · Docker Security<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="grc" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/FileEvaluation" target="_blank" rel="noopener">FileEvaluation</a> &amp; <a href="https://github.com/pauloribeiro16/JsonGDPREvaluationAPI" target="_blank" rel="noopener">JsonGDPREvaluationAPI</a></h4>
+          <p lang="en">Automated GDPR Personally Identifiable Information (PII) sensitivity analyzers for JSON schemas and JSON documents. Deduplicates schema properties across files, evaluates GDPR sensitivity criteria in batched Ollama LLM calls with persistent local caching, and generates multi-sheet Excel audit reports with colour-coded sensitivity highlighting.</p>
+          <p lang="pt">Analisadores automáticos de dados pessoais (PII) segundo critérios do RGPD/GDPR para esquemas e documentos JSON. Desduplicam propriedades, avaliam a sensibilidade em lotes via modelos locais Ollama com cache persistente e geram relatórios Excel multi-folha com células destacadas por nível de risco.</p>
+          <div class="proj-tags"><span>Python</span><span>GDPR / PII Analysis</span><span>Ollama</span><span>OpenPyXL Excel Reports</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public (2 repos)</span><span lang="pt">público (2 repos)</span></span><br>Python · GDPR<br>2025</div>
+      </article>
+
+      <article class="proj" data-category="grc" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/RegulationExpert" target="_blank" rel="noopener">RegulationExpert</a> &amp; <a href="https://github.com/pauloribeiro16/VisioSec" target="_blank" rel="noopener">VisioSec</a></h4>
+          <p lang="en">Early compliance expert system prototype with configurable project context and compliance logging (<code>RegulationExpert</code>) alongside an exploratory security visualization repository (<code>VisioSec</code>).</p>
+          <p lang="pt">Protótipo de sistema pericial de conformidade regulamentar com registo de logs de auditoria e contexto de projeto (<code>RegulationExpert</code>), acompanhado de um repositório exploratório de visualização de segurança (<code>VisioSec</code>).</p>
+          <div class="proj-tags"><span>Python</span><span>Compliance Logging</span><span>Security Visualization</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public (2 repos)</span><span lang="pt">público (2 repos)</span></span><br>Python<br>2025–2026</div>
+      </article>
+    </div>
+
+    <!-- ==================== GROUP III: AI AGENTS & BENCHMARKS ==================== -->
+    <div class="group" data-group="agents">
+      <div class="group-header">
+        <h3><span lang="en">III. Multi-Agent AI Systems, LLM Benchmarks &amp; Agent Tooling</span><span lang="pt">III. Sistemas Multiagente de IA, Benchmarks de LLMs &amp; Ferramentas Agênticas</span></h3>
+        <span class="group-count">11 <span lang="en">projects</span><span lang="pt">projetos</span></span>
+      </div>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Delegate</a></h4>
+          <p lang="en">Built for the <strong>Hack4Guimarães 2035</strong> hackathon (challenge: <em>"Falar com a Câmara sem Burocracia"</em>). Gives every citizen and business in Guimarães a Personal Digital Representative (<em>Henriques</em>) that handles municipal paperwork under explicit mandate, cites official regulations, and declines to answer when no authoritative source exists — paired with a governed Municipal Agentic Gateway, Technician Console, and City Intent Map.</p>
+          <p lang="pt">Desenvolvido para o hackathon <strong>Hack4Guimarães 2035</strong> (desafio <em>«Falar com a Câmara sem Burocracia»</em>). Dá a cada munícipe e empresa um Representante Digital Pessoal (o <em>Henriques</em>) que trata da burocracia municipal com mandato explícito, cita fontes oficiais e abstém-se quando não existem — ligado a uma Porta Agêntica Municipal governada, Consola Técnica e Mapa de Intenções da Cidade.</p>
+          <div class="proj-tags"><span>TypeScript</span><span>Civic AI Agents</span><span>Hack4Guimarães 2035</span><span>Zero-Hallucination Mandate</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>TypeScript<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/financial-adviser" target="_blank" rel="noopener">financial-adviser</a></h4>
+          <p lang="en">Multi-persona equity and macroeconomic debate pipeline. Fifteen investor and central-banker personas (Buffett, Lynch, Dalio, Burry, Greenspan, Bernanke, Volcker, Dimon, Eisman, Grantham, Simons, Taleb, Wood, Gundlach, Thaler) inspect the same live SEC EDGAR 10-K/XBRL filings, yfinance multiples, or FRED macro indicators, clash across structured rebuttal rounds, and conclude with a moderator synthesis mapping consensus vs. contested claims.</p>
+          <p lang="pt">Pipeline de debate multi-persona sobre ações e macroeconomia. Quinze personas de investidores e economistas (Buffett, Lynch, Dalio, Burry, Greenspan, Bernanke, Volcker, Dimon, Eisman, Grantham, Simons, Taleb, Wood, Gundlach, Thaler) analisam os mesmos relatórios SEC EDGAR 10-K/XBRL, múltiplos yfinance ou indicadores FRED, debatem em várias rondas de refutação e terminam numa síntese de moderador.</p>
+          <div class="proj-tags"><span>Python</span><span>LangChain</span><span>Langfuse</span><span>SEC EDGAR · yfinance · FRED</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · LangChain<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/Agentic-Orquestrator" target="_blank" rel="noopener">Agentic-Orquestrator</a></h4>
+          <p lang="en">Antigravity DevSecOps multi-agent orchestration framework. Implements intelligent cost-tier model routing (Opus 8x for STRIDE threat modelling, Sonnet 1x for ASVS audits, Flash 0.1x for surveys), 20+ specialized security/engineering personas, 40+ modular skills, and a mandatory 4-phase DevSecOps gate pipeline (STRIDE Threat Model → Secure Design &amp; SCA → OWASP ASVS Level 2 Audit → Evaluator-Optimizer loop).</p>
+          <p lang="pt">Framework de orquestração multiagente DevSecOps. Implementa encaminhamento inteligente por escalão de custo/modelo (Opus para Threat Modeling STRIDE, Sonnet para auditorias OWASP ASVS, Flash para triagem), mais de 20 agentes especializados, 40+ módulos de skills e uma pipeline obrigatória de 4 gates de segurança DevSecOps.</p>
+          <div class="proj-tags"><span>Python</span><span>DevSecOps Pipeline</span><span>STRIDE · OWASP ASVS L2</span><span>Multi-Agent Routing</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · DevSecOps<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test" target="_blank" rel="noopener">Cybersecurity_sanity_test</a> &amp; <a href="https://github.com/pauloribeiro16/Cybersecurity_Sanity_Tests" target="_blank" rel="noopener">Cybersecurity_Sanity_Tests</a></h4>
+          <p lang="en">Comprehensive LLM cybersecurity benchmarking suites evaluating 15+ local models (<code>gpt-oss 20b</code>, <code>glm-4.7-flash</code>, <code>phi4 14b</code>, <code>qwen3</code>, <code>granite4</code>, <code>ministral-3</code>, <code>NVIDIA-Orchestrator-8B</code>) across 80, 500, 2,000, and 10,000 <strong>CyberMetric</strong> questions in three reasoning modes (Standard MC, Two-Step CoT Deduction, Probabilistic Confidence Calibration), plus Reverse Concept Identification (CWE lookup) and multi-step Log4Shell/NIST CSF inference tests, complete with an interactive web dashboard.</p>
+          <p lang="pt">Suites de benchmarking de LLMs em cibersegurança que avaliam mais de 15 modelos locais (<code>gpt-oss 20b</code>, <code>glm-4.7-flash</code>, <code>phi4 14b</code>, <code>qwen3</code>, <code>granite4</code>, <code>ministral-3</code>) em datasets <strong>CyberMetric</strong> de 80, 500, 2.000 e 10.000 questões segundo três modos (Standard, Raciocínio em Dois Passos e Probabilístico Calibrado), além de testes inversos de identificação de CWE e inferência multi-passo (Log4Shell / NIST CSF), com dashboard web interativo.</p>
+          <div class="proj-tags"><span>Python · JavaScript</span><span>CyberMetric (10,000Q)</span><span>Ollama</span><span>LLM Benchmarking</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public (2 repos)</span><span lang="pt">público (2 repos)</span></span><br>Python · JS Dashboard<br>2025–2026</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a></h4>
+          <p lang="en">Research testbed for an AI <strong>Mixture of Experts (MoE)</strong> architecture in cybersecurity requirements engineering. Evaluates how small local LLMs (0.5B–8B parameters) perform as semantic JSON routers and specialized domain experts (Threat Analyst, Controls Engineer), measuring routing accuracy, instruction alignment, persona adherence, latency, and VRAM footprint.</p>
+          <p lang="pt">Banco de ensaio para uma arquitetura <strong>Mixture of Experts (MoE)</strong> aplicada a requisitos de cibersegurança. Avalia o desempenho de modelos locais compactos (0.5B–8B parâmetros) como routers semânticos JSON e peritos de domínio (Analista de Ameaças, Engenheiro de Controlos), medindo precisão de encaminhamento, aderência à persona, latência e consumo de VRAM.</p>
+          <div class="proj-tags"><span>Python</span><span>Mixture of Experts (MoE)</span><span>Small LLMs (0.5B–8B)</span><span>Ollama</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · Ollama<br>2025</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/RAGImplementation" target="_blank" rel="noopener">RAGImplementation</a></h4>
+          <p lang="en">Transparent, glass-box RAG evaluation framework. Quantitatively compares RAG vs. No-RAG responses, XML vs. plain-text CWE parsing strategies, Sentence-Window indexing, and two-stage cross-encoder reranking, logging every prompt, retrieved chunk score, and model latency for reproducible experiments.</p>
+          <p lang="pt">Framework transparente ("glass-box") para avaliação de pipelines RAG. Compara quantitativamente respostas RAG vs. No-RAG, impacto do parsing estruturado de XML (CWE), indexação Sentence-Window e re-ranking em duas fases com cross-encoder, registando prompts, scores de chunks e latências.</p>
+          <div class="proj-tags"><span>Python</span><span>Sentence-Window RAG</span><span>Cross-Encoder Reranking</span><span>CWE XML</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Python · RAG<br>2025</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/harness-design-best-practices" target="_blank" rel="noopener">harness-design-best-practices</a> &amp; <a href="https://github.com/pauloribeiro16/my-skills" target="_blank" rel="noopener">my-skills</a></h4>
+          <p lang="en">Engineering reference kits for long-running autonomous AI agents: initializer and coding-agent harness loops, checkpoint/recovery routines, hierarchical <code>AGENTS.md</code> templates, Langfuse observability guides, and a curated library of 30+ OpenCode/Claude agent skills covering document automation (<code>docx</code>, <code>xlsx</code>, <code>pdf</code>, <code>pptx</code>), security auditing, and web debugging.</p>
+          <p lang="pt">Repositórios de engenharia de agentes autónomos de longa duração: templates de harnesses (initializer/coding agent), rotinas de checkpoint e recuperação, arquitetura de ficheiros <code>AGENTS.md</code>, guias Langfuse/LangGraph e uma coleção de mais de 30 skills reutilizáveis para manipulação documental (<code>docx</code>, <code>xlsx</code>, <code>pdf</code>, <code>pptx</code>), segurança e desenvolvimento.</p>
+          <div class="proj-tags"><span>Agent Harnesses</span><span>AGENTS.md</span><span>Langfuse · LangGraph</span><span>OpenCode &amp; Claude Skills</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public (2 repos)</span><span lang="pt">público (2 repos)</span></span><br>Python · Shell · Docs<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/Cybersecurity_News_Agent" target="_blank" rel="noopener">Cybersecurity_News_Agent</a></h4>
+          <p lang="en">AI-powered cybersecurity news aggregation and threat brief analysis application built with TypeScript and the Gemini API.</p>
+          <p lang="pt">Aplicação de agregação e análise inteligente de notícias e alertas de cibersegurança construída em TypeScript com a API Gemini.</p>
+          <div class="proj-tags"><span>TypeScript</span><span>Gemini API</span><span>Threat Intelligence Briefs</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>TypeScript<br>2025</div>
+      </article>
+
+      <article class="proj" data-category="agents" data-vis="priv">
+        <div>
+          <h4>Learning</h4>
+          <p lang="en">A structured study corpus on AI agent engineering: 47 conference talks cleaned into transcripts and distilled into 443 cited claims across 39 topics, so any architectural question gets an answer backed by primary sources.</p>
+          <p lang="pt">Corpus estruturado de estudo sobre engenharia de sistemas de agentes: 47 palestras técnicas limpas em transcrições e destiladas em 443 afirmações citadas em 39 tópicos, garantindo respostas sempre sustentadas na fonte.</p>
+          <div class="proj-tags"><span>Python</span><span>Knowledge Distillation</span><span>443 Cited Claims</span></div>
+        </div>
+        <div class="meta"><span class="vis priv"><span lang="en">private</span><span lang="pt">privado</span></span><br>Python<br>2026</div>
+      </article>
+    </div>
+
+    <!-- ==================== GROUP IV: MOBILE APPS & LINUX SYSTEMS ==================== -->
+    <div class="group" data-group="mobile">
+      <div class="group-header">
+        <h3><span lang="en">IV. Mobile Apps, Linux Systems &amp; Offline-First Software</span><span lang="pt">IV. Aplicações Móveis, Sistemas Linux &amp; Software Offline-First</span></h3>
+        <span class="group-count">4 <span lang="en">projects</span><span lang="pt">projetos</span></span>
+      </div>
+
+      <article class="proj" data-category="mobile" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/finflow" target="_blank" rel="noopener">Finflow</a></h4>
+          <p lang="en">Ultra-private, offline-first personal finance manager and wealth analytics app for Android (8.0+). Built with Kotlin 2.0, Jetpack Compose (Material 3), and Room SQLite encrypted at rest with <strong>AES-256 SQLCipher</strong>. Features biometric authentication, 4-dimensional transaction tracking (Category, Context/Entity, Payment Method, Fixed/Variable classification), custom native Canvas analytics charts, bilingual EN/PT switcher, and exact integer-cent (<code>Long</code>) arithmetic. Signed APK &amp; SHA-256 checksums published via GitHub Releases.</p>
+          <p lang="pt">Gestor de finanças pessoais e análise patrimonial para Android (8.0+), 100% offline e ultra-privado. Construído com Kotlin 2.0, Jetpack Compose (Material 3) e Room SQLite cifrado em repouso com <strong>AES-256 SQLCipher</strong>. Inclui autenticação biométrica, rastreio de transações a 4 dimensões (Categoria, Entidade/Contexto, Método de Pagamento, Fixo/Variável), gráficos nativos em Canvas, suporte bilingue PT/EN e matemática financeira exata em cêntimos inteiros (<code>Long</code>). APK assinado disponível no GitHub Releases.</p>
+          <div class="proj-tags"><span>Kotlin 2.0</span><span>Jetpack Compose</span><span>Room · SQLCipher AES-256</span><span>Biometrics</span><span>Android APK</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public · APK</span><span lang="pt">público · APK</span></span><br>Kotlin · Compose<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="mobile" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/omarchy-mobile" target="_blank" rel="noopener">omarchy-mobile</a></h4>
+          <p lang="en">Native Omarchy on mobile phones: <strong>Arch Linux ARM</strong>, <strong>Hyprland</strong> tiling compositor, and Omarchy's packages running directly on mobile hardware on a mainline Linux kernel (reference device: Google Pixel 7 Pro, <code>cheetah</code> / <code>gs201</code>). Includes custom aarch64 package and rootfs builders, kernel/initramfs tooling (<code>bin/omamobile</code>), non-destructive slot-B fastboot installation preserving stock Android on slot A, cryptographic NV/modem partition checksum verification, mobile quick-settings, on-screen keyboard, and voice dictation into terminal AI agents.</p>
+          <p lang="pt">Omarchy nativo em telemóveis: <strong>Arch Linux ARM</strong>, compositor em mosaico <strong>Hyprland</strong> e pacotes Omarchy a correr diretamente no hardware sobre um kernel Linux mainline (dispositivo de referência: Google Pixel 7 Pro, <code>cheetah</code> / <code>gs201</code>). Inclui construtores de pacotes aarch64 e rootfs, ferramentas de kernel/initramfs (<code>bin/omamobile</code>), instalação fastboot não-destrutiva no slot B (mantendo Android no slot A), verificação criptográfica de partições de modem/NV e ditado por voz no terminal.</p>
+          <div class="proj-tags"><span>Arch Linux ARM</span><span>Mainline Linux Kernel</span><span>Hyprland</span><span>Pixel 7 Pro (gs201)</span><span>Fastboot · Rootfs</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>Shell · C · Arch ARM<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="mobile" data-vis="priv">
+        <div>
+          <h4>Piano &amp; Pautas</h4>
+          <p lang="en">The Android app I built to learn piano: a musical staff and keyboard that light up in sync, chord and inversion drills, a precision metronome, a chromatic pitch tuner, and a practice recorder — with polyphonic piano sound synthesised directly on the device.</p>
+          <p lang="pt">A aplicação Android que construí para aprender piano: pauta musical e teclado que acendem em simultâneo, treino de acordes e inversões, metrónomo, afinador cromático e gravador de estudo — com o som sintetizado em tempo real no próprio telemóvel.</p>
+          <div class="proj-tags"><span>Kotlin</span><span>Jetpack Compose</span><span>On-Device Audio Synthesis</span><span>DSP / Pitch Detection</span></div>
+        </div>
+        <div class="meta"><span class="vis priv"><span lang="en">private</span><span lang="pt">privado</span></span><br>Kotlin · Compose<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="mobile" data-vis="priv">
+        <div>
+          <h4>Pegadas</h4>
+          <p lang="en">An offline travel journal that automatically groups phone photos into trips by date and plots them on an interactive world map (places visited and places still to visit). References photos in-place where they already live on the device and never duplicates or uploads them.</p>
+          <p lang="pt">Um diário de viagens offline que agrupa automaticamente as fotos por viagem a partir da data e as coloca num mapa do mundo interativo (locais visitados e por visitar). Referencia as fotografias onde elas já estão no telemóvel, sem nunca as copiar nem enviar para a nuvem.</p>
+          <div class="proj-tags"><span>Flutter · Dart</span><span>Offline-First</span><span>EXIF / Geospatial Map</span><span>Zero-Copy Media</span></div>
+        </div>
+        <div class="meta"><span class="vis priv"><span lang="en">private</span><span lang="pt">privado</span></span><br>Flutter<br>2026</div>
+      </article>
+    </div>
+
+    <!-- ==================== GROUP V: FULL-STACK, FORMAL METHODS & ARCHIVE ==================== -->
+    <div class="group" data-group="archive">
+      <div class="group-header">
+        <h3><span lang="en">V. Full-Stack Templates, Formal Methods, Pentesting Notes &amp; Lab Archive</span><span lang="pt">V. Templates Full-Stack, Métodos Formais, Notas de Pentesting &amp; Arquivo de Laboratórios</span></h3>
+        <span class="group-count">14 <span lang="en">repositories</span><span lang="pt">repositórios</span></span>
+      </div>
+
+      <article class="proj" data-category="archive" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/Template_React" target="_blank" rel="noopener">Template_React</a></h4>
+          <p lang="en">Production-ready full-stack pnpm monorepo template: <strong>React 19 + TypeScript + TanStack Query</strong> on the frontend and <strong>Express + Prisma + PostgreSQL 15+</strong> on the backend, pre-configured with a hierarchical <code>AGENTS.md</code> architecture and 9 vendorized development skills.</p>
+          <p lang="pt">Template full-stack monorepo (pnpm workspace): <strong>React 19 + TypeScript + TanStack Query</strong> no frontend e <strong>Express + Prisma + PostgreSQL 15+</strong> no backend, pré-configurado com hierarquia <code>AGENTS.md</code> e 9 skills de desenvolvimento e testes.</p>
+          <div class="proj-tags"><span>React 19 · TypeScript</span><span>Express · Prisma · PostgreSQL</span><span>TanStack Query</span><span>pnpm Monorepo</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public</span><span lang="pt">público</span></span><br>TypeScript · React 19<br>2026</div>
+      </article>
+
+      <article class="proj" data-category="archive" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/Timed-Automata-converter" target="_blank" rel="noopener">Timed-Automata-converter</a> &amp; <a href="https://github.com/pauloribeiro16/Project" target="_blank" rel="noopener">Project</a></h4>
+          <p lang="en">Functional programming and formal verification tools written in <strong>Haskell</strong> during my Physics of Information / Engineering studies at Universidade do Minho: a parser, regular-expression engine, and visual automaton renderer for Timed Automata models.</p>
+          <p lang="pt">Ferramentas de programação funcional e métodos formais desenvolvidas em <strong>Haskell</strong> durante o percurso em Engenharia Física (Física da Informação) na Universidade do Minho: parser, motor de expressões regulares e conversor/visualizador de Autómatos Temporizados (Timed Automata).</p>
+          <div class="proj-tags"><span>Haskell</span><span>Timed Automata</span><span>Formal Methods · Parsers</span><span>Physics of Information</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public (2 repos)</span><span lang="pt">público (2 repos)</span></span><br>Haskell<br>2019–2021</div>
+      </article>
+
+      <article class="proj" data-category="archive" data-vis="pub">
+        <div>
+          <h4><a href="https://github.com/pauloribeiro16/CyberSecurity" target="_blank" rel="noopener">CyberSecurity</a> &amp; <a href="https://github.com/pauloribeiro16/cyberpath" target="_blank" rel="noopener">cyberpath</a></h4>
+          <p lang="en">Offensive security and penetration testing field notes, enumeration playbooks (Port scanning, FTP, SSH, HTTP, SMB, SNMP, LDAP, MSSQL, MySQL, PostgreSQL), Linux/Windows privilege escalation, reverse shell upgrading, Chisel port-forwarding, magic-byte file bypasses, and buffer overflow labs.</p>
+          <p lang="pt">Notas práticas de segurança ofensiva e pentesting: playbooks de enumeração de serviços (FTP, SSH, HTTP, SNMP, LDAP, MSSQL, MySQL, PostgreSQL), escalada de privilégios em Linux/Windows, reverse shells, port-forwarding com Chisel, manipulação de magic bytes e exploração de Buffer Overflows.</p>
+          <div class="proj-tags"><span>Pentesting</span><span>Enumeration</span><span>Privilege Escalation</span><span>Buffer Overflow · Chisel</span></div>
+        </div>
+        <div class="meta"><span class="vis pub"><span lang="en">public (2 repos)</span><span lang="pt">público (2 repos)</span></span><br>Markdown · Offensive Sec<br>2024</div>
+      </article>
+
+      <div class="archive-grid">
+        <div class="archive-card" data-category="archive" data-vis="pub">
+          <div>
+            <h4><a href="https://github.com/pauloribeiro16/rentacarproject" target="_blank" rel="noopener">rentacarproject</a></h4>
+            <p lang="en">Python car rental management system with vehicle inventory, customer registry, date validation, and multi-tier booking discounts.</p>
+            <p lang="pt">Sistema de gestão de aluguer de viaturas em Python com gestão de frota, clientes, validação de datas e cálculo de reservas.</p>
+          </div>
+          <div class="archive-meta"><span>Python</span><span>2024 · Public</span></div>
+        </div>
+
+        <div class="archive-card" data-category="archive" data-vis="pub">
+          <div>
+            <h4><a href="https://github.com/pauloribeiro16/redis_python_lab" target="_blank" rel="noopener">redis_python_lab</a></h4>
+            <p lang="en">Integration lab exploring in-memory caching, key-value data structures, and pub/sub workflows with Redis and Python.</p>
+            <p lang="pt">Laboratório de integração de caching em memória e estruturas chave-valor com Redis e Python.</p>
+          </div>
+          <div class="archive-meta"><span>Python · Redis</span><span>2024 · Public</span></div>
+        </div>
+
+        <div class="archive-card" data-category="archive" data-vis="pub">
+          <div>
+            <h4><a href="https://github.com/pauloribeiro16/docker-amarante" target="_blank" rel="noopener">docker-amarante</a></h4>
+            <p lang="en">Container orchestration and Docker deployment configuration lab.</p>
+            <p lang="pt">Configuração de contentorização e deployment com Docker.</p>
+          </div>
+          <div class="archive-meta"><span>Docker</span><span>2024 · Public</span></div>
+        </div>
+
+        <div class="archive-card" data-category="archive" data-vis="pub">
+          <div>
+            <h4><a href="https://github.com/pauloribeiro16/webapi08" target="_blank" rel="noopener">webapi08</a></h4>
+            <p lang="en">RESTful Web API coursework project built with C# and .NET.</p>
+            <p lang="pt">Projeto de Web API RESTful desenvolvido em C# e .NET.</p>
+          </div>
+          <div class="archive-meta"><span>C# · .NET Web API</span><span>2024 · Public</span></div>
+        </div>
+
+        <div class="archive-card" data-category="archive" data-vis="pub">
+          <div>
+            <h4><a href="https://github.com/pauloribeiro16/webapp-aws-v8" target="_blank" rel="noopener">webapp-aws-v8</a> &amp; <a href="https://github.com/pauloribeiro16/webapp-aws-v6" target="_blank" rel="noopener">webapp-aws-v6</a></h4>
+            <p lang="en">C#/.NET web applications configured for AWS cloud deployment (v6 &amp; v8 coursework).</p>
+            <p lang="pt">Aplicações web em C#/.NET preparadas para deployment na cloud AWS (versões v6 e v8).</p>
+          </div>
+          <div class="archive-meta"><span>C# · AWS Cloud</span><span>2024 · Public (2 repos)</span></div>
+        </div>
+
+        <div class="archive-card" data-category="archive" data-vis="pub">
+          <div>
+            <h4><a href="https://github.com/pauloribeiro16/aws-amt-site-pr" target="_blank" rel="noopener">aws-amt-site-pr</a>, <a href="https://github.com/pauloribeiro16/webapp06" target="_blank" rel="noopener">webapp06</a> &amp; <a href="https://github.com/pauloribeiro16/webapp-pr" target="_blank" rel="noopener">webapp-pr</a></h4>
+            <p lang="en">Cloud CI/CD GitHub Actions pipelines and web application coursework labs.</p>
+            <p lang="pt">Laboratórios de CI/CD com GitHub Actions, AWS e aplicações web.</p>
+          </div>
+          <div class="archive-meta"><span>HTML · GitHub Actions · AWS</span><span>2024 · Public (3 repos)</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Paulo Ribeiro · Guimarães, Portugal</div>
+    <div class="footer-links">
+      <a href="index.html"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
+      <a href="projects.html"><span lang="en">Projects</span><span lang="pt">Projetos</span></a>
+      <a href="research.html"><span lang="en">Research</span><span lang="pt">Investigação</span></a>
+      <a href="about.html"><span lang="en">About &amp; CV</span><span lang="pt">Sobre &amp; CV</span></a>
+      <a href="contact.html"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
+      <a href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/pauloribeiro16" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

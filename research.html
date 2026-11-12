@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Investigação &amp; Tese — Paulo Ribeiro</title>
+<meta name="description" content="Investigação de doutoramento de Paulo Ribeiro (Universidade do Minho · ALGORITMI · CCG/ZGDV · CeDRI): Metodologia AEGIS (4SRS), Grafo de Conhecimento Unificado de Cibersegurança e Benchmarks de LLMs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" class="brand" id="nav-brand">
+      <span class="brand-name">Paulo Ribeiro</span>
+      <span class="brand-tag">Cybersecurity · AI Systems · PhD</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" id="nav-home"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
+      <a href="projects.html" id="nav-projects"><span lang="en">Projects (45)</span><span lang="pt">Projetos (45)</span></a>
+      <a href="research.html" id="nav-research" aria-current="page"><span lang="en">Research &amp; Thesis</span><span lang="pt">Investigação &amp; Tese</span></a>
+      <a href="about.html" id="nav-about"><span lang="en">About, CV &amp; Interests</span><span lang="pt">Sobre, CV &amp; Gostos</span></a>
+      <a href="contact.html" id="nav-contact"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
+    </nav>
+    <div class="controls">
+      <div class="switch" role="group" aria-label="Language">
+        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="theme-btn" id="theme-toggle" aria-label="Toggle theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow">
+      <span lang="en">Doctoral Research · PDTSI · FCT Non-Academic PhD Fellowship</span>
+      <span lang="pt">Investigação de Doutoramento · PDTSI · Bolsa FCT em Ambiente Não Académico</span>
+    </span>
+    <h1>
+      <span lang="en">From Abstract Regulation to Verifiable Security Requirements</span>
+      <span lang="pt">De Regulamentos Abstratos a Requisitos de Segurança Verificáveis</span>
+    </h1>
+    <p class="lede" lang="en">My doctoral research at <strong>Universidade do Minho</strong> (School of Engineering · Centro ALGORITMI), conducted in an applied industry/research setting with the <strong>CCG/ZGDV Institute</strong> and <strong>CeDRI (IPB)</strong>, addresses how to systematically transform abstract security Non-Functional Requirements (NFRs) and European regulations into actionable, testable Functional Requirements (FRs) for software engineers and multi-agent AI systems.</p>
+    <p class="lede" lang="pt">A minha investigação de doutoramento na <strong>Universidade do Minho</strong> (Escola de Engenharia · Centro ALGORITMI), desenvolvida em ambiente não académico no <strong>Instituto CCG/ZGDV</strong> e em colaboração com o <strong>CeDRI (IPB)</strong>, foca-se em transformar de forma determinística Requisitos Não-Funcionais (NFRs) abstratos e regulamentos europeus em Requisitos Funcionais (FRs) acionáveis e verificáveis para equipas de engenharia e sistemas multiagente de IA.</p>
+  </div>
+</div>
+
+<section id="thesis-core">
+  <div class="wrap">
+    <div>
+      <h2><span lang="en">The Research Question</span><span lang="pt">A Questão de Investigação</span></h2>
+      <p class="sec-note"><span lang="en">Extending the 4SRS (Four-Step Rule Set) methodology into AEGIS.</span><span lang="pt">Extensão da metodologia 4SRS (Four-Step Rule Set) através do AEGIS.</span></p>
+    </div>
+    <div class="prose">
+      <p class="question" lang="en">How do you check, deterministically and verifiably, that a software architecture or multi-agent AI system satisfies its regulatory and security obligations?</p>
+      <p class="question" lang="pt">Como se verifica, de forma determinística e comprovável, que uma arquitetura de software ou um sistema multiagente de IA cumpre as suas obrigações regulamentares e de segurança?</p>
+      <p lang="en">In software engineering, high-level mandates ("comply with NIS 2 and DORA", "ensure resilience against prompt injection", "protect PII under GDPR") start as abstract Non-Functional Requirements (NFRs). When left to ad-hoc checklists or ungrounded LLM generation, critical obligations are lost or hallucinated.</p>
+      <p lang="pt">Na engenharia de software, obrigações de alto nível («cumprir a NIS 2 e o DORA», «garantir resiliência contra ataques», «proteger dados pessoais segundo o RGPD») surgem como Requisitos Não-Funcionais (NFRs) abstratos. Quando delegados em checklists estáticas ou geração livre por LLMs, perdem-se garantias e surgem alucinações.</p>
+      <p lang="en">My thesis proposes <strong>AEGIS</strong>, an extension of the <strong>4SRS (Four-Step Rule Set)</strong> architectural transformation methodology. AEGIS couples a frozen regulatory/control baseline with a unified cybersecurity Knowledge Graph and a state-machine Decision Support System (DSS), ensuring that every derived Functional Requirement (FR) and technical control preserves an auditable chain of provenance back to its legal article and threat vector.</p>
+      <p lang="pt">A minha tese propõe o <strong>AEGIS</strong>, que estende a metodologia de transformação arquitetural <strong>4SRS (Four-Step Rule Set)</strong>. O AEGIS articula uma baseline normativa congelada com um Grafo de Conhecimento de cibersegurança e um Sistema de Apoio à Decisão (DSS) em máquina de estados, garantindo que cada Requisito Funcional (FR) derivado mantém rastreabilidade completa até ao artigo legal e vetor de ameaça que lhe deu origem.</p>
+
+      <ul class="refs" aria-label="Standards and regulations mapped">
+        <li>4SRS Methodology</li><li>CWE (969)</li><li>CAPEC (615)</li><li>MITRE ATT&amp;CK (836)</li><li>MITRE ATLAS</li><li>MITRE D3FEND (466)</li>
+        <li>NIST CSF 2.0</li><li>NIST SP 800-53</li><li>NIST PF 1.1</li><li>NIST AI RMF</li><li>ISO/IEC 27001 &amp; 27002</li><li>ISO/IEC 42001</li>
+        <li>GDPR</li><li>CRA</li><li>NIS 2</li><li>DORA</li><li>EU AI Act</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="aegis-architecture">
+  <div class="wrap">
+    <div>
+      <h2><span lang="en">The AEGIS Pipeline</span><span lang="pt">A Pipeline AEGIS</span></h2>
+      <p class="sec-note"><span lang="en">Three natures of information and deterministic state-machine execution.</span><span lang="pt">Três naturezas de informação e execução determinística em máquina de estados.</span></p>
+    </div>
+    <div class="prose">
+      <p lang="en">Implemented across <a href="https://github.com/pauloribeiro16/aegis-mvp" target="_blank" rel="noopener">aegis-mvp</a>, <a href="https://github.com/pauloribeiro16/aegis-phase1" target="_blank" rel="noopener">aegis-phase1</a>, and <a href="https://github.com/pauloribeiro16/Methodology_compact" target="_blank" rel="noopener">Methodology_compact</a>, the methodology separates static domain intelligence from company-specific context:</p>
+      <p lang="pt">Implementada nos repositórios <a href="https://github.com/pauloribeiro16/aegis-mvp" target="_blank" rel="noopener">aegis-mvp</a>, <a href="https://github.com/pauloribeiro16/aegis-phase1" target="_blank" rel="noopener">aegis-phase1</a> e <a href="https://github.com/pauloribeiro16/Methodology_compact" target="_blank" rel="noopener">Methodology_compact</a>, a metodologia separa o conhecimento normativo estático do contexto específico de cada organização:</p>
+
+      <div class="table-wrap">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th><span lang="en">Stage / Artifact</span><span lang="pt">Fase / Artefacto</span></th>
+              <th><span lang="en">Scope &amp; Mechanism</span><span lang="pt">Âmbito &amp; Mecanismo</span></th>
+              <th><span lang="en">Deliverables &amp; Traceability</span><span lang="pt">Entregáveis &amp; Rastreabilidade</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono"><strong>Phase 0 · Baseline</strong><br>aegis-mvp/baseline</td>
+              <td>
+                <span lang="en">10 Security Domains × 38 Sub-Domains (<code>D-XX.Y</code>), Ambiguity Registry, verbatim EU regulation articles, and 7 NIST/OWASP referentials.</span>
+                <span lang="pt">10 Domínios de Segurança × 38 Subdomínios (<code>D-XX.Y</code>), Registo de Ambiguidades, artigos regulamentares verbatim e 7 referenciais NIST/OWASP.</span>
+              </td>
+              <td class="mono">00_Taxonomy_Reference<br>01_Ambiguity_Registry<br>SR ↔ CSF/PF/AI-RMF JSON</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>Phase 1 · Context</strong><br>aegis-phase1</td>
+              <td>
+                <span lang="en">LangGraph workflow (SubPhase A: Foundations → SubPhase B: Regulation → SubPhase C: Analysis) with 7–9 LLM calls + zero-LLM aggregation nodes.</span>
+                <span lang="pt">Fluxo LangGraph (SubFase A: Fundações → SubFase B: Regulação → SubFase C: Análise) com 7–9 chamadas LLM e nós de agregação determinísticos (zero-LLM).</span>
+              </td>
+              <td class="mono">Doc 04 (Context)<br>Doc 05 (Applicability)<br>Doc 06 (Clause Matrix)<br>Doc 07 (Compliance Matrix)</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>Phase 2 &amp; 3 · 4SRS</strong><br>Methodology_compact</td>
+              <td>
+                <span lang="en">Decomposes adjusted security objectives into functional requirements (NFR → FR), threat mitigations, and verifiable architectural controls.</span>
+                <span lang="pt">Decompõe os objetivos de segurança ajustados em requisitos funcionais (NFR → FR), mitigações de ameaças e controlos arquiteturais verificáveis.</span>
+              </td>
+              <td class="mono">4SRS Transformation<br>Audit Trail &amp; Lints<br>aegis-inspector diffs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="knowledge-graphs">
+  <div class="wrap">
+    <div>
+      <h2><span lang="en">Unified Knowledge Graphs &amp; System-1 Traversal</span><span lang="pt">Grafos de Conhecimento &amp; Travessia System-1</span></h2>
+      <p class="sec-note"><span lang="en">Connecting legal obligations to technical attack &amp; defence ontologies.</span><span lang="pt">Ligar obrigações legais a ontologias técnicas de ataque e defesa.</span></p>
+    </div>
+    <div class="prose">
+      <p lang="en">A central contribution of my work is bridging two worlds that usually live in separate silos: <strong>normative legal frameworks</strong> (<a href="https://github.com/pauloribeiro16/aegis-kg-unified" target="_blank" rel="noopener">aegis-kg-unified</a>) and <strong>adversarial/defensive cybersecurity ontologies</strong> (<a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a> and <a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a>).</p>
+      <p lang="pt">Uma contribuição central do meu trabalho consiste em unir dois mundos que habitualmente existem em silos separados: os <strong>quadros legais normativos</strong> (<a href="https://github.com/pauloribeiro16/aegis-kg-unified" target="_blank" rel="noopener">aegis-kg-unified</a>) e as <strong>ontologias técnicas de ataque e defesa</strong> (<a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a> e <a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a>).</p>
+
+      <div class="table-wrap">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th><span lang="en">Ontology / Regulation</span><span lang="pt">Ontologia / Regulamento</span></th>
+              <th><span lang="en">Graph Nodes &amp; Scope</span><span lang="pt">Nós no Grafo &amp; Âmbito</span></th>
+              <th><span lang="en">Cross-Framework Bridges</span><span lang="pt">Relações Cross-Framework</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono"><strong>EU Regulations (5)</strong></td>
+              <td>GDPR (99 arts), EU AI Act (113 arts), CRA (58 arts), DORA (51 arts), NIS 2 (41 arts) → 150+ atomic clauses</td>
+              <td class="mono">(:Clause)-[:MAPS_TO_SUBDOMAIN]-&gt;(:SubDomain)</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>CWE v4.19</strong></td>
+              <td>969 software &amp; architectural weaknesses</td>
+              <td class="mono">(:CAPEC)-[:EXPLOITS]-&gt;(:CWE) [1,212 edges]</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>CAPEC</strong></td>
+              <td>615 common attack patterns</td>
+              <td class="mono">(:CAPEC)-[:MAPS_TO_ATTACK]-&gt;(:ATTACK) [271 edges]</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>MITRE ATT&amp;CK &amp; ATLAS</strong></td>
+              <td>836 Enterprise/Mobile adversarial techniques + AI/ML ATLAS threats</td>
+              <td class="mono">(:D3FEND)-[:MITIGATES]-&gt;(:ATTACK) [3,234 edges]</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>MITRE D3FEND</strong></td>
+              <td>466 defensive countermeasures + 52 AEGIS taxonomic bridge nodes</td>
+              <td class="mono">(*)-[:MAPS_TO_SUBDOMAIN]-&gt;(:SubDomain) [5,121 edges]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p lang="en">In <a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a>, instead of asking a slow "System 2" LLM to generate Cypher or guess graph paths, I use sub-50ms probabilistic "System 1" inference primitives — <code>Noul</code> (boolean goal satisfaction), <code>Choice</code> (categorical edge selection), and <code>Score</code> (heuristic $h(n)$ alignment) — to guide A* and Beam Search directly across the Neo4j graph without hallucinating node IDs.</p>
+      <p lang="pt">No projeto <a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a>, em vez de usar LLMs convencionais ("System 2") lentos e propensos a alucinar nós, utilizo primitivas de inferência probabilística "System 1" em menos de 50ms — <code>Noul</code> (critério booleano de paragem), <code>Choice</code> (seleção categórica de arestas) e <code>Score</code> (heurística $h(n)$) — para guiar algoritmos A* e Beam Search diretamente sobre o Neo4j.</p>
+    </div>
+  </div>
+</section>
+
+<section id="benchmarks">
+  <div class="wrap">
+    <div>
+      <h2><span lang="en">LLM Cybersecurity Benchmarks</span><span lang="pt">Benchmarks de LLMs em Cibersegurança</span></h2>
+      <p class="sec-note"><span lang="en">Empirical evaluation across 80 to 10,000 CyberMetric questions (<a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test" target="_blank" rel="noopener">Cybersecurity_sanity_test</a>).</span><span lang="pt">Avaliação empírica de 80 a 10.000 questões CyberMetric (<a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test" target="_blank" rel="noopener">Cybersecurity_sanity_test</a>).</span></p>
+    </div>
+    <div class="prose">
+      <p lang="en">Before trusting any local or open-weights model inside a security pipeline, I benchmark its factual recall, two-step chain-of-thought deduction, probabilistic confidence calibration, and routing accuracy (<a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a>). Below is a subset of our empirical accuracy results on the cleaned <strong>CyberMetric</strong> dataset running locally on Ollama:</p>
+      <p lang="pt">Antes de integrar qualquer modelo local numa pipeline de cibersegurança, avalio empiricamente a sua precisão factual, raciocínio em dois passos, calibração probabilística de confiança e capacidade de routing (<a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a>). Abaixo apresenta-se uma amostra dos resultados obtidos na suite <strong>CyberMetric</strong> via Ollama:</p>
+
+      <div class="table-wrap">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Model (Local / Ollama)</th>
+              <th>80Q</th>
+              <th>500Q</th>
+              <th>2,000Q</th>
+              <th>10,000Q</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono"><strong>gpt-oss (20b)</strong></td>
+              <td class="mono">97.5%</td>
+              <td class="mono">91.0%</td>
+              <td class="mono">90.3%</td>
+              <td class="mono"><strong>86.7%</strong></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>glm-4.7-flash</strong></td>
+              <td class="mono">96.3%</td>
+              <td class="mono"><strong>93.8%</strong></td>
+              <td class="mono">90.5%</td>
+              <td class="mono">—</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>phi4 (14b)</strong></td>
+              <td class="mono">93.8%</td>
+              <td class="mono">91.8%</td>
+              <td class="mono"><strong>90.8%</strong></td>
+              <td class="mono"><strong>87.0%</strong></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>ministral-3</strong></td>
+              <td class="mono">95.0%</td>
+              <td class="mono">88.8%</td>
+              <td class="mono">—</td>
+              <td class="mono">84.7%</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>NVIDIA-Orchestrator-Cybersecurity-8B (Q8_0)</strong></td>
+              <td class="mono">93.8%</td>
+              <td class="mono">—</td>
+              <td class="mono">—</td>
+              <td class="mono">—</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>qwen3 (14b / 8b)</strong></td>
+              <td class="mono">92.5%</td>
+              <td class="mono">91.4%</td>
+              <td class="mono">90.1%</td>
+              <td class="mono">—</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>granite4 (tiny-h)</strong></td>
+              <td class="mono">91.3%</td>
+              <td class="mono">83.4%</td>
+              <td class="mono">80.6%</td>
+              <td class="mono">76.3%</td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>gemma3n (e4b)</strong></td>
+              <td class="mono">86.3%</td>
+              <td class="mono">81.8%</td>
+              <td class="mono">81.6%</td>
+              <td class="mono">78.8%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="affiliations">
+  <div class="wrap">
+    <div>
+      <h2><span lang="en">Research Centres &amp; Academic Service</span><span lang="pt">Centros de Investigação &amp; Serviço Científico</span></h2>
+      <p class="sec-note"><span lang="en">Institutional ecosystems supporting this research.</span><span lang="pt">Ecossistemas institucionais onde desenvolvo investigação.</span></p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3 class="tl-role">CCG/ZGDV — ICT Innovation Institute</h3>
+          <span class="tl-period">Guimarães, Portugal</span>
+        </div>
+        <p class="tl-org"><span lang="en">Assistant Researcher · Department of Software Engineering and Data Intelligence</span><span lang="pt">Investigador Assistente · Departamento de Engenharia de Software e Inteligência de Dados</span></p>
+        <p class="tl-body" lang="en">Applied research on industrial cyber resilience, threat modelling for IoT and distributed systems, ontology-driven security requirements, and organizational compliance with GDPR, NIS 2, DORA, and ISO/IEC 27001 (<a href="https://ccg.pt/en/about/meet-the-team/paulo-ribeiro" target="_blank" rel="noopener">CCG Profile ↗</a>).</p>
+        <p class="tl-body" lang="pt">Investigação aplicada em ciber-resiliência industrial, modelação de ameaças para sistemas IoT e distribuídos, segurança baseada em ontologias e taxonomias, e conformidade com GDPR, NIS 2, DORA e ISO/IEC 27001 (<a href="https://ccg.pt/en/about/meet-the-team/paulo-ribeiro" target="_blank" rel="noopener">Perfil CCG ↗</a>).</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3 class="tl-role">Universidade do Minho · Centro ALGORITMI</h3>
+          <span class="tl-period">Guimarães, Portugal</span>
+        </div>
+        <p class="tl-org"><span lang="en">PhD Candidate in Information Systems and Technology (PDTSI) · FCT Fellowship</span><span lang="pt">Doutorando em Tecnologias e Sistemas de Informação (PDTSI) · Bolsa FCT</span></p>
+        <p class="tl-body" lang="en">Doctoral programme at the School of Engineering, supported by an FCT PhD Scholarship under the Specific Line of Application in a Non-Academic Environment (2025). Member of the Program Committee for <strong>ARTIIS 2026</strong> (Special Session on Information and Infrastructure Security — IIS 2026).</p>
+        <p class="tl-body" lang="pt">Programa Doutoral na Escola de Engenharia, com bolsa de doutoramento FCT na Linha Específica de Candidatura em Ambiente Não Académico (2025). Membro da Comissão de Programa da conferência internacional <strong>ARTIIS 2026</strong> (Special Session on Information and Infrastructure Security — IIS 2026).</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3 class="tl-role">CeDRI — Research Centre in Digitalization and Intelligent Robotics (IPB)</h3>
+          <span class="tl-period">Bragança / Guimarães</span>
+        </div>
+        <p class="tl-org"><span lang="en">Research Collaborator · Simulation and Advanced Data Analytics</span><span lang="pt">Investigador Colaborador · Simulação e Analítica Avançada de Dados</span></p>
+        <p class="tl-body" lang="en">Research fellowship collaboration focused on extending the 4SRS methodology, cybersecurity knowledge graphs, and AI-driven Decision Support Systems across the SDLC (<a href="https://cedri.ipb.pt/people/research-fellowships/paulo-ribeiro" target="_blank" rel="noopener">CeDRI Profile ↗</a>).</p>
+        <p class="tl-body" lang="pt">Colaboração de investigação centrada na extensão da metodologia 4SRS, grafos de conhecimento de cibersegurança e Sistemas de Apoio à Decisão baseados em IA ao longo do SDLC (<a href="https://cedri.ipb.pt/people/research-fellowships/paulo-ribeiro" target="_blank" rel="noopener">Perfil CeDRI ↗</a>).</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Paulo Ribeiro · Guimarães, Portugal</div>
+    <div class="footer-links">
+      <a href="index.html"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
+      <a href="projects.html"><span lang="en">Projects</span><span lang="pt">Projetos</span></a>
+      <a href="research.html"><span lang="en">Research</span><span lang="pt">Investigação</span></a>
+      <a href="about.html"><span lang="en">About &amp; CV</span><span lang="pt">Sobre &amp; CV</span></a>
+      <a href="contact.html"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
+      <a href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/pauloribeiro16" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
