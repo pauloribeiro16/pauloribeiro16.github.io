@@ -288,3 +288,5 @@ footer a { color: var(--muted); }
   .intro { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .phones { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+.projects figure { max-width: 30rem; margin: 0.6rem 0 0.2rem; }
