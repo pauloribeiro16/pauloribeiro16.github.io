@@ -13,8 +13,8 @@
     if (searchInput) {
       searchInput.placeholder =
         lang === "pt"
-          ? "Filtrar por tecnologia, nome, tema..."
-          : "Filter by stack, name, topic...";
+          ? "Filtrar por tecnologia, nome..."
+          : "Filter by stack, name...";
     }
   }
 
@@ -56,10 +56,6 @@
     themeBtn.setAttribute(
       "aria-label",
       current === "dark" ? "Switch to light mode" : "Switch to dark mode"
-    );
-    themeBtn.setAttribute(
-      "title",
-      current === "dark" ? "Light mode / Modo claro" : "Dark mode / Modo escuro"
     );
   }
 
@@ -148,4 +144,92 @@
       applyFilters();
     });
   }
+
+  /* 4. Card Thumbnail Switcher */
+  document.querySelectorAll(".thumb-btn").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var src = btn.getAttribute("data-src");
+      var card = btn.closest(".vcard");
+      if (!card || !src) return;
+      var mainImg = card.querySelector(".vcard-media > img");
+      if (mainImg) {
+        mainImg.src = src;
+      }
+      card.querySelectorAll(".thumb-btn").forEach(function (b) {
+        b.classList.toggle("active", b === btn);
+      });
+    });
+  });
+
+  /* 5. Fullscreen Lightbox for Screenshots */
+  var lightbox = document.createElement("div");
+  lightbox.className = "lightbox";
+  lightbox.setAttribute("hidden", "");
+  lightbox.innerHTML =
+    '<img id="lightbox-img" src="" alt="Screenshot preview">' +
+    '<div class="lightbox-bar">' +
+    '<span id="lightbox-caption"></span>' +
+    '<button type="button" class="lightbox-close" id="lightbox-close">ESC / Fechar ✕</button>' +
+    "</div>";
+  document.body.appendChild(lightbox);
+
+  var lbImg = document.getElementById("lightbox-img");
+  var lbCap = document.getElementById("lightbox-caption");
+  var lbClose = document.getElementById("lightbox-close");
+
+  function openLightbox(src, alt) {
+    if (!src) return;
+    lbImg.src = src;
+    lbCap.textContent = alt || "";
+    lightbox.removeAttribute("hidden");
+  }
+
+  function closeLightbox() {
+    lightbox.setAttribute("hidden", "");
+    lbImg.src = "";
+  }
+
+  document.querySelectorAll(".vcard-media").forEach(function (media) {
+    media.addEventListener("click", function (e) {
+      var targetImg = e.target.closest("img") || media.querySelector("img");
+      if (targetImg && targetImg.src) {
+        openLightbox(targetImg.src, targetImg.alt);
+      }
+    });
+  });
+
+  lbClose.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !lightbox.hasAttribute("hidden")) {
+      closeLightbox();
+    }
+  });
+
+  /* 6. Interactive Area Explorer Pills (index.html & research.html) */
+  document.querySelectorAll(".area-pills").forEach(function (pillGroup) {
+    var pills = pillGroup.querySelectorAll(".area-pill[data-area]");
+    var targetScope = pillGroup.getAttribute("data-target") || "area-item";
+    var items = document.querySelectorAll('[data-area-group="' + targetScope + '"]');
+
+    pills.forEach(function (pill) {
+      pill.addEventListener("click", function () {
+        var area = pill.getAttribute("data-area") || "all";
+        pills.forEach(function (p) {
+          p.setAttribute("aria-pressed", String(p === pill));
+        });
+        items.forEach(function (item) {
+          var itemArea = item.getAttribute("data-area-val") || "";
+          if (area === "all" || itemArea.indexOf(area) !== -1) {
+            item.removeAttribute("hidden");
+          } else {
+            item.setAttribute("hidden", "");
+          }
+        });
+      });
+    });
+  });
 })();

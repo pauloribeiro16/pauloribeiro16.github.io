@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Investigação &amp; Tese — Paulo Ribeiro</title>
-<meta name="description" content="Investigação de doutoramento de Paulo Ribeiro (Universidade do Minho · ALGORITMI · CCG/ZGDV · CeDRI): Metodologia AEGIS (4SRS), Grafo de Conhecimento Unificado de Cibersegurança e Benchmarks de LLMs.">
+<title>IA na Investigação, Deucalion HPC &amp; Tese — Paulo Ribeiro</title>
+<meta name="description" content="Experiências com agentes e prompts no supercomputador Deucalion, integração de IA na investigação, projetos que vão além da tese (Jev, Orquestração, Hack4Guimarães 2035) e trabalho exclusivo da escrita da tese de doutoramento.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -16,12 +16,12 @@
   <div class="wrap">
     <a href="index.html" class="brand" id="nav-brand">
       <span class="brand-name">Paulo Ribeiro</span>
-      <span class="brand-tag">Cybersecurity · AI Systems · PhD</span>
+      <span class="brand-tag">AI Integration · Agents · GRC · Systems</span>
     </a>
     <nav aria-label="Main navigation">
-      <a href="index.html" id="nav-home"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
-      <a href="projects.html" id="nav-projects"><span lang="en">Projects (45)</span><span lang="pt">Projetos (45)</span></a>
-      <a href="research.html" id="nav-research" aria-current="page"><span lang="en">Research &amp; Thesis</span><span lang="pt">Investigação &amp; Tese</span></a>
+      <a href="index.html" id="nav-home"><span lang="en">Overview &amp; Lab</span><span lang="pt">Visão Geral &amp; Lab</span></a>
+      <a href="projects.html" id="nav-projects"><span lang="en">Projects by Area (45)</span><span lang="pt">Projetos por Área (45)</span></a>
+      <a href="research.html" id="nav-research" aria-current="page"><span lang="en">AI Research, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
       <a href="about.html" id="nav-about"><span lang="en">About, CV &amp; Interests</span><span lang="pt">Sobre, CV &amp; Gostos</span></a>
       <a href="contact.html" id="nav-contact"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
     </nav>
@@ -39,268 +39,253 @@
 <div class="page-header">
   <div class="wrap">
     <span class="eyebrow">
-      <span lang="en">Doctoral Research · PDTSI · FCT Non-Academic PhD Fellowship</span>
-      <span lang="pt">Investigação de Doutoramento · PDTSI · Bolsa FCT em Ambiente Não Académico</span>
+      <span lang="en">Deucalion Supercomputer Lab · AI Integration · Beyond-Thesis Research · PhD Dissertation</span>
+      <span lang="pt">Experiências no Deucalion · Integração de IA na Investigação · Além da Tese · Escrita da Tese</span>
     </span>
     <h1>
-      <span lang="en">From Abstract Regulation to Verifiable Security Requirements</span>
-      <span lang="pt">De Regulamentos Abstratos a Requisitos de Segurança Verificáveis</span>
+      <span lang="en">AI Integration in Research, Deucalion Experiments &amp; The Thesis</span>
+      <span lang="pt">Integração de IA na Investigação, Experiências no Deucalion &amp; A Tese</span>
     </h1>
-    <p class="lede" lang="en">My doctoral research at <strong>Universidade do Minho</strong> (School of Engineering · Centro ALGORITMI), conducted in an applied industry/research setting with the <strong>CCG/ZGDV Institute</strong> and <strong>CeDRI (IPB)</strong>, addresses how to systematically transform abstract security Non-Functional Requirements (NFRs) and European regulations into actionable, testable Functional Requirements (FRs) for software engineers and multi-agent AI systems.</p>
-    <p class="lede" lang="pt">A minha investigação de doutoramento na <strong>Universidade do Minho</strong> (Escola de Engenharia · Centro ALGORITMI), desenvolvida em ambiente não académico no <strong>Instituto CCG/ZGDV</strong> e em colaboração com o <strong>CeDRI (IPB)</strong>, foca-se em transformar de forma determinística Requisitos Não-Funcionais (NFRs) abstratos e regulamentos europeus em Requisitos Funcionais (FRs) acionáveis e verificáveis para equipas de engenharia e sistemas multiagente de IA.</p>
+    <p class="lede" lang="en">My research separates three distinct layers: <strong>(1)</strong> running empirical AI integration, agent, and prompt experiments on the <strong>Deucalion supercomputer</strong>; <strong>(2)</strong> independent agent orchestration and graph inference work that goes <strong>beyond the thesis</strong> (like <code>Jev</code> and <code>Delegate</code>); and <strong>(3)</strong> the work <strong>exclusive to the PhD dissertation</strong> (academic writing, 322 source-checked citations, and the formal 4SRS/AEGIS methodology).</p>
+    <p class="lede" lang="pt">Aqui separo claramente três frentes distintas: <strong>(1)</strong> experiências empíricas de <strong>integração de IA</strong>, agentes e prompts no supercomputador <strong>Deucalion</strong>; <strong>(2)</strong> investigação em orquestração de agentes e grafos que <strong>vai além da tese</strong> (como o <code>Jev</code>, debates multiagente e o <code>Delegate</code> no Hack4Guimarães 2035); e <strong>(3)</strong> o que é <strong>exclusivo da tese de doutoramento</strong> (a escrita científica, o registo auditado de 322 fontes e a extensão formal do método 4SRS).</p>
+
+    <div class="area-pills" data-target="research-sections" role="group" aria-label="Filter research layers">
+      <button type="button" class="area-pill" data-area="all" aria-pressed="true">
+        <span lang="en">Show All 3 Layers</span><span lang="pt">Ver as 3 Frentes</span>
+      </button>
+      <button type="button" class="area-pill" data-area="deucalion" aria-pressed="false">
+        <span lang="en">1. Deucalion HPC &amp; AI Integration</span><span lang="pt">1. Deucalion HPC &amp; Integração de IA</span>
+      </button>
+      <button type="button" class="area-pill" data-area="beyond" aria-pressed="false">
+        <span lang="en">2. Beyond the Thesis (Agents, Jev, Hackathon)</span><span lang="pt">2. Além da Tese (Orquestração, Jev, Hackathon)</span>
+      </button>
+      <button type="button" class="area-pill" data-area="thesis" aria-pressed="false">
+        <span lang="en">3. Exclusive to the Thesis (Writing &amp; 4SRS)</span><span lang="pt">3. Exclusivo da Tese (Escrita &amp; Método 4SRS)</span>
+      </button>
+    </div>
   </div>
 </div>
 
-<section id="thesis-core">
+<!-- ==================== LAYER 1: DEUCALION HPC & AI INTEGRATION ==================== -->
+<section id="deucalion-lab" data-area-group="research-sections" data-area-val="deucalion">
   <div class="wrap">
-    <div>
-      <h2><span lang="en">The Research Question</span><span lang="pt">A Questão de Investigação</span></h2>
-      <p class="sec-note"><span lang="en">Extending the 4SRS (Four-Step Rule Set) methodology into AEGIS.</span><span lang="pt">Extensão da metodologia 4SRS (Four-Step Rule Set) através do AEGIS.</span></p>
-    </div>
-    <div class="prose">
-      <p class="question" lang="en">How do you check, deterministically and verifiably, that a software architecture or multi-agent AI system satisfies its regulatory and security obligations?</p>
-      <p class="question" lang="pt">Como se verifica, de forma determinística e comprovável, que uma arquitetura de software ou um sistema multiagente de IA cumpre as suas obrigações regulamentares e de segurança?</p>
-      <p lang="en">In software engineering, high-level mandates ("comply with NIS 2 and DORA", "ensure resilience against prompt injection", "protect PII under GDPR") start as abstract Non-Functional Requirements (NFRs). When left to ad-hoc checklists or ungrounded LLM generation, critical obligations are lost or hallucinated.</p>
-      <p lang="pt">Na engenharia de software, obrigações de alto nível («cumprir a NIS 2 e o DORA», «garantir resiliência contra ataques», «proteger dados pessoais segundo o RGPD») surgem como Requisitos Não-Funcionais (NFRs) abstratos. Quando delegados em checklists estáticas ou geração livre por LLMs, perdem-se garantias e surgem alucinações.</p>
-      <p lang="en">My thesis proposes <strong>AEGIS</strong>, an extension of the <strong>4SRS (Four-Step Rule Set)</strong> architectural transformation methodology. AEGIS couples a frozen regulatory/control baseline with a unified cybersecurity Knowledge Graph and a state-machine Decision Support System (DSS), ensuring that every derived Functional Requirement (FR) and technical control preserves an auditable chain of provenance back to its legal article and threat vector.</p>
-      <p lang="pt">A minha tese propõe o <strong>AEGIS</strong>, que estende a metodologia de transformação arquitetural <strong>4SRS (Four-Step Rule Set)</strong>. O AEGIS articula uma baseline normativa congelada com um Grafo de Conhecimento de cibersegurança e um Sistema de Apoio à Decisão (DSS) em máquina de estados, garantindo que cada Requisito Funcional (FR) derivado mantém rastreabilidade completa até ao artigo legal e vetor de ameaça que lhe deu origem.</p>
-
-      <ul class="refs" aria-label="Standards and regulations mapped">
-        <li>4SRS Methodology</li><li>CWE (969)</li><li>CAPEC (615)</li><li>MITRE ATT&amp;CK (836)</li><li>MITRE ATLAS</li><li>MITRE D3FEND (466)</li>
-        <li>NIST CSF 2.0</li><li>NIST SP 800-53</li><li>NIST PF 1.1</li><li>NIST AI RMF</li><li>ISO/IEC 27001 &amp; 27002</li><li>ISO/IEC 42001</li>
-        <li>GDPR</li><li>CRA</li><li>NIS 2</li><li>DORA</li><li>EU AI Act</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="aegis-architecture">
-  <div class="wrap">
-    <div>
-      <h2><span lang="en">The AEGIS Pipeline</span><span lang="pt">A Pipeline AEGIS</span></h2>
-      <p class="sec-note"><span lang="en">Three natures of information and deterministic state-machine execution.</span><span lang="pt">Três naturezas de informação e execução determinística em máquina de estados.</span></p>
-    </div>
-    <div class="prose">
-      <p lang="en">Implemented across <a href="https://github.com/pauloribeiro16/aegis-mvp" target="_blank" rel="noopener">aegis-mvp</a>, <a href="https://github.com/pauloribeiro16/aegis-phase1" target="_blank" rel="noopener">aegis-phase1</a>, and <a href="https://github.com/pauloribeiro16/Methodology_compact" target="_blank" rel="noopener">Methodology_compact</a>, the methodology separates static domain intelligence from company-specific context:</p>
-      <p lang="pt">Implementada nos repositórios <a href="https://github.com/pauloribeiro16/aegis-mvp" target="_blank" rel="noopener">aegis-mvp</a>, <a href="https://github.com/pauloribeiro16/aegis-phase1" target="_blank" rel="noopener">aegis-phase1</a> e <a href="https://github.com/pauloribeiro16/Methodology_compact" target="_blank" rel="noopener">Methodology_compact</a>, a metodologia separa o conhecimento normativo estático do contexto específico de cada organização:</p>
-
-      <div class="table-wrap">
-        <table class="spec-table">
-          <thead>
-            <tr>
-              <th><span lang="en">Stage / Artifact</span><span lang="pt">Fase / Artefacto</span></th>
-              <th><span lang="en">Scope &amp; Mechanism</span><span lang="pt">Âmbito &amp; Mecanismo</span></th>
-              <th><span lang="en">Deliverables &amp; Traceability</span><span lang="pt">Entregáveis &amp; Rastreabilidade</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="mono"><strong>Phase 0 · Baseline</strong><br>aegis-mvp/baseline</td>
-              <td>
-                <span lang="en">10 Security Domains × 38 Sub-Domains (<code>D-XX.Y</code>), Ambiguity Registry, verbatim EU regulation articles, and 7 NIST/OWASP referentials.</span>
-                <span lang="pt">10 Domínios de Segurança × 38 Subdomínios (<code>D-XX.Y</code>), Registo de Ambiguidades, artigos regulamentares verbatim e 7 referenciais NIST/OWASP.</span>
-              </td>
-              <td class="mono">00_Taxonomy_Reference<br>01_Ambiguity_Registry<br>SR ↔ CSF/PF/AI-RMF JSON</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>Phase 1 · Context</strong><br>aegis-phase1</td>
-              <td>
-                <span lang="en">LangGraph workflow (SubPhase A: Foundations → SubPhase B: Regulation → SubPhase C: Analysis) with 7–9 LLM calls + zero-LLM aggregation nodes.</span>
-                <span lang="pt">Fluxo LangGraph (SubFase A: Fundações → SubFase B: Regulação → SubFase C: Análise) com 7–9 chamadas LLM e nós de agregação determinísticos (zero-LLM).</span>
-              </td>
-              <td class="mono">Doc 04 (Context)<br>Doc 05 (Applicability)<br>Doc 06 (Clause Matrix)<br>Doc 07 (Compliance Matrix)</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>Phase 2 &amp; 3 · 4SRS</strong><br>Methodology_compact</td>
-              <td>
-                <span lang="en">Decomposes adjusted security objectives into functional requirements (NFR → FR), threat mitigations, and verifiable architectural controls.</span>
-                <span lang="pt">Decompõe os objetivos de segurança ajustados em requisitos funcionais (NFR → FR), mitigações de ameaças e controlos arquiteturais verificáveis.</span>
-              </td>
-              <td class="mono">4SRS Transformation<br>Audit Trail &amp; Lints<br>aegis-inspector diffs</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span lang="en">Layer 1 · Supercomputing &amp; Scientific AI Integration</span><span lang="pt">Frente 1 · Supercomputação &amp; Novas Formas de Implementar IA na Investigação</span></span>
+        <h2><span lang="en">Agent &amp; Prompt Experiments on the Deucalion Supercomputer</span><span lang="pt">Experiências com Agentes e Prompts no Supercomputador Deucalion</span></h2>
+        <p class="sec-note">
+          <span lang="en">Focus on controlled <strong>AI integration</strong> (human gates, contracts, reproducibility) rather than blind automation.</span>
+          <span lang="pt">Foco na <strong>integração de IA</strong> (gates humanas, contratos determinísticos e reprodutibilidade) e não em automação cega.</span>
+        </p>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="knowledge-graphs">
-  <div class="wrap">
-    <div>
-      <h2><span lang="en">Unified Knowledge Graphs &amp; System-1 Traversal</span><span lang="pt">Grafos de Conhecimento &amp; Travessia System-1</span></h2>
-      <p class="sec-note"><span lang="en">Connecting legal obligations to technical attack &amp; defence ontologies.</span><span lang="pt">Ligar obrigações legais a ontologias técnicas de ataque e defesa.</span></p>
-    </div>
-    <div class="prose">
-      <p lang="en">A central contribution of my work is bridging two worlds that usually live in separate silos: <strong>normative legal frameworks</strong> (<a href="https://github.com/pauloribeiro16/aegis-kg-unified" target="_blank" rel="noopener">aegis-kg-unified</a>) and <strong>adversarial/defensive cybersecurity ontologies</strong> (<a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a> and <a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a>).</p>
-      <p lang="pt">Uma contribuição central do meu trabalho consiste em unir dois mundos que habitualmente existem em silos separados: os <strong>quadros legais normativos</strong> (<a href="https://github.com/pauloribeiro16/aegis-kg-unified" target="_blank" rel="noopener">aegis-kg-unified</a>) e as <strong>ontologias técnicas de ataque e defesa</strong> (<a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a> e <a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a>).</p>
-
-      <div class="table-wrap">
-        <table class="spec-table">
-          <thead>
-            <tr>
-              <th><span lang="en">Ontology / Regulation</span><span lang="pt">Ontologia / Regulamento</span></th>
-              <th><span lang="en">Graph Nodes &amp; Scope</span><span lang="pt">Nós no Grafo &amp; Âmbito</span></th>
-              <th><span lang="en">Cross-Framework Bridges</span><span lang="pt">Relações Cross-Framework</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="mono"><strong>EU Regulations (5)</strong></td>
-              <td>GDPR (99 arts), EU AI Act (113 arts), CRA (58 arts), DORA (51 arts), NIS 2 (41 arts) → 150+ atomic clauses</td>
-              <td class="mono">(:Clause)-[:MAPS_TO_SUBDOMAIN]-&gt;(:SubDomain)</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>CWE v4.19</strong></td>
-              <td>969 software &amp; architectural weaknesses</td>
-              <td class="mono">(:CAPEC)-[:EXPLOITS]-&gt;(:CWE) [1,212 edges]</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>CAPEC</strong></td>
-              <td>615 common attack patterns</td>
-              <td class="mono">(:CAPEC)-[:MAPS_TO_ATTACK]-&gt;(:ATTACK) [271 edges]</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>MITRE ATT&amp;CK &amp; ATLAS</strong></td>
-              <td>836 Enterprise/Mobile adversarial techniques + AI/ML ATLAS threats</td>
-              <td class="mono">(:D3FEND)-[:MITIGATES]-&gt;(:ATTACK) [3,234 edges]</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>MITRE D3FEND</strong></td>
-              <td>466 defensive countermeasures + 52 AEGIS taxonomic bridge nodes</td>
-              <td class="mono">(*)-[:MAPS_TO_SUBDOMAIN]-&gt;(:SubDomain) [5,121 edges]</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p lang="en">In <a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a>, instead of asking a slow "System 2" LLM to generate Cypher or guess graph paths, I use sub-50ms probabilistic "System 1" inference primitives — <code>Noul</code> (boolean goal satisfaction), <code>Choice</code> (categorical edge selection), and <code>Score</code> (heuristic $h(n)$ alignment) — to guide A* and Beam Search directly across the Neo4j graph without hallucinating node IDs.</p>
-      <p lang="pt">No projeto <a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a>, em vez de usar LLMs convencionais ("System 2") lentos e propensos a alucinar nós, utilizo primitivas de inferência probabilística "System 1" em menos de 50ms — <code>Noul</code> (critério booleano de paragem), <code>Choice</code> (seleção categórica de arestas) e <code>Score</code> (heurística $h(n)$) — para guiar algoritmos A* e Beam Search diretamente sobre o Neo4j.</p>
-    </div>
-  </div>
-</section>
-
-<section id="benchmarks">
-  <div class="wrap">
-    <div>
-      <h2><span lang="en">LLM Cybersecurity Benchmarks</span><span lang="pt">Benchmarks de LLMs em Cibersegurança</span></h2>
-      <p class="sec-note"><span lang="en">Empirical evaluation across 80 to 10,000 CyberMetric questions (<a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test" target="_blank" rel="noopener">Cybersecurity_sanity_test</a>).</span><span lang="pt">Avaliação empírica de 80 a 10.000 questões CyberMetric (<a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test" target="_blank" rel="noopener">Cybersecurity_sanity_test</a>).</span></p>
-    </div>
-    <div class="prose">
-      <p lang="en">Before trusting any local or open-weights model inside a security pipeline, I benchmark its factual recall, two-step chain-of-thought deduction, probabilistic confidence calibration, and routing accuracy (<a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a>). Below is a subset of our empirical accuracy results on the cleaned <strong>CyberMetric</strong> dataset running locally on Ollama:</p>
-      <p lang="pt">Antes de integrar qualquer modelo local numa pipeline de cibersegurança, avalio empiricamente a sua precisão factual, raciocínio em dois passos, calibração probabilística de confiança e capacidade de routing (<a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a>). Abaixo apresenta-se uma amostra dos resultados obtidos na suite <strong>CyberMetric</strong> via Ollama:</p>
-
-      <div class="table-wrap">
-        <table class="spec-table">
-          <thead>
-            <tr>
-              <th>Model (Local / Ollama)</th>
-              <th>80Q</th>
-              <th>500Q</th>
-              <th>2,000Q</th>
-              <th>10,000Q</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="mono"><strong>gpt-oss (20b)</strong></td>
-              <td class="mono">97.5%</td>
-              <td class="mono">91.0%</td>
-              <td class="mono">90.3%</td>
-              <td class="mono"><strong>86.7%</strong></td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>glm-4.7-flash</strong></td>
-              <td class="mono">96.3%</td>
-              <td class="mono"><strong>93.8%</strong></td>
-              <td class="mono">90.5%</td>
-              <td class="mono">—</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>phi4 (14b)</strong></td>
-              <td class="mono">93.8%</td>
-              <td class="mono">91.8%</td>
-              <td class="mono"><strong>90.8%</strong></td>
-              <td class="mono"><strong>87.0%</strong></td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>ministral-3</strong></td>
-              <td class="mono">95.0%</td>
-              <td class="mono">88.8%</td>
-              <td class="mono">—</td>
-              <td class="mono">84.7%</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>NVIDIA-Orchestrator-Cybersecurity-8B (Q8_0)</strong></td>
-              <td class="mono">93.8%</td>
-              <td class="mono">—</td>
-              <td class="mono">—</td>
-              <td class="mono">—</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>qwen3 (14b / 8b)</strong></td>
-              <td class="mono">92.5%</td>
-              <td class="mono">91.4%</td>
-              <td class="mono">90.1%</td>
-              <td class="mono">—</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>granite4 (tiny-h)</strong></td>
-              <td class="mono">91.3%</td>
-              <td class="mono">83.4%</td>
-              <td class="mono">80.6%</td>
-              <td class="mono">76.3%</td>
-            </tr>
-            <tr>
-              <td class="mono"><strong>gemma3n (e4b)</strong></td>
-              <td class="mono">86.3%</td>
-              <td class="mono">81.8%</td>
-              <td class="mono">81.6%</td>
-              <td class="mono">78.8%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="affiliations">
-  <div class="wrap">
-    <div>
-      <h2><span lang="en">Research Centres &amp; Academic Service</span><span lang="pt">Centros de Investigação &amp; Serviço Científico</span></h2>
-      <p class="sec-note"><span lang="en">Institutional ecosystems supporting this research.</span><span lang="pt">Ecossistemas institucionais onde desenvolvo investigação.</span></p>
-    </div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-role">CCG/ZGDV — ICT Innovation Institute</h3>
-          <span class="tl-period">Guimarães, Portugal</span>
+    <div class="visual-grid cols-2">
+      <!-- Card 1: Deucalion EXP-01 / EXP-02 / EXP-03 -->
+      <article class="vcard">
+        <div class="vcard-media">
+          <img src="assets/img/deucalion-hpc.svg" alt="Deucalion Supercomputer SLURM A100 Experiments — Pipeline vs Agent and Seed Reproducibility" loading="lazy">
+          <span class="zoom-hint">🔍 Zoom</span>
         </div>
-        <p class="tl-org"><span lang="en">Assistant Researcher · Department of Software Engineering and Data Intelligence</span><span lang="pt">Investigador Assistente · Departamento de Engenharia de Software e Inteligência de Dados</span></p>
-        <p class="tl-body" lang="en">Applied research on industrial cyber resilience, threat modelling for IoT and distributed systems, ontology-driven security requirements, and organizational compliance with GDPR, NIS 2, DORA, and ISO/IEC 27001 (<a href="https://ccg.pt/en/about/meet-the-team/paulo-ribeiro" target="_blank" rel="noopener">CCG Profile ↗</a>).</p>
-        <p class="tl-body" lang="pt">Investigação aplicada em ciber-resiliência industrial, modelação de ameaças para sistemas IoT e distribuídos, segurança baseada em ontologias e taxonomias, e conformidade com GDPR, NIS 2, DORA e ISO/IEC 27001 (<a href="https://ccg.pt/en/about/meet-the-team/paulo-ribeiro" target="_blank" rel="noopener">Perfil CCG ↗</a>).</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-role">Universidade do Minho · Centro ALGORITMI</h3>
-          <span class="tl-period">Guimarães, Portugal</span>
+        <div class="vcard-body">
+          <div class="thumb-row">
+            <button type="button" class="thumb-btn active" data-src="assets/img/deucalion-hpc.svg" title="Deucalion Results"><img src="assets/img/deucalion-hpc.svg" alt="Deucalion"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/aegis-drilldown.png" title="Run Inspector"><img src="assets/img/aegis-drilldown.png" alt="Inspector"></button>
+          </div>
+          <div class="vcard-top">
+            <h3><a href="https://github.com/pauloribeiro16/aegis-mvp/tree/main/pipeline/deucalion" target="_blank" rel="noopener">Deucalion A100: Workflow vs. Agente &amp; Seed 42</a></h3>
+            <span class="scope-pill hpc">SLURM · A100-80GB</span>
+          </div>
+          <div class="purpose-line">
+            <span lang="en"><b>Purpose:</b> Measure under pre-registered protocols (<code>PREREG_01..04</code>) whether autonomous tool-calling agents beat fixed pipelines, and establish the noise floor on HPC GPUs.</span>
+            <span lang="pt"><b>Propósito:</b> Medir sob protocolos pré-registados (<code>PREREG_01..04</code>) se agentes autónomos batem pipelines fixas e determinar o piso de ruído em GPUs A100.</span>
+          </div>
+          <p lang="en"><strong>EXP-01 &amp; EXP-03:</strong> Free agents take <strong>5.2× more LLM calls</strong> (220 vs 42) and fail to terminate cleanly in 8/15 runs. <strong>EXP-02:</strong> Fixing <code>seed=42</code> yields <strong>15/15 byte-identical runs</strong> ($\sigma = 0.0000$), while unseeded runs abort 40% of the time on grounding gates.</p>
+          <p lang="pt"><strong>EXP-01 &amp; EXP-03:</strong> O agente livre gasta <strong>5,2× mais chamadas</strong> (220 vs 42) e falha em terminar limpo em 8/15 corridas. <strong>EXP-02:</strong> Com <code>seed=42</code>, <strong>15/15 corridas são byte-idênticas</strong> ($\sigma = 0.0000$), enquanto sem seed 40% abortam na gate R6.</p>
+          <div class="proj-tags"><span>Deucalion HPC</span><span>SLURM sbatch</span><span>EXP-01..EXP-05</span><span>Bit-Reproducible</span></div>
         </div>
-        <p class="tl-org"><span lang="en">PhD Candidate in Information Systems and Technology (PDTSI) · FCT Fellowship</span><span lang="pt">Doutorando em Tecnologias e Sistemas de Informação (PDTSI) · Bolsa FCT</span></p>
-        <p class="tl-body" lang="en">Doctoral programme at the School of Engineering, supported by an FCT PhD Scholarship under the Specific Line of Application in a Non-Academic Environment (2025). Member of the Program Committee for <strong>ARTIIS 2026</strong> (Special Session on Information and Infrastructure Security — IIS 2026).</p>
-        <p class="tl-body" lang="pt">Programa Doutoral na Escola de Engenharia, com bolsa de doutoramento FCT na Linha Específica de Candidatura em Ambiente Não Académico (2025). Membro da Comissão de Programa da conferência internacional <strong>ARTIIS 2026</strong> (Special Session on Information and Infrastructure Security — IIS 2026).</p>
-      </div>
+      </article>
 
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-role">CeDRI — Research Centre in Digitalization and Intelligent Robotics (IPB)</h3>
-          <span class="tl-period">Bragança / Guimarães</span>
+      <!-- Card 2: Prompt Engineering Lab & AI Integration -->
+      <article class="vcard">
+        <div class="vcard-media">
+          <img src="assets/img/prompt-engineering-lab.svg" alt="Prompt Engineering Lab — Per-Model Overlays, Context Packs &amp; Human Decision Gates" loading="lazy">
+          <span class="zoom-hint">🔍 Zoom</span>
         </div>
-        <p class="tl-org"><span lang="en">Research Collaborator · Simulation and Advanced Data Analytics</span><span lang="pt">Investigador Colaborador · Simulação e Analítica Avançada de Dados</span></p>
-        <p class="tl-body" lang="en">Research fellowship collaboration focused on extending the 4SRS methodology, cybersecurity knowledge graphs, and AI-driven Decision Support Systems across the SDLC (<a href="https://cedri.ipb.pt/people/research-fellowships/paulo-ribeiro" target="_blank" rel="noopener">CeDRI Profile ↗</a>).</p>
-        <p class="tl-body" lang="pt">Colaboração de investigação centrada na extensão da metodologia 4SRS, grafos de conhecimento de cibersegurança e Sistemas de Apoio à Decisão baseados em IA ao longo do SDLC (<a href="https://cedri.ipb.pt/people/research-fellowships/paulo-ribeiro" target="_blank" rel="noopener">Perfil CeDRI ↗</a>).</p>
+        <div class="vcard-body">
+          <div class="thumb-row">
+            <button type="button" class="thumb-btn active" data-src="assets/img/prompt-engineering-lab.svg" title="Prompt Lab"><img src="assets/img/prompt-engineering-lab.svg" alt="Prompt Lab"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/aegis-rule.png" title="Rule Trace"><img src="assets/img/aegis-rule.png" alt="Rule Trace"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/aegis-controls.png" title="Controls"><img src="assets/img/aegis-controls.png" alt="Controls"></button>
+          </div>
+          <div class="vcard-top">
+            <h3><a href="https://github.com/pauloribeiro16/aegis-mvp/tree/main/lab" target="_blank" rel="noopener">Banca de Ensaios de Prompt Engineering (<code>lab/</code>)</a></h3>
+            <span class="scope-pill hpc"><span lang="en">AI Integration</span><span lang="pt">Integração de IA</span></span>
+          </div>
+          <div class="purpose-line">
+            <span lang="en"><b>Purpose:</b> Implement new ways of integrating AI in research: deterministic context packs (<code>K1–K4</code>), L0 repair loops, human gates (<code>G-P1-A..D</code>), and isolated prompt overlays.</span>
+            <span lang="pt"><b>Propósito:</b> Testar novas formas de integrar IA na investigação: context packs determinísticos (<code>K1–K4</code>), reparo L0, gates humanas (<code>G-P1-A..D</code>) e overlays isolados por modelo.</span>
+          </div>
+          <p lang="en">Proved on Deucalion across 7 models (<code>qwen3.8</code>, <code>gemma4</code>, <code>muse-glimmer</code>, <code>glm-4.7</code>, <code>nemotron</code>) and <code>LiquidAI/d1</code> decision models that models copy the prompt's <em>structural exemplar</em> rather than prose rules (fixing <code>p2o</code> from 0/37 → 37/37).</p>
+          <p lang="pt">Provado no Deucalion em 7 modelos (<code>qwen3.8</code>, <code>gemma4</code>, <code>muse-glimmer</code>, <code>glm-4.7</code>, <code>nemotron</code>) e modelos de decisão <code>LiquidAI/d1</code> que os LLMs seguem o <em>exemplar estrutural</em> do envelope e não a regra em prosa (levando <code>p2o</code> de 0/37 → 37/37).</p>
+          <div class="proj-tags"><span>Prompt-as-Code</span><span>Lab Overlays</span><span>LiquidAI/d1 System-1</span><span>Human-in-the-Loop</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LAYER 2: BEYOND THE THESIS ==================== -->
+<section id="beyond-thesis" data-area-group="research-sections" data-area-val="beyond">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span lang="en">Layer 2 · Independent Research &amp; Applied Systems</span><span lang="pt">Frente 2 · Investigação &amp; Engenharia que Vão Além da Tese</span></span>
+        <h2><span lang="en">Beyond the Thesis: Agent Orchestration, Jev, Benchmarks &amp; Hack4Guimarães</span><span lang="pt">Além da Tese: Orquestração de Agentes, Jev, Benchmarks &amp; Hack4Guimarães</span></h2>
+        <p class="sec-note">
+          <span lang="en">Agent orchestration, System-1 graph search, LLM benchmarks, and civic AI built as standalone research and engineering lines.</span>
+          <span lang="pt">A orquestração de agentes, o motor <code>Jev</code>, os benchmarks de LLMs e a participação no Hack4Guimarães 2035 nascem e evoluem para além da tese.</span>
+        </p>
       </div>
+    </div>
+
+    <div class="visual-grid">
+      <!-- 1. Jev & System-1 Graph Search -->
+      <article class="vcard">
+        <div class="vcard-media">
+          <img src="assets/img/jev-graph.svg" alt="Jev — Sub-50ms System-1 Probabilistic Graph Traversal" loading="lazy">
+          <span class="zoom-hint">🔍 Zoom</span>
+        </div>
+        <div class="vcard-body">
+          <div class="thumb-row">
+            <button type="button" class="thumb-btn active" data-src="assets/img/jev-graph.svg" title="Jev System-1"><img src="assets/img/jev-graph.svg" alt="Jev"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/d3fend-killchain.png" title="Kill Chain"><img src="assets/img/d3fend-killchain.png" alt="Kill Chain"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/d3fend-hub.png" title="D3FEND Hub"><img src="assets/img/d3fend-hub.png" alt="Hub"></button>
+          </div>
+          <div class="vcard-top">
+            <h3><a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a> &amp; <a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a></h3>
+            <span class="scope-pill beyond"><span lang="en">Beyond Thesis</span><span lang="pt">Além da Tese</span></span>
+          </div>
+          <div class="purpose-line">
+            <span lang="en"><b>Purpose:</b> Navigate attack trees and MITRE ontologies in &lt;50ms using System-1 probabilistic primitives (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) instead of slow LLM text generation.</span>
+            <span lang="pt"><b>Propósito:</b> Navegar árvores de ataque e ontologias MITRE em &lt;50ms com primitivas probabilísticas System-1 (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) em vez de geração lenta de texto.</span>
+          </div>
+          <div class="proj-tags"><span>TypeSafe AI · Jev</span><span>Neo4j · GraphDB</span><span>A* &amp; Beam Search</span></div>
+        </div>
+      </article>
+
+      <!-- 2. Hack4Guimarães 2035 — Delegate -->
+      <article class="vcard">
+        <div class="vcard-media">
+          <img src="assets/img/hack4guimaraes-delegate.svg" alt="Delegate — Hack4Guimarães 2035 Civic AI Architecture" loading="lazy">
+          <span class="zoom-hint">🔍 Zoom</span>
+        </div>
+        <div class="vcard-body">
+          <div class="thumb-row">
+            <button type="button" class="thumb-btn active" data-src="assets/img/hack4guimaraes-delegate.svg" title="Architecture"><img src="assets/img/hack4guimaraes-delegate.svg" alt="Architecture"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/delegate-header.png" title="Delegate"><img src="assets/img/delegate-header.png" alt="Delegate"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/delegate-henriques.jpg" title="Henriques"><img src="assets/img/delegate-henriques.jpg" alt="Henriques"></button>
+          </div>
+          <div class="vcard-top">
+            <h3><a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Delegate (Hack4Guimarães 2035)</a></h3>
+            <span class="scope-pill beyond">Hackathon</span>
+          </div>
+          <div class="purpose-line">
+            <span lang="en"><b>Purpose:</b> Built for the Hack4Guimarães 2035 challenge <em>"Talk to the City Council without Bureaucracy"</em> — pairing citizen digital representatives with a municipal MCP gateway.</span>
+            <span lang="pt"><b>Propósito:</b> Criado para o Hack4Guimarães 2035 (desafio <em>«Falar com a Câmara sem Burocracia»</em>) — ligando o representante digital <em>Henriques</em> a uma Porta Agêntica MCP municipal.</span>
+          </div>
+          <div class="proj-tags"><span>Hack4Guimarães 2035</span><span>TypeScript · MCP</span><span>Civic AI</span></div>
+        </div>
+      </article>
+
+      <!-- 3. Multi-Agent Orchestration & CyberMetric Benchmarks -->
+      <article class="vcard">
+        <div class="vcard-media">
+          <img src="assets/img/cybermetric-chart.svg" alt="CyberMetric 10,000Q Benchmarks &amp; Multi-Agent Orchestration" loading="lazy">
+          <span class="zoom-hint">🔍 Zoom</span>
+        </div>
+        <div class="vcard-body">
+          <div class="thumb-row">
+            <button type="button" class="thumb-btn active" data-src="assets/img/cybermetric-chart.svg" title="CyberMetric"><img src="assets/img/cybermetric-chart.svg" alt="CyberMetric"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/agentic-devsecops.svg" title="Agentic DevSecOps"><img src="assets/img/agentic-devsecops.svg" alt="DevSecOps"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/financial-adviser.svg" title="Financial Adviser"><img src="assets/img/financial-adviser.svg" alt="Financial Adviser"></button>
+          </div>
+          <div class="vcard-top">
+            <h3><a href="https://github.com/pauloribeiro16/Agentic-Orquestrator" target="_blank" rel="noopener">Orquestração</a> &amp; <a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test" target="_blank" rel="noopener">Benchmarks</a></h3>
+            <span class="scope-pill beyond"><span lang="en">Beyond Thesis</span><span lang="pt">Além da Tese</span></span>
+          </div>
+          <div class="purpose-line">
+            <span lang="en"><b>Purpose:</b> Benchmark 13+ local LLMs across 10,000 CyberMetric questions, route Mixture-of-Experts (<a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a>), and design long-running agent harnesses.</span>
+            <span lang="pt"><b>Propósito:</b> Avaliar 13+ LLMs locais até 10.000 questões CyberMetric, testar routing Mixture-of-Experts (<a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a>) e desenhar harnesses para agentes de longa duração.</span>
+          </div>
+          <div class="proj-tags"><span>CyberMetric 10k</span><span>MoE Routing</span><span>20 DevSecOps Agents</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LAYER 3: EXCLUSIVE TO THE PHD THESIS ==================== -->
+<section id="thesis-exclusive" data-area-group="research-sections" data-area-val="thesis">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span lang="en">Layer 3 · Exclusive to the PhD Dissertation (UMinho · ALGORITMI · CCG/ZGDV · CeDRI)</span><span lang="pt">Frente 3 · Exclusivo da Tese de Doutoramento (UMinho · ALGORITMI · CCG/ZGDV · CeDRI)</span></span>
+        <h2><span lang="en">Thesis-Exclusive Work: Dissertation Writing, 322 Verified Sources &amp; Formal 4SRS</span><span lang="pt">Exclusivo da Tese: A Escrita Científica, 322 Fontes Verificadas &amp; Método 4SRS</span></h2>
+        <p class="sec-note">
+          <span lang="en">What belongs strictly to the doctoral dissertation (PDTSI, FCT Non-Academic Fellowship): the academic writing, technology-neutral methodology, and blind human evaluation rubrics.</span>
+          <span lang="pt">O que pertence estritamente à dissertação de doutoramento (PDTSI, Bolsa FCT em Ambiente Não Académico): a escrita, o método formal neutro face à tecnologia e as rubricas de avaliação cega.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="visual-grid cols-2">
+      <!-- Card 1: Thesis Writing & Source Anchoring -->
+      <article class="vcard">
+        <div class="vcard-media">
+          <img src="assets/img/thesis-writing.svg" alt="Thesis Writing, 322 Source-Anchored Claims &amp; Scientific Method Alignment" loading="lazy">
+          <span class="zoom-hint">🔍 Zoom</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vcard-top">
+            <h3><a href="https://github.com/pauloribeiro16/aegis-mvp/tree/main/docs/research" target="_blank" rel="noopener"><span lang="en">Dissertation Writing &amp; Anti-Drift Literature Registry</span><span lang="pt">Escrita da Tese &amp; Registo Auditado de Literatura (322 Fontes)</span></a></h3>
+            <span class="scope-pill"><span lang="en">Thesis Exclusive</span><span lang="pt">Exclusivo da Tese</span></span>
+          </div>
+          <div class="purpose-line">
+            <span lang="en"><b>Purpose:</b> Keep every academic claim in the thesis writing anchored to a primary source with verbatim quotes, evidence grades, and automated staleness checks.</span>
+            <span lang="pt"><b>Propósito:</b> Garantir que cada afirmação na escrita da tese tem um token <code>[S-nnn]</code>, citação verbatim, grau de evidência (<code>PRIMARY</code>, <code>PEER</code>, <code>CONTESTED</code>) e validação automática.</span>
+          </div>
+          <p lang="en">Covers 7 systematic catalogues (<code>PP</code> Pipelines, <code>AO</code> Agent Orchestration, <code>KG</code> Knowledge Graphs, <code>SM</code> Scientific Method, <code>CX</code> Context, <code>PE</code> Prompt Engineering, <code>OR</code> Orchestration) verified by <code>check_research_refs.py --strict</code> (Rules R1–R7).</p>
+          <p lang="pt">Organiza a revisão da literatura em 7 catálogos formais (<code>PP</code>, <code>AO</code>, <code>KG</code>, <code>SM</code>, <code>CX</code>, <code>PE</code>, <code>OR</code>) verificados por <code>check_research_refs.py --strict</code> (Regras R1–R7, proibindo citar fontes não lidas).</p>
+          <div class="proj-tags"><span>322 Verified Sources</span><span>SM-001..011</span><span>L2 Blind Rubric</span><span>PDTSI UMinho</span></div>
+        </div>
+      </article>
+
+      <!-- Card 2: Formal 4SRS / AEGIS Methodology -->
+      <article class="vcard">
+        <div class="vcard-media">
+          <img src="assets/img/aegis-overview.png" alt="AEGIS Methodology — Technology-Neutral 4SRS Extension (Phases 0 to 3)" loading="lazy">
+          <span class="zoom-hint">🔍 Zoom</span>
+        </div>
+        <div class="vcard-body">
+          <div class="thumb-row">
+            <button type="button" class="thumb-btn active" data-src="assets/img/aegis-overview.png" title="Phase 1 Overview"><img src="assets/img/aegis-overview.png" alt="Overview"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/aegis-controls.png" title="Controls"><img src="assets/img/aegis-controls.png" alt="Controls"></button>
+            <button type="button" class="thumb-btn" data-src="assets/img/aegis-rule.png" title="Rule Decomposition"><img src="assets/img/aegis-rule.png" alt="Rule"></button>
+          </div>
+          <div class="vcard-top">
+            <h3><a href="https://github.com/pauloribeiro16/Methodology_compact" target="_blank" rel="noopener"><span lang="en">Formal 4SRS Transformation &amp; Case Studies</span><span lang="pt">Transformação Formal 4SRS &amp; Casos de Estudo da Tese</span></a></h3>
+            <span class="scope-pill"><span lang="en">Thesis Exclusive</span><span lang="pt">Exclusivo da Tese</span></span>
+          </div>
+          <div class="purpose-line">
+            <span lang="en"><b>Purpose:</b> The frozen, technology-neutral methodology contract (<code>SPEC.md</code>) transforming regulatory NFRs into testable Functional Requirements (FRs) across 3 validation cases.</span>
+            <span lang="pt"><b>Propósito:</b> O contrato metodológico congelado e neutro face à tecnologia (<code>SPEC.md</code>) que transforma NFRs regulamentares em Requisitos Funcionais (FRs) em 3 casos de estudo.</span>
+          </div>
+          <p lang="en">Validated across <strong>Case 01 TinyTask</strong> (2 regulations, 8 staff), <strong>Case 02 SecureBorder</strong> (4 regulations, 450 staff), and <strong>Case 03 OmniBank</strong> (5 regulations, 5,000 staff) from Phase 0 (10×38 taxonomy) to Phase 3 (4SRS &amp; risk trees).</p>
+          <p lang="pt">Validado nos casos <strong>Case 01 TinyTask</strong> (2 regulamentos), <strong>Case 02 SecureBorder</strong> (4 regulamentos) e <strong>Case 03 OmniBank</strong> (5 regulamentos), da Fase 0 (taxonomia 10×38) à Fase 3 (requisitos 4SRS e árvores de risco STRIDE/LINDDUN).</p>
+          <div class="proj-tags"><span>4SRS Methodology</span><span>AEGIS 10×38</span><span>STRIDE · LINDDUN</span><span>QNRCS Reg. 756/2026</span></div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -311,8 +296,8 @@
     <div>© 2026 Paulo Ribeiro · Guimarães, Portugal</div>
     <div class="footer-links">
       <a href="index.html"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
-      <a href="projects.html"><span lang="en">Projects</span><span lang="pt">Projetos</span></a>
-      <a href="research.html"><span lang="en">Research</span><span lang="pt">Investigação</span></a>
+      <a href="projects.html"><span lang="en">Projects (45)</span><span lang="pt">Projetos (45)</span></a>
+      <a href="research.html"><span lang="en">AI, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
       <a href="about.html"><span lang="en">About &amp; CV</span><span lang="pt">Sobre &amp; CV</span></a>
       <a href="contact.html"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
       <a href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>

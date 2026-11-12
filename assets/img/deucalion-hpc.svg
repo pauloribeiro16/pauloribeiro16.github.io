@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#091326"/>
+      <stop offset="100%" stop-color="#132544"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="24" y="20" width="752" height="410" rx="14" fill="#0f1d36" stroke="#29436e" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="48" y="54" fill="#60a5fa" font-family="monospace" font-size="13" font-weight="bold">SUPERCOMPUTADOR DEUCALION · A100-80GB SLURM · PREREGISTERED AI EXPERIMENTS</text>
+  <text x="48" y="84" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold">Banca de Ensaios: Pipelines, Agentes &amp; Modelos em HPC</text>
+
+  <!-- Box 1: EXP-01 & EXP-03 -->
+  <rect x="48" y="106" width="340" height="142" rx="10" fill="#162847" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="66" y="132" fill="#93c5fd" font-family="monospace" font-size="12" font-weight="bold">EXP-01 / EXP-03 · WORKFLOW VS. AGENTE</text>
+  <text x="66" y="156" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">Quem decide a ordem de trabalho?</text>
+  <text x="66" y="182" fill="#34d399" font-family="monospace" font-size="13">Pipeline Fixa : 42 calls · 1.304s · 15/15 OK</text>
+  <text x="66" y="204" fill="#fbbf24" font-family="monospace" font-size="13">Agente Livre  : 220 calls (5.2x) · 7/15 OK</text>
+  <text x="66" y="230" fill="#94a3b8" font-family="sans-serif" font-size="12">O contrato (parsers + gates), não o loop, garante a qualidade.</text>
+
+  <!-- Box 2: EXP-02 Bit-reproducibility -->
+  <rect x="412" y="106" width="340" height="142" rx="10" fill="#162847" stroke="#10b981" stroke-width="1.5"/>
+  <text x="430" y="132" fill="#6ee7b7" font-family="monospace" font-size="12" font-weight="bold">EXP-02 · REPRODUTIBILIDADE BIT-A-BIT</text>
+  <text x="430" y="156" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">3 Braços × 15 Corridas no Deucalion</text>
+  <text x="430" y="182" fill="#34d399" font-family="monospace" font-size="13">Com Seed 42   : 15/15 byte-idênticos (σ=0.000)</text>
+  <text x="430" y="204" fill="#f87171" font-family="monospace" font-size="13">Sem Seed      : 40% abortam na Gate R6</text>
+  <text x="430" y="230" fill="#94a3b8" font-family="sans-serif" font-size="12">Variância residual da infraestrutura vLLM/Ollama = zero.</text>
+
+  <!-- Box 3: Model Matrix M01/M02 -->
+  <rect x="48" y="266" width="340" height="142" rx="10" fill="#162847" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="66" y="292" fill="#d8b4fe" font-family="monospace" font-size="12" font-weight="bold">MATRIZ M01/M02 · 7 MODELOS EM A100</text>
+  <text x="66" y="316" fill="#e2e8f0" font-family="sans-serif" font-size="13">qwen3.8:27b · gemma4:31b · muse-glimmer:30b</text>
+  <text x="66" y="338" fill="#e2e8f0" font-family="sans-serif" font-size="13">glm-4.7-flash · nemotron-3.5 · qwen3.5</text>
+  <rect x="66" y="354" width="140" height="22" rx="4" fill="#1e3a8a"/>
+  <text x="74" y="369" fill="#93c5fd" font-family="monospace" font-size="11">gemma4: ret 0.653</text>
+  <rect x="216" y="354" width="154" height="22" rx="4" fill="#064e3b"/>
+  <text x="224" y="369" fill="#6ee7b7" font-family="monospace" font-size="11">muse-glimmer: 0.804</text>
+  <text x="66" y="396" fill="#94a3b8" font-family="sans-serif" font-size="12">Mesmo contrato, comportamentos de calibração distintos.</text>
+
+  <!-- Box 4: Decision Models d1 -->
+  <rect x="412" y="266" width="340" height="142" rx="10" fill="#162847" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="430" y="292" fill="#fde68a" font-family="monospace" font-size="12" font-weight="bold">LAB/DECISION · MODELOS SYSTEM-1 (d1)</text>
+  <text x="430" y="316" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">LiquidAI/d1-3B &amp; d1-omni-600M</text>
+  <text x="430" y="340" fill="#fbbf24" font-family="monospace" font-size="12">POST /v1/systemone → output_tokens: 0</text>
+  <text x="430" y="362" fill="#cbd5e1" font-family="monospace" font-size="12">Primitivas: noul (P) · choice · score</text>
+  <text x="430" y="396" fill="#94a3b8" font-family="sans-serif" font-size="12">Decisão estruturada sem geração livre de texto.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <rect width="800" height="450" fill="#0c1420"/>
+  <rect x="24" y="20" width="752" height="410" rx="12" fill="#121c2b" stroke="#26344a"/>
+  <text x="48" y="56" fill="#8fb0ff" font-size="12" font-family="monospace">CYBERMETRIC LLM BENCHMARK SUITE · 80Q TO 10,000Q · OLLAMA LOCAL</text>
+  <text x="48" y="88" fill="#f8fafc" font-size="22" font-weight="700">Empirical Accuracy Across Reasoning Modes (Standard · 2-Step CoT · Probabilistic)</text>
+  <!-- Bars -->
+  <g transform="translate(48, 120)" font-family="monospace" font-size="12">
+    <text x="0" y="20" fill="#e2e8f0">gpt-oss (20b)</text>
+    <rect x="190" y="6" width="430" height="20" rx="3" fill="#3b82f6"/>
+    <text x="630" y="20" fill="#93c5fd">97.5% (80Q) · 86.7% (10kQ)</text>
+
+    <text x="0" y="62" fill="#e2e8f0">glm-4.7-flash</text>
+    <rect x="190" y="48" width="424" height="20" rx="3" fill="#38bdf8"/>
+    <text x="624" y="62" fill="#7dd3fc">96.3% (80Q) · 93.8% (500Q)</text>
+
+    <text x="0" y="104" fill="#e2e8f0">ministral-3</text>
+    <rect x="190" y="90" width="418" height="20" rx="3" fill="#34d399"/>
+    <text x="618" y="104" fill="#6ee7b7">95.0% (80Q) · 84.7% (10kQ)</text>
+
+    <text x="0" y="146" fill="#e2e8f0">phi4 (14b)</text>
+    <rect x="190" y="132" width="412" height="20" rx="3" fill="#10b981"/>
+    <text x="612" y="146" fill="#6ee7b7">93.8% (80Q) · 87.0% (10kQ)</text>
+
+    <text x="0" y="188" fill="#e2e8f0">NVIDIA-Sec-8B</text>
+    <rect x="190" y="174" width="412" height="20" rx="3" fill="#f59e0b"/>
+    <text x="612" y="188" fill="#fcd34d">93.8% (80Q)</text>
+
+    <text x="0" y="230" fill="#e2e8f0">qwen3 (14b/8b)</text>
+    <rect x="190" y="216" width="405" height="20" rx="3" fill="#6366f1"/>
+    <text x="605" y="230" fill="#a5b4fc">92.5% (80Q) · 90.1% (2kQ)</text>
+
+    <text x="0" y="272" fill="#e2e8f0">granite4 (tiny-h)</text>
+    <rect x="190" y="258" width="380" height="20" rx="3" fill="#64748b"/>
+    <text x="580" y="272" fill="#94a3b8">91.3% (80Q) · 76.3% (10kQ)</text>
+  </g>
+</svg>

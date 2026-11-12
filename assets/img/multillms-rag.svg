@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <rect width="800" height="450" fill="#0c1420"/>
+  <rect x="24" y="20" width="752" height="410" rx="12" fill="#121c2b" stroke="#26344a"/>
+  <text x="48" y="56" fill="#38bdf8" font-size="12" font-family="monospace">MULTILLMS · REGULATORY RAG QA &amp; MULTI-MODEL CONSENSUS</text>
+  <text x="48" y="88" fill="#f8fafc" font-size="22" font-weight="700">EU Compliance Assessor (AI Act · CRA · DORA · GDPR · NIS 2)</text>
+  <g transform="translate(48, 120)">
+    <rect width="215" height="260" rx="8" fill="#0c1420" stroke="#334155"/>
+    <text x="16" y="30" fill="#93c5fd" font-size="11" font-family="monospace">1. QDRANT + LLAMAINDEX</text>
+    <text x="16" y="58" fill="#f8fafc" font-size="14" font-weight="600">Legal Article Retrieval</text>
+    <rect x="16" y="78" width="183" height="32" rx="4" fill="#1e293b"/><text x="26" y="99" fill="#e2e8f0" font-size="11" font-family="monospace">EU AI Act · Art. 6–15</text>
+    <rect x="16" y="118" width="183" height="32" rx="4" fill="#1e293b"/><text x="26" y="139" fill="#e2e8f0" font-size="11" font-family="monospace">CRA · Annex I Reqs</text>
+    <rect x="16" y="158" width="183" height="32" rx="4" fill="#1e293b"/><text x="26" y="179" fill="#e2e8f0" font-size="11" font-family="monospace">DORA · ICT Risk Art. 5</text>
+    <rect x="16" y="198" width="183" height="32" rx="4" fill="#1e293b"/><text x="26" y="219" fill="#e2e8f0" font-size="11" font-family="monospace">NIS 2 · Art. 21 Measures</text>
+  </g>
+  <g transform="translate(288, 120)">
+    <rect width="215" height="260" rx="8" fill="#0c1420" stroke="#334155"/>
+    <text x="16" y="30" fill="#fcd34d" font-size="11" font-family="monospace">2. MULTI-EXPERT DEBATE</text>
+    <text x="16" y="58" fill="#f8fafc" font-size="14" font-weight="600">Local Ollama Consensus</text>
+    <rect x="16" y="82" width="183" height="44" rx="6" fill="#17253b"/><text x="26" y="108" fill="#93c5fd" font-size="12" font-family="monospace">phi4 (14b) · Vote: APPLY</text>
+    <rect x="16" y="136" width="183" height="44" rx="6" fill="#17253b"/><text x="26" y="162" fill="#6ee7b7" font-size="12" font-family="monospace">gemma3 · Vote: APPLY</text>
+    <rect x="16" y="190" width="183" height="44" rx="6" fill="#17253b"/><text x="26" y="216" fill="#fcd34d" font-size="12" font-family="monospace">llama3 · Vote: CONDITIONAL</text>
+  </g>
+  <g transform="translate(528, 120)">
+    <rect width="220" height="260" rx="8" fill="#0f2922" stroke="#10b981"/>
+    <text x="16" y="30" fill="#6ee7b7" font-size="11" font-family="monospace">3. AUDITOR VERDICT</text>
+    <text x="16" y="58" fill="#f8fafc" font-size="14" font-weight="600">Boolean Logic Table</text>
+    <text x="16" y="95" fill="#d1fae5" font-size="12" font-family="monospace">AND / OR / NOT Resolution</text>
+    <text x="16" y="130" fill="#a7f3d0" font-size="11">• Criteria Extraction</text>
+    <text x="16" y="155" fill="#a7f3d0" font-size="11">• Case-by-Criterion Audit</text>
+    <text x="16" y="180" fill="#a7f3d0" font-size="11">• Cited Article Anchors</text>
+    <text x="16" y="205" fill="#a7f3d0" font-size="11">• Zero Hallucination Gate</text>
+  </g>
+</svg>

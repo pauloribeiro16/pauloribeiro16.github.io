@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#0d1726"/>
+  <rect x="24" y="20" width="752" height="410" rx="14" fill="#132238" stroke="#315282" stroke-width="1.5"/>
+
+  <text x="48" y="54" fill="#f59e0b" font-family="monospace" font-size="13" font-weight="bold">EXCLUSIVO DA TESE DE DOUTORAMENTO · PDTSI UMINHO · ESCRITA &amp; MÉTODO FORMAL</text>
+  <text x="48" y="84" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold">Dissertação, Transformação 4SRS &amp; Rigor Metodológico</text>
+
+  <!-- 3 Pillars of Thesis Exclusive Work -->
+  <rect x="48" y="110" width="222" height="295" rx="10" fill="#182b47" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="66" y="140" fill="#fde68a" font-family="monospace" font-size="12" font-weight="bold">1. ESCRITA &amp; LITERATURA</text>
+  <text x="66" y="168" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">322 Fontes Verificadas</text>
+  <text x="66" y="196" fill="#cbd5e1" font-family="sans-serif" font-size="12">Cada afirmação na revisão carrega</text>
+  <text x="66" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12">um token [S-nnn] validado por</text>
+  <text x="66" y="232" fill="#93c5fd" font-family="monospace" font-size="11">check_research_refs.py</text>
+  <rect x="66" y="252" width="186" height="130" rx="6" fill="#0f1d33"/>
+  <text x="78" y="276" fill="#6ee7b7" font-family="monospace" font-size="11">PRIMARY / PEER / CONTESTED</text>
+  <text x="78" y="298" fill="#94a3b8" font-family="sans-serif" font-size="11">• Citações verbatim no registo</text>
+  <text x="78" y="318" fill="#94a3b8" font-family="sans-serif" font-size="11">• Alarme anti-drift (6/12 meses)</text>
+  <text x="78" y="338" fill="#94a3b8" font-family="sans-serif" font-size="11">• Declaração explícita de vieses</text>
+  <text x="78" y="358" fill="#94a3b8" font-family="sans-serif" font-size="11">• Higiene documental (doc_lint)</text>
+
+  <rect x="289" y="110" width="222" height="295" rx="10" fill="#182b47" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="307" y="140" fill="#7dd3fc" font-family="monospace" font-size="12" font-weight="bold">2. MÉTODO 4SRS → AEGIS</text>
+  <text x="307" y="168" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">De NFR a Requisito (FR)</text>
+  <text x="307" y="196" fill="#cbd5e1" font-family="sans-serif" font-size="12">Artefactos congelados e neutros</text>
+  <text x="307" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12">face à tecnologia (R5, R13):</text>
+  <rect x="307" y="234" width="186" height="34" rx="5" fill="#0f1d33"/>
+  <text x="319" y="255" fill="#93c5fd" font-family="monospace" font-size="11">Fase 0: Taxonomia 10×38</text>
+  <rect x="307" y="276" width="186" height="34" rx="5" fill="#0f1d33"/>
+  <text x="319" y="297" fill="#93c5fd" font-family="monospace" font-size="11">Fase 1: Contexto &amp; Objetivos</text>
+  <rect x="307" y="318" width="186" height="34" rx="5" fill="#0f1d33"/>
+  <text x="319" y="339" fill="#93c5fd" font-family="monospace" font-size="11">Fase 2: Catálogo RULE-*</text>
+  <rect x="307" y="360" width="186" height="34" rx="5" fill="#0f1d33"/>
+  <text x="319" y="381" fill="#93c5fd" font-family="monospace" font-size="11">Fase 3: 4SRS &amp; Árvores Risco</text>
+
+  <rect x="530" y="110" width="222" height="295" rx="10" fill="#182b47" stroke="#10b981" stroke-width="1.5"/>
+  <text x="548" y="140" fill="#6ee7b7" font-family="monospace" font-size="12" font-weight="bold">3. MÉTODO CIENTÍFICO</text>
+  <text x="548" y="168" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">Pré-Registo &amp; Rubrica L2</text>
+  <text x="548" y="196" fill="#cbd5e1" font-family="sans-serif" font-size="12">Alinhamento SM-001..SM-011:</text>
+  <rect x="548" y="218" width="186" height="164" rx="6" fill="#0f1d33"/>
+  <text x="560" y="244" fill="#6ee7b7" font-family="monospace" font-size="11">PREREG_01 .. PREREG_P3</text>
+  <text x="560" y="268" fill="#94a3b8" font-family="sans-serif" font-size="11">• Hipótese e falsificador escritos</text>
+  <text x="560" y="286" fill="#94a3b8" font-family="sans-serif" font-size="11">  antes da 1.ª corrida</text>
+  <text x="560" y="310" fill="#94a3b8" font-family="sans-serif" font-size="11">• Avaliação humana cega</text>
+  <text x="560" y="328" fill="#94a3b8" font-family="sans-serif" font-size="11">  (L2_RUBRIC.md / F3 Pack)</text>
+  <text x="560" y="352" fill="#94a3b8" font-family="sans-serif" font-size="11">• 3 Casos: TinyTask, SecureBorder</text>
+  <text x="560" y="370" fill="#94a3b8" font-family="sans-serif" font-size="11">  e OmniBank (2 a 5 regulamentos)</text>
+</svg>
