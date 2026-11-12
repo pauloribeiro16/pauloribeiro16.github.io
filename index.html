@@ -3,358 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Paulo Ribeiro — AI Integration, Agent Orchestration, GRC &amp; Software Experimentation</title>
-<meta name="description" content="Paulo Ribeiro — Experimentação em Integração de IA, Orquestração de Agentes, Prompt Engineering no Deucalion HPC, GRC, Requisitos de Segurança, Grafos System-1 (Jev), Hack4Guimarães 2035 e Criação de Apps.">
+<title>Paulo Ribeiro</title>
+<meta name="description" content="Paulo Ribeiro, investigador no CCG/ZGDV e doutorando na Universidade do Minho. Segurança, regulação e experiências com modelos de linguagem.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a href="index.html" class="brand" id="nav-brand">
-      <span class="brand-name">Paulo Ribeiro</span>
-      <span class="brand-tag">AI Integration · Agents · GRC · Systems</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="index.html" id="nav-home" aria-current="page"><span lang="en">Overview &amp; Lab</span><span lang="pt">Visão Geral &amp; Lab</span></a>
-      <a href="projects.html" id="nav-projects"><span lang="en">Projects by Area (45)</span><span lang="pt">Projetos por Área (45)</span></a>
-      <a href="research.html" id="nav-research"><span lang="en">AI Research, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
-      <a href="about.html" id="nav-about"><span lang="en">About, CV &amp; Interests</span><span lang="pt">Sobre, CV &amp; Gostos</span></a>
-      <a href="contact.html" id="nav-contact"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
+    <a href="index.html" class="brand">Paulo Ribeiro</a>
+    <nav aria-label="Menu">
+      <a href="index.html" aria-current="page"><span lang="pt">Início</span><span lang="en">Home</span></a>
+      <a href="projects.html"><span lang="pt">Projetos</span><span lang="en">Projects</span></a>
+      <a href="research.html"><span lang="pt">Investigação</span><span lang="en">Research</span></a>
+      <a href="about.html"><span lang="pt">Sobre</span><span lang="en">About</span></a>
+      <a href="contact.html"><span lang="pt">Contacto</span><span lang="en">Contact</span></a>
     </nav>
     <div class="controls">
-      <div class="switch" role="group" aria-label="Language">
-        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
-        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
-      </div>
-      <button type="button" class="theme-btn" id="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" id="theme-toggle">escuro</button>
     </div>
   </div>
 </header>
 
-<main>
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <span class="eyebrow">
-        <span lang="en">AI Integration · Agent Orchestration · Prompt Engineering · GRC · App Builder</span>
-        <span lang="pt">Integração de IA · Orquestração de Agentes · Prompt Engineering · GRC · Criação de Apps</span>
-      </span>
-      <h1>
-        <span lang="en">Experimenting with how AI integrates into security, decisions, and real software.</span>
-        <span lang="pt">Experimentar novas formas de integrar IA em segurança, decisões e software real.</span>
-      </h1>
-      <p class="lede" lang="en">I'm <strong>Paulo Ribeiro</strong>. Rather than treating AI as black-box automation, I build and test systems centered on <strong>AI integration</strong>: orchestrating multi-agent workflows, running controlled prompt and model experiments on the <strong>Deucalion supercomputer</strong>, engineering security requirements &amp; GRC platforms, traversing threat graphs in &lt;50ms (<a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a>), building civic agents (<a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Hack4Guimarães 2035</a>), and crafting offline-first mobile apps.</p>
-      <p class="lede" lang="pt">Sou o <strong>Paulo Ribeiro</strong>. Mais do que usar IA como simples automação, foco-me na <strong>integração de IA</strong>: orquestração de agentes, engenharia de prompts, experiências controladas no supercomputador <strong>Deucalion</strong>, plataformas de GRC e requisitos de segurança, grafos probabilísticos System-1 (<a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a>), agentes cívicos (<a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Hack4Guimarães 2035</a>) e criação de aplicações móveis offline-first.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" id="cta-projects" href="projects.html">
-          <span lang="en">Explore Projects by Area (45) →</span>
-          <span lang="pt">Explorar Projetos por Área (45) →</span>
-        </a>
-        <a class="btn" id="cta-research" href="research.html">
-          <span lang="en">Deucalion Lab, AI &amp; Thesis</span>
-          <span lang="pt">Deucalion, IA na Investigação &amp; Tese</span>
-        </a>
-        <a class="btn" id="cta-linkedin" href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn" id="cta-github" href="https://github.com/pauloribeiro16" target="_blank" rel="noopener">GitHub ↗</a>
-      </div>
-    </div>
-
-    <figure class="stack">
-      <figcaption><span lang="en">What I Experiment With (4 Fronts)</span><span lang="pt">Áreas de Experimentação (4 Frentes)</span></figcaption>
-      <div class="layer"><b>01</b><div>
-        <strong><span lang="en">Agent Orchestration &amp; AI Pipelines</span><span lang="pt">Orquestração de Agentes &amp; Pipelines de IA</span></strong>
-        <span class="d"><span lang="en">Integrating AI with human decision gates, evaluator loops, multi-persona debates &amp; MCP copilots.</span><span lang="pt">Integração de IA com gates humanas, loops avaliador-otimizador, debates multi-persona e MCP.</span></span>
-      </div></div>
-      <div class="layer"><b>02</b><div>
-        <strong><span lang="en">Deucalion HPC &amp; Prompt Engineering</span><span lang="pt">Experiências no Deucalion &amp; Prompt Engineering</span></strong>
-        <span class="d"><span lang="en">A100 SLURM runs comparing workflows vs. agents, seed bit-reproducibility &amp; prompt-as-code overlays.</span><span lang="pt">Ensaios em GPUs A100 (workflow vs. agente, reprodutibilidade bit-a-bit e overlays de prompt).</span></span>
-      </div></div>
-      <div class="layer"><b>03</b><div>
-        <strong><span lang="en">GRC, Security Requirements &amp; Threat Graphs</span><span lang="pt">GRC, Requisitos de Segurança &amp; Grafos (Jev)</span></strong>
-        <span class="d"><span lang="en">NIST CSF 2.0, EU regulations, MITRE ATT&amp;CK/D3FEND &amp; &lt;50ms System-1 graph traversal.</span><span lang="pt">NIST CSF 2.0, regulação europeia, MITRE ATT&amp;CK/D3FEND e travessia System-1 em &lt;50ms.</span></span>
-      </div></div>
-      <div class="layer"><b>04</b><div>
-        <strong><span lang="en">App Creation, Hackathons &amp; Mobile Linux</span><span lang="pt">Criação de Apps, Hackathons &amp; Linux Mobile</span></strong>
-        <span class="d"><span lang="en">Delegate (Hack4Guimarães 2035), encrypted Android apps (Finflow) &amp; Arch Linux ARM on Pixel 7 Pro.</span><span lang="pt">Delegate (Hack4Guimarães 2035), apps Android cifradas (Finflow) e Arch Linux ARM no Pixel 7 Pro.</span></span>
-      </div></div>
-    </figure>
+<main class="page">
+<div class="wrap">
+<div class="intro">
+  <img src="assets/img/paulo-profile.jpg" alt="Paulo Ribeiro">
+  <div>
+    <h1><span lang="pt">Olá, sou o Paulo.</span><span lang="en">Hi, I'm Paulo.</span></h1>
+    <p class="lede" lang="pt">Sou investigador no <a href="https://ccg.pt/en/about/meet-the-team/paulo-ribeiro">CCG/ZGDV</a>, em Guimarães, e estou a fazer o doutoramento em Tecnologias e Sistemas de Informação na Universidade do Minho. A tese é sobre como pegar em regulamentos de segurança (NIS2, DORA, RGPD, AI Act) e chegar a requisitos que se conseguem implementar e testar.</p>
+    <p class="lede" lang="en">I'm a researcher at <a href="https://ccg.pt/en/about/meet-the-team/paulo-ribeiro">CCG/ZGDV</a> in Guimarães, Portugal, and a PhD student in Information Systems and Technology at the University of Minho. My thesis is about taking security regulations (NIS2, DORA, GDPR, the AI Act) and turning them into requirements you can actually implement and test.</p>
   </div>
 </div>
 
-<div class="snapshot-bar" aria-label="Quick Summary">
-  <div class="wrap snapshot-grid">
-    <div class="snap-item">
-      <span class="snap-label"><span lang="en">AI Integration &amp; HPC</span><span lang="pt">Integração de IA &amp; HPC</span></span>
-      <span class="snap-value"><span lang="en">Deucalion Supercomputer Lab</span><span lang="pt">Experiências no Deucalion</span></span>
-      <span class="snap-sub"><span lang="en">Pipelines vs. Agents · Prompt-as-Code · System-1</span><span lang="pt">Pipelines vs. Agentes · Prompt Engineering · System-1</span></span>
-    </div>
-    <div class="snap-item">
-      <span class="snap-label"><span lang="en">Security &amp; GRC</span><span lang="pt">Segurança &amp; GRC</span></span>
-      <span class="snap-value"><span lang="en">Requirements, Audits &amp; Graphs</span><span lang="pt">Requisitos, Auditoria &amp; Grafos</span></span>
-      <span class="snap-sub">NIST CSF 2.0 · MITRE · NIS2, DORA, GDPR, AI Act</span>
-    </div>
-    <div class="snap-item">
-      <span class="snap-label"><span lang="en">Apps &amp; Hackathons</span><span lang="pt">Apps &amp; Hackathons</span></span>
-      <span class="snap-value"><span lang="en">Hack4Guimarães · Finflow · Omarchy</span><span lang="pt">Hack4Guimarães · Finflow · Omarchy</span></span>
-      <span class="snap-sub"><span lang="en">Civic AI · Offline Android · Arch ARM on Phone</span><span lang="pt">IA Cívica · Android Offline · Arch ARM em Telemóvel</span></span>
-    </div>
-    <div class="snap-item">
-      <span class="snap-label"><span lang="en">Research &amp; Role</span><span lang="pt">Investigação &amp; Cargo</span></span>
-      <span class="snap-value"><span lang="en">Researcher at CCG/ZGDV</span><span lang="pt">Investigador no CCG/ZGDV</span></span>
-      <span class="snap-sub"><span lang="en">MSc Physics of Info · PhD at UMinho (ALGORITMI/CeDRI)</span><span lang="pt">Mestre Eng. Física · Doutorando UMinho (ALGORITMI/CeDRI)</span></span>
-    </div>
-  </div>
+<p lang="pt">Fora da tese, passo muito tempo a testar modelos de linguagem. Interessa-me perceber quando é que um agente autónomo compensa e quando é melhor uma sequência fixa de passos, ou quanto muda o comportamento de um modelo por causa de uma linha no prompt. Parte destes testes corre no supercomputador Deucalion.</p>
+<p lang="en">Outside the thesis I spend a lot of time testing language models: when an autonomous agent is worth it and when a fixed sequence of steps does better, or how much a model's behaviour shifts because of one line in the prompt. Some of these runs happen on the Deucalion supercomputer.</p>
+
+<p lang="pt">Também gosto de fazer coisas para uso próprio, como apps Android que funcionam sem internet ou Linux a correr num Pixel 7 Pro.</p>
+<p lang="en">I also like building things for my own use, like Android apps that work without internet, or Linux running on a Pixel 7 Pro.</p>
+
+<h2><span lang="pt">Em que tenho andado a trabalhar</span><span lang="en">What I've been working on</span></h2>
+
+<div class="entry">
+  <h3><a href="research.html#deucalion"><span lang="pt">Pipelines contra agentes, no Deucalion</span><span lang="en">Pipelines vs. agents, on Deucalion</span></a></h3>
+  <p class="meta"><span lang="pt">Investigação</span><span lang="en">Research</span> · SLURM, GPUs A100</p>
+  <p lang="pt">Pus uma pipeline fixa e um agente livre a fazer a mesma tarefa. A pipeline fez 42 chamadas ao modelo e completou as 15 corridas. O agente fez 220 chamadas e só completou 7. Com a seed fixa, as 15 corridas da pipeline deram resultados idênticos byte a byte.</p>
+  <p lang="en">I gave a fixed pipeline and a free agent the same task. The pipeline made 42 model calls and completed all 15 runs. The agent made 220 calls and completed 7. With a fixed seed, the pipeline's 15 runs were byte-for-byte identical.</p>
 </div>
 
-<section id="areas-showcase">
-  <div class="wrap">
-    <div class="sec-head">
-      <div>
-        <h2><span lang="en">Areas of Intervention: Visuals &amp; Purpose</span><span lang="pt">Áreas de Intervenção: Imagens &amp; Propósito</span></h2>
-        <p class="sec-note">
-          <span lang="en">Click an area below to filter, click thumbnails to switch screenshots, or click any image to zoom.</span>
-          <span lang="pt">Filtra por área de intervenção abaixo, alterna entre miniaturas ou clica em qualquer imagem para ampliar.</span>
-        </p>
-      </div>
-      <a class="btn" href="projects.html"><span lang="en">All 45 Projects →</span><span lang="pt">Ver os 45 Projetos →</span></a>
+<div class="entry">
+  <h3><a href="https://github.com/pauloribeiro16/delegate">Delegate</a></h3>
+  <p class="meta">Hack4Guimarães 2035 · TypeScript, MCP</p>
+  <figure><img src="assets/img/delegate-header.png" alt="Delegate" loading="lazy"></figure>
+  <p lang="pt">Feito para o desafio «Falar com a Câmara sem Burocracia» do Hack4Guimarães 2035. Cada munícipe tem um representante digital, o Henriques, que trata dos assuntos com a Câmara através de um gateway MCP e cita sempre a fonte oficial.</p>
+  <p lang="en">Built for the "Talk to the City Council without bureaucracy" challenge at Hack4Guimarães 2035. Each resident gets a digital representative, Henriques, who deals with the council through an MCP gateway and always cites the official source.</p>
+</div>
+
+<div class="entry">
+  <h3><a href="https://github.com/pauloribeiro16/omarchy-mobile">omarchy-mobile</a></h3>
+  <p class="meta">Arch Linux ARM · Hyprland · Pixel 7 Pro</p>
+  <figure>
+    <div class="phones">
+      <img src="assets/img/omarchy-home.png" alt="Omarchy Mobile: ecrã inicial" loading="lazy">
+      <img src="assets/img/omarchy-quick.png" alt="Omarchy Mobile: definições rápidas" loading="lazy">
+      <img src="assets/img/omarchy-keyboard.png" alt="Omarchy Mobile: teclado" loading="lazy">
+      <img src="assets/img/omarchy-terminal.png" alt="Omarchy Mobile: terminal" loading="lazy">
     </div>
+  </figure>
+  <p lang="pt">Arch Linux ARM com kernel mainline e Hyprland a correr nativamente num Pixel 7 Pro, com um terminal onde posso ditar comandos por voz.</p>
+  <p lang="en">Arch Linux ARM with a mainline kernel and Hyprland running natively on a Pixel 7 Pro, plus a terminal I can dictate commands into.</p>
+</div>
 
-    <div class="area-pills" data-target="home-cards" role="group" aria-label="Filter by area of intervention">
-      <button type="button" class="area-pill" data-area="all" aria-pressed="true">
-        <span lang="en">All Areas (8)</span><span lang="pt">Todas as Áreas (8)</span>
-      </button>
-      <button type="button" class="area-pill" data-area="deucalion" aria-pressed="false">
-        <span lang="en">Deucalion HPC &amp; Prompts</span><span lang="pt">Deucalion HPC &amp; Prompts</span>
-      </button>
-      <button type="button" class="area-pill" data-area="agents" aria-pressed="false">
-        <span lang="en">Agent Orchestration</span><span lang="pt">Orquestração de Agentes</span>
-      </button>
-      <button type="button" class="area-pill" data-area="hackathon" aria-pressed="false">
-        <span lang="en">Hack4Guimarães 2035</span><span lang="pt">Hack4Guimarães 2035</span>
-      </button>
-      <button type="button" class="area-pill" data-area="graphs" aria-pressed="false">
-        <span lang="en">Jev &amp; Knowledge Graphs</span><span lang="pt">Jev &amp; Grafos System-1</span>
-      </button>
-      <button type="button" class="area-pill" data-area="grc" aria-pressed="false">
-        <span lang="en">GRC &amp; Security Req.</span><span lang="pt">GRC &amp; Requisitos</span>
-      </button>
-      <button type="button" class="area-pill" data-area="apps" aria-pressed="false">
-        <span lang="en">Apps &amp; Mobile Linux</span><span lang="pt">Criação de Apps &amp; Linux</span>
-      </button>
-    </div>
+<div class="entry">
+  <h3><a href="https://github.com/pauloribeiro16/NIST_Assessment">NIST_Assessment</a> <span lang="pt">e</span><span lang="en">and</span> <a href="https://github.com/pauloribeiro16/CyberResilience">CyberResilience</a></h3>
+  <p class="meta">GRC · NIST CSF 2.0 · RGPD, NIS2, DORA, CRA, AI Act</p>
+  <figure><img src="assets/img/nist-metrics.png" alt="NIST_Assessment: maturidade por função" loading="lazy"></figure>
+  <p lang="pt">Duas ferramentas para trocar as folhas de Excel com que normalmente se fazem auditorias. Uma avalia a maturidade de uma organização segundo o NIST CSF 2.0. A outra faz a análise de risco por fases para os regulamentos europeus.</p>
+  <p lang="en">Two tools to replace the spreadsheets audits are usually done in. One assesses an organisation's maturity against NIST CSF 2.0. The other runs a phased risk analysis for the EU regulations.</p>
+</div>
 
-    <div class="visual-grid">
-      <!-- 1. Deucalion HPC Experiments -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="deucalion agents">
-        <div class="vcard-media">
-          <img src="assets/img/deucalion-hpc.svg" alt="Deucalion Supercomputer A100 Experiments — Pipeline vs Agent &amp; Model Matrix" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/deucalion-hpc.svg" title="Deucalion HPC"><img src="assets/img/deucalion-hpc.svg" alt="Deucalion"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/aegis-drilldown.png" title="Run Inspector"><img src="assets/img/aegis-drilldown.png" alt="Inspector"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/cybermetric-chart.svg" title="Benchmarks"><img src="assets/img/cybermetric-chart.svg" alt="Benchmarks"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><a href="research.html#deucalion-lab"><span lang="en">Deucalion HPC Agent Lab</span><span lang="pt">Experiências no Deucalion HPC</span></a></h3>
-            <span class="scope-pill hpc">Deucalion A100</span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Test empirically on A100 GPUs when a fixed pipeline beats a free agent (42 vs 220 calls) and prove bit-reproducibility under seed 42.</span>
-            <span lang="pt"><b>Propósito:</b> Medir em GPUs A100 quando uma pipeline bate um agente livre (42 vs 220 chamadas), provar reprodutibilidade bit-a-bit e testar matrizes de modelos.</span>
-          </div>
-          <div class="proj-tags"><span>SLURM · A100</span><span>qwen3.8 · gemma4 · muse</span><span>LiquidAI/d1</span></div>
-        </div>
-      </article>
+<div class="entry">
+  <h3><a href="https://github.com/pauloribeiro16/Jev">Jev</a> <span lang="pt">e</span><span lang="en">and</span> <a href="https://github.com/pauloribeiro16/D3fendGraph">D3fendGraph</a></h3>
+  <p class="meta">Neo4j · MITRE ATT&amp;CK, D3FEND, CWE, CAPEC</p>
+  <figure><img src="assets/img/d3fend-killchain.png" alt="D3fendGraph: visualização de kill chain" loading="lazy"></figure>
+  <p lang="pt">O D3fendGraph junta as bases da MITRE (ATT&amp;CK, ATLAS, D3FEND, CWE, CAPEC) num grafo. O Jev percorre-o com decisões curtas e rápidas, abaixo de 50 ms, em vez de pedir a um LLM que gere texto.</p>
+  <p lang="en">D3fendGraph puts the MITRE knowledge bases (ATT&amp;CK, ATLAS, D3FEND, CWE, CAPEC) into one graph. Jev walks it with short, fast decisions (under 50 ms) instead of asking an LLM to generate text.</p>
+</div>
 
-      <!-- 2. Prompt Engineering & AI Integration -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="deucalion agents">
-        <div class="vcard-media">
-          <img src="assets/img/prompt-engineering-lab.svg" alt="Prompt Engineering Lab — Prompt-as-Code, Context Packs &amp; Human Gates" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/prompt-engineering-lab.svg" title="Prompt Lab"><img src="assets/img/prompt-engineering-lab.svg" alt="Prompt Lab"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/aegis-rule.png" title="Rule Trace"><img src="assets/img/aegis-rule.png" alt="Rule Trace"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><a href="https://github.com/pauloribeiro16/aegis-mvp/tree/main/lab" target="_blank" rel="noopener">Prompt Engineering &amp; AI Integration</a></h3>
-            <span class="scope-pill hpc"><span lang="en">AI Integration</span><span lang="pt">Integração IA</span></span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Integrate AI with human decision gates and deterministic L0/L1 parsers, isolating how 1-line prompt changes shift model behaviour.</span>
-            <span lang="pt"><b>Propósito:</b> Integrar IA com decisões humanas e contratos L0/L1 determinísticos, isolando como alterações de 1 linha no prompt mudam o comportamento do modelo.</span>
-          </div>
-          <div class="proj-tags"><span>Prompt-as-Code</span><span>Context Packs K1–K4</span><span>Human Gates</span></div>
-        </div>
-      </article>
+<div class="entry">
+  <h3><a href="https://github.com/pauloribeiro16/finflow">Finflow</a></h3>
+  <p class="meta">Android · Kotlin, Compose, SQLCipher</p>
+  <p lang="pt">A app que uso para as minhas finanças. Funciona sem conta e sem nuvem, e a base de dados está cifrada no telemóvel.</p>
+  <p lang="en">The app I use for my own finances. No account, no cloud, and the database is encrypted on the phone.</p>
+</div>
 
-      <!-- 3. Hack4Guimarães 2035 — Delegate -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="hackathon agents apps">
-        <div class="vcard-media">
-          <img src="assets/img/delegate-header.png" alt="Delegate (Henriques) — Hack4Guimarães 2035 Civic AI Representative" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/delegate-header.png" title="Delegate Banner"><img src="assets/img/delegate-header.png" alt="Delegate"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/hack4guimaraes-delegate.svg" title="Architecture"><img src="assets/img/hack4guimaraes-delegate.svg" alt="Architecture"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/delegate-henriques.jpg" title="Henriques"><img src="assets/img/delegate-henriques.jpg" alt="Henriques"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Delegate — Hack4Guimarães 2035</a></h3>
-            <span class="scope-pill beyond">Hackathon</span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Give every citizen of Guimarães a personal digital representative (<em>Henriques</em>) and the Municipality an open MCP Agentic Gateway without bureaucracy.</span>
-            <span lang="pt"><b>Propósito:</b> Dar a cada munícipe de Guimarães um representante digital (<em>Henriques</em>) e à Câmara uma Porta Agêntica MCP que cita fontes oficiais e respeita a decisão humana.</span>
-          </div>
-          <div class="proj-tags"><span>Hack4Guimarães 2035</span><span>TypeScript · MCP</span><span>TypeSafe AI</span></div>
-        </div>
-      </article>
-
-      <!-- 4. Jev & Knowledge Graphs (Beyond the Thesis) -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="graphs agents">
-        <div class="vcard-media">
-          <img src="assets/img/jev-graph.svg" alt="Jev — Sub-50ms System-1 Probabilistic Graph Traversal over Neo4j" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/jev-graph.svg" title="Jev System-1"><img src="assets/img/jev-graph.svg" alt="Jev"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/d3fend-killchain.png" title="Kill Chain"><img src="assets/img/d3fend-killchain.png" alt="Kill Chain"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/d3fend-hub.png" title="D3FEND Hub"><img src="assets/img/d3fend-hub.png" alt="Hub"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/d3fend-groups.png" title="APT Groups"><img src="assets/img/d3fend-groups.png" alt="Groups"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev</a> &amp; <a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a></h3>
-            <span class="scope-pill beyond"><span lang="en">Beyond Thesis</span><span lang="pt">Além da Tese</span></span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Replace slow, hallucination-prone LLM text generation with &lt;50ms System-1 probabilistic primitives (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) over Neo4j threat graphs.</span>
-            <span lang="pt"><b>Propósito:</b> Substituir geração lenta de texto por julgamentos probabilísticos System-1 em &lt;50ms (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) para navegar árvores de ataque em Neo4j.</span>
-          </div>
-          <div class="proj-tags"><span>Neo4j · GraphDB</span><span>System-1 A*</span><span>MITRE ATT&amp;CK · D3FEND</span></div>
-        </div>
-      </article>
-
-      <!-- 5. Agent Orchestration & Multi-Persona Debate (Beyond the Thesis) -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="agents">
-        <div class="vcard-media">
-          <img src="assets/img/financial-adviser.svg" alt="financial-adviser &amp; Agentic-Orquestrator — Multi-Agent Debate and DevSecOps" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/financial-adviser.svg" title="15-Persona Debate"><img src="assets/img/financial-adviser.svg" alt="Debate"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/agentic-devsecops.svg" title="DevSecOps 20 Agents"><img src="assets/img/agentic-devsecops.svg" alt="DevSecOps"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><a href="https://github.com/pauloribeiro16/financial-adviser" target="_blank" rel="noopener">financial-adviser</a> &amp; <a href="https://github.com/pauloribeiro16/Agentic-Orquestrator" target="_blank" rel="noopener">Orquestrator</a></h3>
-            <span class="scope-pill beyond"><span lang="en">Beyond Thesis</span><span lang="pt">Além da Tese</span></span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Orchestrate adversarial multi-agent debates (15 investor personas on SEC filings) and 20-agent DevSecOps pipelines with tier routing and harnesses.</span>
-            <span lang="pt"><b>Propósito:</b> Orquestrar debates multiagente contraditórios (15 analistas sobre dados SEC EDGAR) e pipelines DevSecOps de 20 agentes com model-tier routing.</span>
-          </div>
-          <div class="proj-tags"><span>LangChain · LangGraph</span><span>Langfuse</span><span>Harnesses &amp; Skills</span></div>
-        </div>
-      </article>
-
-      <!-- 6. GRC, Compliance & Security Requirements -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="grc">
-        <div class="vcard-media">
-          <img src="assets/img/nist-metrics.png" alt="NIST_Assessment &amp; CyberResilience — GRC &amp; Security Requirements Platforms" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/nist-metrics.png" title="NIST Radar"><img src="assets/img/nist-metrics.png" alt="NIST Radar"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/nist-grid.png" title="Audit Grid"><img src="assets/img/nist-grid.png" alt="Grid"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/cyberresilience-home.png" title="CyberResilience"><img src="assets/img/cyberresilience-home.png" alt="CyberResilience"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/aegis-overview.png" title="AEGIS Dashboard"><img src="assets/img/aegis-overview.png" alt="AEGIS"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><a href="https://github.com/pauloribeiro16/NIST_Assessment" target="_blank" rel="noopener">NIST_Assessment</a> &amp; <a href="https://github.com/pauloribeiro16/CyberResilience" target="_blank" rel="noopener">GRC Suite</a></h3>
-            <span class="scope-pill"><span lang="en">GRC &amp; SecReq</span><span lang="pt">GRC &amp; Requisitos</span></span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Turn EU regulations (NIS2, DORA, GDPR, CRA, AI Act) and NIST CSF 2.0 into interactive maturity dashboards, RAG consensus, and testable security requirements.</span>
-            <span lang="pt"><b>Propósito:</b> Transformar regulamentos (NIS2, DORA, GDPR, CRA, AI Act) e NIST CSF 2.0 em plataformas visuais de maturidade, consenso RAG e requisitos verificáveis.</span>
-          </div>
-          <div class="proj-tags"><span>NIST CSF 2.0</span><span>MCP Copilot</span><span>Qdrant RAG</span><span>4SRS / AEGIS</span></div>
-        </div>
-      </article>
-
-      <!-- 7. Offline-First Apps (Finflow, Piano & Pautas, Pegadas) -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="apps">
-        <div class="vcard-media">
-          <img src="assets/img/finflow-preview.svg" alt="Finflow — Offline-First AES-256 Encrypted Android Finance App" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/finflow-preview.svg" title="Finflow"><img src="assets/img/finflow-preview.svg" alt="Finflow"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/piano-pegadas.svg" title="Piano &amp; Pegadas"><img src="assets/img/piano-pegadas.svg" alt="Piano &amp; Pegadas"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><a href="https://github.com/pauloribeiro16/finflow" target="_blank" rel="noopener">Finflow</a>, Piano &amp; Pegadas</h3>
-            <span class="scope-pill beyond"><span lang="en">App Creation</span><span lang="pt">Criação de Apps</span></span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Build everyday mobile apps that respect user privacy — 100% offline, SQLCipher AES-256 encrypted, zero cloud accounts, and on-device audio synthesis.</span>
-            <span lang="pt"><b>Propósito:</b> Criar aplicações móveis que respeitam o utilizador — 100% offline, cifradas com SQLCipher AES-256, sem contas na nuvem e com síntese áudio local.</span>
-          </div>
-          <div class="proj-tags"><span>Kotlin 2.0 · Compose</span><span>SQLCipher AES-256</span><span>Flutter</span></div>
-        </div>
-      </article>
-
-      <!-- 8. Omarchy Mobile (Arch Linux ARM on Pixel 7 Pro) -->
-      <article class="vcard" data-area-group="home-cards" data-area-val="apps">
-        <div class="vcard-media">
-          <div class="phone-strip">
-            <img src="assets/img/omarchy-home.png" alt="Omarchy Mobile Home Screen" loading="lazy">
-            <img src="assets/img/omarchy-quick.png" alt="Omarchy Mobile Quick Settings" loading="lazy">
-            <img src="assets/img/omarchy-keyboard.png" alt="Omarchy Mobile Keyboard" loading="lazy">
-            <img src="assets/img/omarchy-terminal.png" alt="Omarchy Mobile Voice Terminal" loading="lazy">
-          </div>
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="vcard-top">
-            <h3><a href="https://github.com/pauloribeiro16/omarchy-mobile" target="_blank" rel="noopener">omarchy-mobile</a></h3>
-            <span class="scope-pill beyond"><span lang="en">Systems &amp; Linux</span><span lang="pt">Sistemas &amp; Linux</span></span>
-          </div>
-          <div class="purpose-line">
-            <span lang="en"><b>Purpose:</b> Port mainline Linux, Arch Linux ARM, and a Hyprland tiling desktop natively onto a Google Pixel 7 Pro with voice-dictated terminal agents.</span>
-            <span lang="pt"><b>Propósito:</b> Correr um kernel Linux mainline com Arch Linux ARM e Hyprland nativamente num Google Pixel 7 Pro, incluindo ditado por voz para agentes no terminal.</span>
-          </div>
-          <div class="proj-tags"><span>Arch Linux ARM</span><span>Mainline Kernel</span><span>Hyprland</span><span>Pixel 7 Pro</span></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+<p><a href="projects.html"><span lang="pt">Lista completa de projetos →</span><span lang="en">Full project list →</span></a></p>
+</div>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Paulo Ribeiro · Guimarães, Portugal</div>
-    <div class="footer-links">
-      <a href="index.html"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
-      <a href="projects.html"><span lang="en">Projects (45)</span><span lang="pt">Projetos (45)</span></a>
-      <a href="research.html"><span lang="en">AI, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
-      <a href="about.html"><span lang="en">About &amp; CV</span><span lang="pt">Sobre &amp; CV</span></a>
-      <a href="contact.html"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
-      <a href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://github.com/pauloribeiro16" target="_blank" rel="noopener">GitHub ↗</a>
-    </div>
+    <span>Paulo Ribeiro · Guimarães</span>
+    <span><a href="mailto:paulo.ribeiro@ccg.pt">paulo.ribeiro@ccg.pt</a> · <a href="https://github.com/pauloribeiro16">GitHub</a> · <a href="https://www.linkedin.com/in/paulo-ribeiro-/">LinkedIn</a></span>
   </div>
 </footer>
 

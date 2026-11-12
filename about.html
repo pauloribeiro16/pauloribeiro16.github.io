@@ -3,214 +3,97 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sobre, CV &amp; Gostos — Paulo Ribeiro</title>
-<meta name="description" content="Percurso profissional, formação académica (Mestrado em Engenharia Física — Física da Informação e Doutoramento em TSI na UMinho), Hack4Guimarães 2035, competências e interesses de Paulo Ribeiro.">
+<title>Sobre — Paulo Ribeiro</title>
+<meta name="description" content="Percurso e interesses de Paulo Ribeiro.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a href="index.html" class="brand" id="nav-brand">
-      <span class="brand-name">Paulo Ribeiro</span>
-      <span class="brand-tag">AI Integration · Agents · GRC · Systems</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="index.html" id="nav-home"><span lang="en">Overview &amp; Lab</span><span lang="pt">Visão Geral &amp; Lab</span></a>
-      <a href="projects.html" id="nav-projects"><span lang="en">Projects by Area (45)</span><span lang="pt">Projetos por Área (45)</span></a>
-      <a href="research.html" id="nav-research"><span lang="en">AI Research, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
-      <a href="about.html" id="nav-about" aria-current="page"><span lang="en">About, CV &amp; Interests</span><span lang="pt">Sobre, CV &amp; Gostos</span></a>
-      <a href="contact.html" id="nav-contact"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
+    <a href="index.html" class="brand">Paulo Ribeiro</a>
+    <nav aria-label="Menu">
+      <a href="index.html"><span lang="pt">Início</span><span lang="en">Home</span></a>
+      <a href="projects.html"><span lang="pt">Projetos</span><span lang="en">Projects</span></a>
+      <a href="research.html"><span lang="pt">Investigação</span><span lang="en">Research</span></a>
+      <a href="about.html" aria-current="page"><span lang="pt">Sobre</span><span lang="en">About</span></a>
+      <a href="contact.html"><span lang="pt">Contacto</span><span lang="en">Contact</span></a>
     </nav>
     <div class="controls">
-      <div class="switch" role="group" aria-label="Language">
-        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
-        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
-      </div>
-      <button type="button" class="theme-btn" id="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" id="theme-toggle">escuro</button>
     </div>
   </div>
 </header>
 
-<main>
-<div class="page-header">
-  <div class="wrap profile-header-grid">
-    <img src="assets/img/paulo-profile.jpg" alt="Paulo Ribeiro" class="profile-avatar">
-    <div>
-      <span class="eyebrow">
-        <span lang="en">Curriculum Vitae · Trajectory · Engineering Philosophy · Personal Interests</span>
-        <span lang="pt">Percurso Profissional · Formação · Filosofia de Trabalho · Gostos Pessoais</span>
-      </span>
-      <h1>
-        <span lang="en">About Me, Trajectory &amp; What I Like Building</span>
-        <span lang="pt">Sobre Mim, Percurso &amp; O Que Gosto de Construir</span>
-      </h1>
-      <p class="lede" lang="en" style="margin-bottom:0;">Trained in Physical Engineering (<em>Physics of Information</em>), I treat software, AI integration, and security as an experimental craft: test on real systems (from a Pixel 7 Pro to the Deucalion supercomputer), anchor claims to sources, and build tools that respect the person using them.</p>
-      <p class="lede" lang="pt" style="margin-bottom:0;">Com formação de base em Engenharia Física (<em>Física da Informação</em>), encaro a integração de IA, a cibersegurança e o software como uma ciência experimental: testar em sistemas reais (de um Pixel 7 Pro ao supercomputador Deucalion), ancorar afirmações às fontes e criar ferramentas que respeitam quem as usa.</p>
-    </div>
+<main class="page">
+<div class="wrap">
+<div class="intro">
+  <img src="assets/img/paulo-profile.jpg" alt="Paulo Ribeiro">
+  <div>
+    <h1><span lang="pt">Sobre mim</span><span lang="en">About me</span></h1>
+    <p class="lede" lang="pt">Venho da Engenharia Física, na área de Física da Informação, e ficou-me o hábito de tratar o software como uma experiência: testar em sistemas reais, medir, e não acreditar em resultados que não consigo reproduzir.</p>
+    <p class="lede" lang="en">My background is in Physical Engineering, specifically Physics of Information, and it left me with the habit of treating software as an experiment: test on real systems, measure, and don't trust results I can't reproduce.</p>
   </div>
 </div>
 
-<section id="experience">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2><span lang="en">Experience, Education &amp; Hackathons</span><span lang="pt">Experiência, Formação &amp; Hackathons</span></h2>
-      <a class="btn" href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>
-    </div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-role"><span lang="en">Cybersecurity &amp; AI Systems Researcher</span><span lang="pt">Investigador em Cibersegurança &amp; Sistemas de IA</span></h3>
-          <span class="tl-period"><span lang="en">Present</span><span lang="pt">Atualidade</span></span>
-        </div>
-        <p class="tl-org">CCG/ZGDV Institute · Software Engineering &amp; Data Intelligence · Guimarães</p>
-        <p class="tl-body" lang="en">Applied R&amp;D in AI integration, multi-agent orchestration, GRC platforms (NIS2, DORA, GDPR, CRA, AI Act, NIST CSF 2.0), threat graphs, and security requirements engineering.</p>
-        <p class="tl-body" lang="pt">I&amp;D aplicada em integração de IA, orquestração de agentes, plataformas de GRC (NIS2, DORA, GDPR, CRA, AI Act, NIST CSF 2.0), grafos de ameaças e requisitos de segurança.</p>
-      </div>
+<h2><span lang="pt">Percurso</span><span lang="en">Background</span></h2>
+<ul class="cv">
+  <li>
+    <strong><span lang="pt">Investigador em cibersegurança e IA</span><span lang="en">Researcher, cybersecurity and AI</span></strong>
+    <p class="meta">CCG/ZGDV, Guimarães · <span lang="pt">atual</span><span lang="en">current</span></p>
+    <span lang="pt">Plataformas de GRC, grafos de ameaças, requisitos de segurança e agentes.</span>
+    <span lang="en">GRC platforms, threat graphs, security requirements and agents.</span>
+  </li>
+  <li>
+    <strong><span lang="pt">Doutoramento em Tecnologias e Sistemas de Informação</span><span lang="en">PhD, Information Systems and Technology</span></strong>
+    <p class="meta">Universidade do Minho (ALGORITMI) · CCG/ZGDV · CeDRI (IPB) · <span lang="pt">em curso, bolsa FCT</span><span lang="en">ongoing, FCT grant</span></p>
+    <span lang="pt">Ver <a href="research.html#tese">a tese</a>.</span>
+    <span lang="en">See <a href="research.html#tese">the thesis</a>.</span>
+  </li>
+  <li>
+    <strong><span lang="pt">Mestrado em Engenharia Física, Física da Informação</span><span lang="en">MSc, Physical Engineering, Physics of Information</span></strong>
+    <p class="meta">Universidade do Minho</p>
+    <span lang="pt">Modelação formal, autómatos temporizados em Haskell e apoio à decisão em requisitos de segurança (SPIDESOFT, que deu origem ao <a href="https://github.com/pauloribeiro16/The_Scribe">The_Scribe</a>).</span>
+    <span lang="en">Formal modelling, timed automata in Haskell, and decision support for security requirements (SPIDESOFT, which led to <a href="https://github.com/pauloribeiro16/The_Scribe">The_Scribe</a>).</span>
+  </li>
+  <li>
+    <strong>Hack4Guimarães 2035</strong>
+    <p class="meta">2025–2026</p>
+    <span lang="pt">Fiz o <a href="https://github.com/pauloribeiro16/delegate">Delegate</a> para o desafio «Falar com a Câmara sem Burocracia».</span>
+    <span lang="en">Built <a href="https://github.com/pauloribeiro16/delegate">Delegate</a> for the "Talk to the City Council without bureaucracy" challenge.</span>
+  </li>
+  <li>
+    <strong><span lang="pt">Comissão de programa</span><span lang="en">Programme committee</span></strong>
+    <p class="meta">IIS 2026 / ARTIIS 2026</p>
+  </li>
+</ul>
+<p class="muted"><span lang="pt">Mais detalhe no <a href="https://www.linkedin.com/in/paulo-ribeiro-/">LinkedIn</a>.</span><span lang="en">More detail on <a href="https://www.linkedin.com/in/paulo-ribeiro-/">LinkedIn</a>.</span></p>
 
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-role"><span lang="en">Hack4Guimarães 2035 &amp; Scientific Committee</span><span lang="pt">Hack4Guimarães 2035 &amp; Comunidade Científica</span></h3>
-          <span class="tl-period">2025 – 2026</span>
-        </div>
-        <p class="tl-org">Delegate (Henriques) · ARTIIS 2026 (IIS 2026 Program Committee)</p>
-        <p class="tl-body" lang="en">Creator of <strong>Delegate</strong> at the <strong>Hack4Guimarães 2035</strong> municipal innovation hackathon (challenge <em>"Talk to the City Council without Bureaucracy"</em>). Program Committee member at IIS 2026 / ARTIIS 2026.</p>
-        <p class="tl-body" lang="pt">Criador do <strong>Delegate</strong> (<em>Henriques</em> + Porta Agêntica MCP) no hackathon <strong>Hack4Guimarães 2035</strong> (desafio <em>«Falar com a Câmara sem Burocracia»</em>). Membro da Comissão de Programa do IIS 2026 / ARTIIS 2026.</p>
-      </div>
+<h2><span lang="pt">Fora do trabalho</span><span lang="en">Outside work</span></h2>
+<p lang="pt">Gosto de fazer as minhas próprias apps, de preferência sem contas nem nuvem. O <a href="https://github.com/pauloribeiro16/finflow">Finflow</a> é onde guardo as finanças. O Piano &amp; Pautas é a app com que estou a aprender piano, e o Pegadas é um diário de viagens.</p>
+<p lang="en">I like making my own apps, ideally with no accounts and no cloud. <a href="https://github.com/pauloribeiro16/finflow">Finflow</a> is where I keep my finances. Piano &amp; Pautas is the app I'm learning piano with, and Pegadas is a travel journal.</p>
+<p lang="pt">Também gosto de recuperar hardware: telemóveis antigos com LineageOS, TV boxes presas em bootloop (e sem a telemetria de fábrica) e, mais recentemente, Linux mainline num Pixel 7 Pro (<a href="https://github.com/pauloribeiro16/omarchy-mobile">omarchy-mobile</a>).</p>
+<p lang="en">I also like bringing hardware back to life: old phones with LineageOS, TV boxes stuck in bootloops (minus the factory telemetry) and, more recently, mainline Linux on a Pixel 7 Pro (<a href="https://github.com/pauloribeiro16/omarchy-mobile">omarchy-mobile</a>).</p>
 
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-role"><span lang="en">MSc in Physical Engineering — Physics of Information</span><span lang="pt">Mestrado em Engenharia Física — Física da Informação</span></h3>
-          <span class="tl-period">Universidade do Minho</span>
-        </div>
-        <p class="tl-org"><span lang="en">School of Engineering / School of Sciences · Braga &amp; Guimarães</span><span lang="pt">Escola de Engenharia / Escola de Ciências · Braga &amp; Guimarães</span></p>
-        <p class="tl-body" lang="en">Specialized in <em>Physics of Information</em>, formal systems modelling, timed automata (Haskell), quantitative analysis, and decision support for security requirements (SPIDESOFT / <code>The_Scribe</code>).</p>
-        <p class="tl-body" lang="pt">Especialização em <em>Física da Informação</em>, modelação formal, autómatos temporizados (Haskell), análise quantitativa e apoio à decisão em requisitos de segurança (SPIDESOFT / <code>The_Scribe</code>).</p>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-role"><span lang="en">PhD in Information Systems and Technology (PDTSI)</span><span lang="pt">Doutoramento em Tecnologias e Sistemas de Informação (PDTSI)</span></h3>
-          <span class="tl-period"><span lang="en">In Progress · FCT Fellowship</span><span lang="pt">Em Curso · Bolsa FCT</span></span>
-        </div>
-        <p class="tl-org">Universidade do Minho (ALGORITMI) · CCG/ZGDV · CeDRI (IPB)</p>
-        <p class="tl-body" lang="en">FCT Non-Academic PhD Fellowship. Dissertation on extending the 4SRS methodology (AEGIS) and running controlled AI pipeline and agent experiments on the Deucalion supercomputer.</p>
-        <p class="tl-body" lang="pt">Bolsa FCT em Ambiente Não Académico. Tese focada na extensão do método 4SRS (AEGIS) e em ensaios controlados de pipelines e agentes no supercomputador Deucalion.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="interests">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2><span lang="en">What I Like Building Outside Formal Research</span><span lang="pt">O Que Gosto de Construir e Explorar</span></h2>
-    </div>
-    <div class="visual-grid">
-      <article class="vcard">
-        <div class="vcard-media">
-          <img src="assets/img/piano-pegadas.svg" alt="Piano &amp; Pautas and Pegadas — Offline Personal Apps" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/piano-pegadas.svg"><img src="assets/img/piano-pegadas.svg" alt="Piano &amp; Pegadas"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/finflow-preview.svg"><img src="assets/img/finflow-preview.svg" alt="Finflow"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><span lang="en">Offline Apps &amp; Learning Piano</span><span lang="pt">Apps Offline &amp; Aprender Piano</span></h3>
-          </div>
-          <p lang="en">I build my own daily tools so they stay 100% offline with zero accounts: <a href="https://github.com/pauloribeiro16/finflow" target="_blank" rel="noopener">Finflow</a> (encrypted finances), <em>Piano &amp; Pautas</em> (the synthesizer app I'm learning piano with), and <em>Pegadas</em> (travel journal).</p>
-          <p lang="pt">Construo as minhas próprias apps para funcionarem 100% offline e sem contas: <a href="https://github.com/pauloribeiro16/finflow" target="_blank" rel="noopener">Finflow</a> (finanças cifradas), <em>Piano &amp; Pautas</em> (a app com sintetizador local com que estou a aprender piano) e <em>Pegadas</em> (diário de viagens).</p>
-        </div>
-      </article>
-
-      <article class="vcard">
-        <div class="vcard-media">
-          <div class="phone-strip">
-            <img src="assets/img/omarchy-home.png" alt="Omarchy Mobile Home" loading="lazy">
-            <img src="assets/img/omarchy-quick.png" alt="Omarchy Mobile Quick Settings" loading="lazy">
-            <img src="assets/img/omarchy-keyboard.png" alt="Omarchy Mobile Keyboard" loading="lazy">
-            <img src="assets/img/omarchy-terminal.png" alt="Omarchy Mobile Terminal" loading="lazy">
-          </div>
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="vcard-top">
-            <h3><span lang="en">Hardware Rescue &amp; Mobile Linux</span><span lang="pt">Recuperar Hardware &amp; Linux em Telemóveis</span></h3>
-          </div>
-          <p lang="en">I rescue old phones with LineageOS, unbrick TV boxes and strip their telemetry, and port mainline Linux + Arch ARM + Hyprland onto a Pixel 7 Pro (<a href="https://github.com/pauloribeiro16/omarchy-mobile" target="_blank" rel="noopener">omarchy-mobile</a>).</p>
-          <p lang="pt">Recupero telemóveis antigos com LineageOS, salvo TV boxes de bootloops limpando a telemetria e porto Linux mainline + Arch ARM + Hyprland para o Pixel 7 Pro (<a href="https://github.com/pauloribeiro16/omarchy-mobile" target="_blank" rel="noopener">omarchy-mobile</a>).</p>
-        </div>
-      </article>
-
-      <article class="vcard">
-        <div class="vcard-media">
-          <img src="assets/img/delegate-header.png" alt="Delegate Hack4Guimarães 2035 &amp; Multi-Agent Debate" loading="lazy">
-          <span class="zoom-hint">🔍 Zoom</span>
-        </div>
-        <div class="vcard-body">
-          <div class="thumb-row">
-            <button type="button" class="thumb-btn active" data-src="assets/img/delegate-header.png"><img src="assets/img/delegate-header.png" alt="Delegate"></button>
-            <button type="button" class="thumb-btn" data-src="assets/img/financial-adviser.svg"><img src="assets/img/financial-adviser.svg" alt="Financial Adviser"></button>
-          </div>
-          <div class="vcard-top">
-            <h3><span lang="en">Civic Hackathons &amp; Adversarial Agents</span><span lang="pt">Hackathons Cívicos &amp; Agentes Contraditórios</span></h3>
-          </div>
-          <p lang="en">From <a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Delegate</a> at Hack4Guimarães 2035 to 15 investor personas debating SEC filings (<a href="https://github.com/pauloribeiro16/financial-adviser" target="_blank" rel="noopener">financial-adviser</a>), I like AI that cites sources and admits when it doesn't know.</p>
-          <p lang="pt">Do <a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Delegate</a> no Hack4Guimarães 2035 às 15 personas de investimento a debater relatórios SEC (<a href="https://github.com/pauloribeiro16/financial-adviser" target="_blank" rel="noopener">financial-adviser</a>), gosto de IA que cita fontes e sabe abster-se.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="method">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2><span lang="en">Working Rules (How I Run Experiments)</span><span lang="pt">Regras de Trabalho &amp; Experimentação</span></h2>
-    </div>
-    <ul class="rules">
-      <li>
-        <strong><span lang="en">1. Decide what would prove me wrong first</span><span lang="pt">1. Decidir primeiro o que me provaria errado</span></strong>
-        <span lang="en">Write the falsifiable hypothesis and its falsifier before submitting the SLURM job or benchmark.</span>
-        <span lang="pt">Escrever a hipótese falsificável e o seu falsificador antes de lançar a experiência ou job SLURM.</span>
-      </li>
-      <li>
-        <strong><span lang="en">2. Evidence before opinion</span><span lang="pt">2. Evidência antes de opinião</span></strong>
-        <span lang="en">Verify in the primary source first and report gaps right next to the results.</span>
-        <span lang="pt">Verificar na fonte primária e relatar as lacunas ao lado dos resultados, nunca atrás deles.</span>
-      </li>
-      <li>
-        <strong><span lang="en">3. A green build is not proof</span><span lang="pt">3. Um build verde não é prova</span></strong>
-        <span lang="en">Passing unit tests with mocks is hygiene; the real test is the downstream system consuming the real output.</span>
-        <span lang="pt">Testes com mocks são higiene; o teste que conta é o sistema real a consumir o output real.</span>
-      </li>
-      <li>
-        <strong><span lang="en">4. Ask whether the metric measures the goal</span><span lang="pt">4. Perguntar se a métrica mede o objetivo</span></strong>
-        <span lang="en">Never tune a gate or rubric until it is clear that it measures what actually matters.</span>
-        <span lang="pt">Nunca afinar uma gate ou métrica sem ter a certeza de que mede o que realmente importa.</span>
-      </li>
-    </ul>
-  </div>
-</section>
+<h2><span lang="pt">Como gosto de trabalhar</span><span lang="en">How I like to work</span></h2>
+<ol>
+  <li><span lang="pt">Decidir antes o que me provaria errado, e só depois correr a experiência.</span><span lang="en">Decide up front what would prove me wrong, and only then run the experiment.</span></li>
+  <li><span lang="pt">Ir à fonte primária e pôr as lacunas ao lado dos resultados, não escondidas.</span><span lang="en">Go to the primary source and put the gaps next to the results, not hidden.</span></li>
+  <li><span lang="pt">Um build verde não prova nada. O teste que conta é o sistema real a usar o resultado real.</span><span lang="en">A green build proves nothing. The test that counts is the real system consuming the real output.</span></li>
+  <li><span lang="pt">Antes de afinar uma métrica, confirmar que ela mede o que interessa.</span><span lang="en">Before tuning a metric, check that it measures what matters.</span></li>
+</ol>
+</div>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Paulo Ribeiro · Guimarães, Portugal</div>
-    <div class="footer-links">
-      <a href="index.html"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
-      <a href="projects.html"><span lang="en">Projects (45)</span><span lang="pt">Projetos (45)</span></a>
-      <a href="research.html"><span lang="en">AI, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
-      <a href="about.html"><span lang="en">About &amp; CV</span><span lang="pt">Sobre &amp; CV</span></a>
-      <a href="contact.html"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
-      <a href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://github.com/pauloribeiro16" target="_blank" rel="noopener">GitHub ↗</a>
-    </div>
+    <span>Paulo Ribeiro · Guimarães</span>
+    <span><a href="mailto:paulo.ribeiro@ccg.pt">paulo.ribeiro@ccg.pt</a> · <a href="https://github.com/pauloribeiro16">GitHub</a> · <a href="https://www.linkedin.com/in/paulo-ribeiro-/">LinkedIn</a></span>
   </div>
 </footer>
 

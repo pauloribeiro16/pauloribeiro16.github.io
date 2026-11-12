@@ -3,525 +3,94 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Projetos por Área de Intervenção (45) — Paulo Ribeiro</title>
-<meta name="description" content="45 projetos de Paulo Ribeiro agrupados por área de intervenção: Orquestração de Agentes, Experiências no Deucalion HPC &amp; Prompt Engineering, Grafos System-1 (Jev), GRC &amp; Requisitos, Hack4Guimarães 2035 e Criação de Apps.">
+<title>Projetos — Paulo Ribeiro</title>
+<meta name="description" content="Lista de projetos de Paulo Ribeiro.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a href="index.html" class="brand" id="nav-brand">
-      <span class="brand-name">Paulo Ribeiro</span>
-      <span class="brand-tag">AI Integration · Agents · GRC · Systems</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="index.html" id="nav-home"><span lang="en">Overview &amp; Lab</span><span lang="pt">Visão Geral &amp; Lab</span></a>
-      <a href="projects.html" id="nav-projects" aria-current="page"><span lang="en">Projects by Area (45)</span><span lang="pt">Projetos por Área (45)</span></a>
-      <a href="research.html" id="nav-research"><span lang="en">AI Research, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
-      <a href="about.html" id="nav-about"><span lang="en">About, CV &amp; Interests</span><span lang="pt">Sobre, CV &amp; Gostos</span></a>
-      <a href="contact.html" id="nav-contact"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
+    <a href="index.html" class="brand">Paulo Ribeiro</a>
+    <nav aria-label="Menu">
+      <a href="index.html"><span lang="pt">Início</span><span lang="en">Home</span></a>
+      <a href="projects.html" aria-current="page"><span lang="pt">Projetos</span><span lang="en">Projects</span></a>
+      <a href="research.html"><span lang="pt">Investigação</span><span lang="en">Research</span></a>
+      <a href="about.html"><span lang="pt">Sobre</span><span lang="en">About</span></a>
+      <a href="contact.html"><span lang="pt">Contacto</span><span lang="en">Contact</span></a>
     </nav>
     <div class="controls">
-      <div class="switch" role="group" aria-label="Language">
-        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
-        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
-      </div>
-      <button type="button" class="theme-btn" id="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" id="theme-toggle">escuro</button>
     </div>
   </div>
 </header>
 
-<main>
-<div class="page-header">
-  <div class="wrap">
-    <span class="eyebrow">
-      <span lang="en">Interactive Project Explorer · Grouped by Area of Intervention · Click any image to zoom</span>
-      <span lang="pt">Explorador Interativo · Agrupado por Área de Intervenção · Clica nas imagens para ampliar</span>
-    </span>
-    <h1>
-      <span lang="en">Projects by Area of Intervention (45)</span>
-      <span lang="pt">Projetos por Área de Intervenção (45)</span>
-    </h1>
-    <p class="lede" lang="en">41 public repositories and 4 private systems organized by intervention domain, showing each project's visual interface and core purpose.</p>
-    <p class="lede" lang="pt">41 repositórios públicos e 4 sistemas privados agrupados por área de intervenção, com imagens e o propósito de cada projeto.</p>
-  </div>
+<main class="page">
+<div class="wrap">
+<h1><span lang="pt">Projetos</span><span lang="en">Projects</span></h1>
+<p lang="pt">Quase tudo está no <a href="https://github.com/pauloribeiro16">GitHub</a>. Os poucos projetos privados estão assinalados.</p>
+<p lang="en">Almost everything is on <a href="https://github.com/pauloribeiro16">GitHub</a>. The few private ones are marked.</p>
+
+<h2><span lang="pt">Agentes e modelos de linguagem</span><span lang="en">Agents and language models</span></h2>
+<ul class="projects">
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/aegis-mvp">aegis-mvp</a></span> <span lang="pt">— o código das experiências no Deucalion: pipelines contra agentes, reprodutibilidade e o laboratório de prompts (<code>lab/</code>).</span><span lang="en">— the code behind the Deucalion experiments: pipelines vs. agents, reproducibility and the prompt lab (<code>lab/</code>).</span><span class="stack">Python · SLURM</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/financial-adviser">financial-adviser</a></span> <span lang="pt">— 15 personas de investidores (Buffett, Burry, Taleb…) discutem em várias rondas os relatórios SEC de uma empresa, até ficar claro em que pressupostos discordam.</span><span lang="en">— 15 investor personas (Buffett, Burry, Taleb…) argue over a company's SEC filings across several rounds until it's clear which assumptions they disagree on.</span><span class="stack">Python · LangChain · Langfuse</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/Agentic-Orquestrator">Agentic-Orquestrator</a>, <a href="https://github.com/pauloribeiro16/harness-design-best-practices">harness-design-best-practices</a>, <a href="https://github.com/pauloribeiro16/my-skills">my-skills</a></span> <span lang="pt">— orquestração de 20 agentes para DevSecOps e as skills e harnesses que fui juntando para agentes de longa duração.</span><span lang="en">— orchestrating 20 DevSecOps agents, plus the skills and harnesses I've collected for long-running agents.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test">Cybersecurity_sanity_test</a>, <a href="https://github.com/pauloribeiro16/Cybersecurity_Sanity_Tests">Cybersecurity_Sanity_Tests</a></span> <span lang="pt">— comparação de mais de 13 LLMs locais com o CyberMetric, de 80 até 10 000 perguntas.</span><span lang="en">— comparing 13+ local LLMs on CyberMetric, from 80 up to 10,000 questions.</span><span class="stack">Python · Ollama</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/MoE-CySec">MoE-CySec</a></span> <span lang="pt">— routing Mixture-of-Experts com modelos pequenos.</span><span lang="en">— Mixture-of-Experts routing with small models.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/aegis-phase1">aegis-phase1</a></span> <span lang="pt">— uma máquina de estados em LangGraph que reduziu um processo de 150 chamadas ao modelo para 7–9.</span><span lang="en">— a LangGraph state machine that cut a 150-call process down to 7–9 calls.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/RAGImplementation">RAGImplementation</a></span> <span lang="pt">— uma pipeline RAG desmontada passo a passo (parsing, chunking, reranking) para ver o que cada etapa acrescenta.</span><span lang="en">— a RAG pipeline taken apart step by step (parsing, chunking, reranking) to see what each stage adds.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/Cybersecurity_News_Agent">Cybersecurity_News_Agent</a></span> <span lang="pt">— agente que recolhe notícias de cibersegurança.</span><span lang="en">— an agent that collects cybersecurity news.</span></li>
+  <li><span class="name">Learning <span lang="pt">(privado)</span><span lang="en">(private)</span></span> <span lang="pt">— 47 palestras sobre agentes resumidas em 443 afirmações, cada uma com a sua fonte.</span><span lang="en">— 47 talks on agents boiled down to 443 claims, each with its source.</span></li>
+</ul>
+
+<h2><span lang="pt">Grafos de conhecimento</span><span lang="en">Knowledge graphs</span></h2>
+<ul class="projects">
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/Jev">Jev</a></span> <span lang="pt">— percorre um grafo de ameaças com 2 886 nós usando decisões pequenas (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) em menos de 50 ms.</span><span lang="en">— walks a 2,886-node threat graph using small decisions (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) in under 50 ms.</span><span class="stack">Neo4j</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/D3fendGraph">D3fendGraph</a>, <a href="https://github.com/pauloribeiro16/VisioSec">VisioSec</a></span> <span lang="pt">— CAPEC, CWE, ATT&amp;CK, ATLAS e D3FEND em GraphDB e Neo4j, com visualização de kill chains.</span><span lang="en">— CAPEC, CWE, ATT&amp;CK, ATLAS and D3FEND in GraphDB and Neo4j, with kill-chain views.</span><span class="stack">GraphDB · SPARQL · Neo4j · Docker</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/aegis-kg-unified">aegis-kg-unified</a></span> <span lang="pt">— mais de 150 cláusulas do RGPD, CRA, NIS2, DORA e AI Act ligadas a 38 subdomínios de segurança.</span><span lang="en">— 150+ clauses from GDPR, CRA, NIS2, DORA and the AI Act linked to 38 security sub-domains.</span><span class="stack">Neo4j · Flask</span></li>
+</ul>
+
+<h2><span lang="pt">GRC e requisitos de segurança</span><span lang="en">GRC and security requirements</span></h2>
+<ul class="projects">
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/NIST_Assessment">NIST_Assessment</a></span> <span lang="pt">— avaliação de maturidade segundo o NIST CSF 2.0, com um assistente via MCP ao lado.</span><span lang="en">— NIST CSF 2.0 maturity assessment with an MCP assistant alongside.</span><span class="stack">FastAPI · Ollama</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/CyberResilience">CyberResilience</a>, <a href="https://github.com/pauloribeiro16/Methodology_compact">Methodology_compact</a></span> <span lang="pt">— análise de risco por fases (contexto, objetivos, risco) para RGPD, NIS2, DORA, CRA, AI Act e QNRCS.</span><span lang="en">— phased risk analysis (context, goals, risk) for GDPR, NIS2, DORA, CRA, the AI Act and QNRCS.</span><span class="stack">React · Vite</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/MultiLLMs">MultiLLMs</a></span> <span lang="pt">— vários LLMs a responder sobre legislação europeia, para comparar onde concordam.</span><span lang="en">— several LLMs answering questions on EU law, to compare where they agree.</span><span class="stack">Qdrant · LlamaIndex</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/The_Scribe">The_Scribe</a></span> <span lang="pt">— ajuda a escrever requisitos de segurança fazendo perguntas, com base no SPIDESOFT. Começou no mestrado.</span><span lang="en">— helps write security requirements by asking questions, based on SPIDESOFT. Started during my master's.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/DockerVulnManager">DockerVulnManager</a></span> <span lang="pt">— hardening de Docker segundo o CIS.</span><span lang="en">— Docker hardening against CIS benchmarks.</span><span class="stack">Trivy</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/FileEvaluation">FileEvaluation</a></span> <span lang="pt">— deteção de dados pessoais (RGPD) em ficheiros.</span><span lang="en">— detecting personal data (GDPR) in files.</span></li>
+</ul>
+
+<h2><span lang="pt">Apps e Linux</span><span lang="en">Apps and Linux</span></h2>
+<ul class="projects">
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/delegate">delegate</a></span> <span lang="pt">— Hack4Guimarães 2035: um representante digital para cada munícipe e um gateway MCP para a Câmara.</span><span lang="en">— Hack4Guimarães 2035: a digital representative for each resident and an MCP gateway for the council.</span><span class="stack">TypeScript · MCP · Telegram</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/finflow">finflow</a></span> <span lang="pt">— finanças pessoais no Android, offline e com a base de dados cifrada.</span><span lang="en">— personal finance on Android, offline with an encrypted database.</span><span class="stack">Kotlin · Compose · SQLCipher</span></li>
+  <li><span class="name">Piano &amp; Pautas <span lang="pt">(privado)</span><span lang="en">(private)</span></span> <span lang="pt">— a app com que estou a aprender piano. O som é sintetizado no próprio telemóvel.</span><span lang="en">— the app I'm learning piano with. Sound is synthesised on the phone itself.</span></li>
+  <li><span class="name">Pegadas <span lang="pt">(privado)</span><span lang="en">(private)</span></span> <span lang="pt">— diário de viagens que usa as fotos da galeria sem as duplicar.</span><span lang="en">— a travel journal that uses the photos in your gallery without copying them.</span><span class="stack">Flutter</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/omarchy-mobile">omarchy-mobile</a></span> <span lang="pt">— Arch Linux ARM e Hyprland num Pixel 7 Pro com kernel mainline.</span><span lang="en">— Arch Linux ARM and Hyprland on a Pixel 7 Pro with a mainline kernel.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/Template_React">Template_React</a></span> <span lang="pt">— o template de onde começo projetos web.</span><span lang="en">— the template I start web projects from.</span><span class="stack">React 19 · Express · Prisma</span></li>
+</ul>
+
+<h2><span lang="pt">Mais antigos: curso e laboratórios</span><span lang="en">Older: coursework and labs</span></h2>
+<ul class="projects">
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/Timed-Automata-converter">Timed-Automata-converter</a></span> <span lang="pt">— conversor em Haskell para verificação formal de autómatos temporizados.</span><span lang="en">— a Haskell converter for formal verification of timed automata.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/CyberSecurity">CyberSecurity</a>, <a href="https://github.com/pauloribeiro16/cyberpath">cyberpath</a></span> <span lang="pt">— notas de pentesting: enumeração, pivoting, AD/LDAP, buffer overflows.</span><span lang="en">— pentesting notes: enumeration, pivoting, AD/LDAP, buffer overflows.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/docker-amarante">docker-amarante</a>, <a href="https://github.com/pauloribeiro16/aws-amt-site-pr">aws-amt-site-pr</a></span> <span lang="pt">— Docker e deploy na AWS.</span><span lang="en">— Docker and AWS deployment.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/rentacarproject">rentacarproject</a>, <a href="https://github.com/pauloribeiro16/redis_python_lab">redis_python_lab</a></span> <span lang="pt">— gestão de rent-a-car em Python e um laboratório com Redis.</span><span lang="en">— a Python car-rental system and a Redis lab.</span></li>
+  <li><span class="name"><a href="https://github.com/pauloribeiro16/webapp-aws-v8">webapp-aws-v8</a>, <a href="https://github.com/pauloribeiro16/webapp-aws-v6">webapp-aws-v6</a>, <a href="https://github.com/pauloribeiro16/webapi08">webapi08</a>, <a href="https://github.com/pauloribeiro16/webapp06">webapp06</a>, <a href="https://github.com/pauloribeiro16/webapp-pr">webapp-pr</a>, <a href="https://github.com/pauloribeiro16/Project">Project</a></span> <span lang="pt">— APIs em C#/.NET e aplicações web de cadeiras.</span><span lang="en">— C#/.NET APIs and web apps from university courses.</span></li>
+</ul>
 </div>
-
-<div class="filter-bar" role="region" aria-label="Project filters">
-  <div class="wrap filter-controls">
-    <div class="filter-tabs" role="group" aria-label="Category filter">
-      <button type="button" class="filter-btn" id="filter-all" data-filter="all" aria-pressed="true">
-        <span lang="en">All (<span id="visible-project-count">45</span>)</span>
-        <span lang="pt">Todos (45)</span>
-      </button>
-      <button type="button" class="filter-btn" id="filter-agents" data-filter="agents" aria-pressed="false">
-        <span lang="en">I. Agent Orchestration (8)</span>
-        <span lang="pt">I. Orquestração de Agentes (8)</span>
-      </button>
-      <button type="button" class="filter-btn" id="filter-deucalion" data-filter="deucalion" aria-pressed="false">
-        <span lang="en">II. Deucalion, Prompts &amp; Evals (5)</span>
-        <span lang="pt">II. Deucalion, Prompts &amp; Benchmarks (5)</span>
-      </button>
-      <button type="button" class="filter-btn" id="filter-graphs" data-filter="graphs" aria-pressed="false">
-        <span lang="en">III. Jev &amp; Graphs (4)</span>
-        <span lang="pt">III. Jev &amp; Grafos (4)</span>
-      </button>
-      <button type="button" class="filter-btn" id="filter-grc" data-filter="grc" aria-pressed="false">
-        <span lang="en">IV. GRC &amp; Security Req. (9)</span>
-        <span lang="pt">IV. GRC &amp; Requisitos (9)</span>
-      </button>
-      <button type="button" class="filter-btn" id="filter-apps" data-filter="apps" aria-pressed="false">
-        <span lang="en">V. Hackathons, Apps &amp; Linux (6)</span>
-        <span lang="pt">V. Hackathons, Apps &amp; Linux (6)</span>
-      </button>
-      <button type="button" class="filter-btn" id="filter-archive" data-filter="archive" aria-pressed="false">
-        <span lang="en">VI. Full-Stack &amp; Labs (13)</span>
-        <span lang="pt">VI. Full-Stack &amp; Labs (13)</span>
-      </button>
-    </div>
-    <div class="search-box">
-      <input type="search" id="project-search" class="search-input" placeholder="Filtrar por tecnologia, nome, área..." aria-label="Search projects">
-    </div>
-  </div>
-</div>
-
-<section>
-  <div class="wrap">
-
-    <!-- ==================== GROUP I: AGENT ORCHESTRATION & AI PIPELINES ==================== -->
-    <div class="group" data-group="agents">
-      <div class="group-header">
-        <h3><span lang="en">I. Agent Orchestration, Multi-Agent Pipelines &amp; Harnesses (Beyond the Thesis)</span><span lang="pt">I. Orquestração de Agentes, Pipelines de IA &amp; Harnesses (Além da Tese)</span></h3>
-        <span class="group-count">8 <span lang="en">projects</span><span lang="pt">projetos</span></span>
-      </div>
-
-      <div class="visual-grid">
-        <article class="vcard" data-category="agents" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/agentic-devsecops.svg" alt="Agentic-Orquestrator, harness-design-best-practices &amp; my-skills" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/Agentic-Orquestrator" target="_blank" rel="noopener">Agentic-Orquestrator</a>, <a href="https://github.com/pauloribeiro16/harness-design-best-practices" target="_blank" rel="noopener">Harnesses</a> &amp; <a href="https://github.com/pauloribeiro16/my-skills" target="_blank" rel="noopener">my-skills</a></h4>
-              <span class="scope-pill beyond"><span lang="en">3 Public</span><span lang="pt">3 Públicos</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Coordinate 20 specialized DevSecOps agents, 40+ skill modules, model-tier routing, and checkpoint recovery harnesses for long-running agents.</span>
-              <span lang="pt"><b>Propósito:</b> Orquestrar 20 agentes DevSecOps, 40+ módulos de skills, model-tier routing e harnesses de checkpoint/recuperação para agentes de longa duração.</span>
-            </div>
-            <div class="proj-tags"><span>20 Agents</span><span>Evaluator-Optimizer</span><span>AGENTS.md</span><span>OpenCode · Claude</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="agents" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/financial-adviser.svg" alt="financial-adviser — 15-Persona Multi-Round Debate Engine" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/financial-adviser" target="_blank" rel="noopener">financial-adviser</a></h4>
-              <span class="scope-pill beyond"><span lang="en">Beyond Thesis</span><span lang="pt">Além da Tese</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Pit 15 investor personas (Buffett, Taleb, Dalio, Burry, Simons...) against each other over SEC EDGAR filings and FRED macro data to expose contested assumptions.</span>
-              <span lang="pt"><b>Propósito:</b> Colocar 15 personas de analistas (Buffett, Taleb, Dalio, Burry...) a debater relatórios SEC EDGAR e dados FRED em várias rondas para expor consensos e disputas.</span>
-            </div>
-            <div class="proj-tags"><span>Python · LangChain</span><span>Langfuse Tracing</span><span>SEC EDGAR · FRED</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="agents" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/aegis-drilldown.png" alt="aegis-phase1 &amp; MoE-CySec — State-Machine Orchestration &amp; Mixture of Experts" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/aegis-drilldown.png"><img src="assets/img/aegis-drilldown.png" alt="LangGraph"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/cybermetric-chart.svg"><img src="assets/img/cybermetric-chart.svg" alt="MoE"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/MoE-CySec" target="_blank" rel="noopener">MoE-CySec</a>, <a href="https://github.com/pauloribeiro16/aegis-phase1" target="_blank" rel="noopener">aegis-phase1</a>, <a href="https://github.com/pauloribeiro16/Cybersecurity_News_Agent" target="_blank" rel="noopener">News_Agent</a> &amp; Learning</h4>
-              <span class="scope-pill beyond"><span lang="en">3 Pub + 1 Priv</span><span lang="pt">3 Púb + 1 Priv</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Evaluate small-LLM Mixture-of-Experts routing, LangGraph state machines (cutting 150 calls to 7–9), and a 47-talk / 443-claim agent corpus (<em>Learning</em>).</span>
-              <span lang="pt"><b>Propósito:</b> Testar routing Mixture-of-Experts com LLMs pequenos, máquinas de estados LangGraph (reduzindo 150 chamadas para 7–9) e um corpus de 443 afirmações citadas sobre agentes.</span>
-            </div>
-            <div class="proj-tags"><span>LangGraph</span><span>MoE Router</span><span>Pydantic</span><span>Gemini · Ollama</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- ==================== GROUP II: DEUCALION HPC, PROMPT ENGINEERING & BENCHMARKS ==================== -->
-    <div class="group" data-group="deucalion">
-      <div class="group-header">
-        <h3><span lang="en">II. Deucalion Supercomputer Lab, Prompt Engineering &amp; LLM Benchmarks</span><span lang="pt">II. Experiências no Deucalion HPC, Prompt Engineering &amp; Benchmarks de LLMs</span></h3>
-        <span class="group-count">5 <span lang="en">projects</span><span lang="pt">projetos</span></span>
-      </div>
-
-      <div class="visual-grid">
-        <article class="vcard" data-category="deucalion" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/deucalion-hpc.svg" alt="aegis-mvp Deucalion HPC &amp; Prompt Lab" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/deucalion-hpc.svg"><img src="assets/img/deucalion-hpc.svg" alt="Deucalion"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/prompt-engineering-lab.svg"><img src="assets/img/prompt-engineering-lab.svg" alt="Prompt Lab"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/aegis-drilldown.png"><img src="assets/img/aegis-drilldown.png" alt="Inspector"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/aegis-mvp" target="_blank" rel="noopener">aegis-mvp (Deucalion &amp; Lab)</a> &amp; aegis-inspector</h4>
-              <span class="scope-pill hpc">Deucalion A100</span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Run SLURM batteries on Deucalion A100 GPUs comparing pipelines vs. agents, testing per-model prompt overlays (<code>lab/</code>), and inspecting runs side-by-side.</span>
-              <span lang="pt"><b>Propósito:</b> Executar baterias SLURM em GPUs A100 no Deucalion comparando pipelines vs. agentes, testando overlays de prompt por modelo (<code>lab/</code>) e inspecionando corridas lado a lado.</span>
-            </div>
-            <div class="proj-tags"><span>Deucalion SLURM</span><span>Prompt-as-Code</span><span>LiquidAI/d1</span><span>React Inspector</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="deucalion" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/cybermetric-chart.svg" alt="Cybersecurity_sanity_test — CyberMetric 10,000Q Benchmark Suite" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/Cybersecurity_sanity_test" target="_blank" rel="noopener">Cybersecurity_sanity_test</a> &amp; <a href="https://github.com/pauloribeiro16/Cybersecurity_Sanity_Tests" target="_blank" rel="noopener">Sanity_Tests</a></h4>
-              <span class="scope-pill beyond"><span lang="en">2 Public</span><span lang="pt">2 Públicos</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Benchmark 13+ local LLMs across 80 to 10,000 CyberMetric questions across direct recall, 2-step CoT reasoning, and confidence calibration.</span>
-              <span lang="pt"><b>Propósito:</b> Avaliar empiricamente 13+ LLMs locais de 80 a 10.000 questões CyberMetric em precisão factual, raciocínio CoT em 2 passos e calibração de confiança.</span>
-            </div>
-            <div class="proj-tags"><span>Python · Ollama</span><span>CyberMetric 10k</span><span>Chart.js Dashboard</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="deucalion" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/multillms-rag.svg" alt="RAGImplementation — White-Box RAG vs No-RAG &amp; Reranking Lab" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/RAGImplementation" target="_blank" rel="noopener">RAGImplementation</a></h4>
-              <span class="scope-pill beyond"><span lang="en">Experiment Lab</span><span lang="pt">Laboratório RAG</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Dissect RAG pipelines stage-by-stage (XML/text parsing, chunking, Cross-Encoder reranking, and RAG vs. No-RAG) instead of treating retrieval as a black box.</span>
-              <span lang="pt"><b>Propósito:</b> Dissecar pipelines RAG etapa a etapa (parsing XML/texto, chunking, Cross-Encoder reranking e comparação RAG vs. No-RAG) de forma transparente.</span>
-            </div>
-            <div class="proj-tags"><span>Python · Ollama</span><span>Cross-Encoder</span><span>White-Box Eval</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- ==================== GROUP III: KNOWLEDGE GRAPHS & SYSTEM-1 INFERENCE ==================== -->
-    <div class="group" data-group="graphs">
-      <div class="group-header">
-        <h3><span lang="en">III. Knowledge Graphs &amp; System-1 Probabilistic Inference (Jev &amp; MITRE)</span><span lang="pt">III. Grafos de Conhecimento &amp; Inferência Probabilística System-1 (Jev &amp; MITRE)</span></h3>
-        <span class="group-count">4 <span lang="en">projects</span><span lang="pt">projetos</span></span>
-      </div>
-
-      <div class="visual-grid">
-        <article class="vcard" data-category="graphs" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/jev-graph.svg" alt="Jev — TypeSafe AI System-1 Sub-50ms Neo4j Graph Explorer" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/Jev" target="_blank" rel="noopener">Jev (System-1 Graph Explorer)</a></h4>
-              <span class="scope-pill beyond"><span lang="en">Beyond Thesis</span><span lang="pt">Além da Tese</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Execute sub-50ms probabilistic micro-judgements (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) to guide A* and Beam Search across 2,886 Neo4j threat nodes without LLM hallucinations.</span>
-              <span lang="pt"><b>Propósito:</b> Executar micro-julgamentos probabilísticos em &lt;50ms (<code>Noul</code>, <code>Choice</code>, <code>Score</code>) para guiar pesquisas A* e Beam Search sobre 2.886 nós Neo4j sem alucinações.</span>
-            </div>
-            <div class="proj-tags"><span>TypeSafe AI · Jev</span><span>Neo4j · Cypher</span><span>CWE · CAPEC · ATT&amp;CK · D3FEND</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="graphs" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/d3fend-killchain.png" alt="D3fendGraph — Multi-Framework Kill Chain Visualization" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/d3fend-killchain.png"><img src="assets/img/d3fend-killchain.png" alt="Kill Chain"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/d3fend-hub.png"><img src="assets/img/d3fend-hub.png" alt="Hub"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/d3fend-groups.png"><img src="assets/img/d3fend-groups.png" alt="Groups"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/D3fendGraph" target="_blank" rel="noopener">D3fendGraph</a> &amp; <a href="https://github.com/pauloribeiro16/VisioSec" target="_blank" rel="noopener">VisioSec</a></h4>
-              <span class="scope-pill beyond"><span lang="en">2 Public</span><span lang="pt">2 Públicos</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Aggregate CAPEC, CWE, MITRE ATT&amp;CK, ATLAS, and D3FEND in a 5-container Ontotext GraphDB (SPARQL/RDF) + Neo4j stack with interactive kill-chain visualizers.</span>
-              <span lang="pt"><b>Propósito:</b> Agregar CAPEC, CWE, MITRE ATT&amp;CK, ATLAS e D3FEND numa arquitetura de 5 contentores (GraphDB SPARQL/RDF + Neo4j) com visualização interativa de kill-chains.</span>
-            </div>
-            <div class="proj-tags"><span>GraphDB · SPARQL</span><span>Neo4j</span><span>STIX 2.1</span><span>Docker Compose</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="graphs" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/aegis-controls.png" alt="aegis-kg-unified — Canonical Regulatory Compliance Knowledge Graph" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/aegis-kg-unified" target="_blank" rel="noopener">aegis-kg-unified</a></h4>
-              <span class="scope-pill"><span lang="en">Regulatory KG</span><span lang="pt">Grafo Normativo</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Map 150+ atomic legal clauses from GDPR, CRA, NIS 2, DORA, and the EU AI Act to 38 security sub-domains with a 14-endpoint Flask REST API.</span>
-              <span lang="pt"><b>Propósito:</b> Mapear 150+ cláusulas normativas do GDPR, CRA, NIS 2, DORA e AI Act para 38 subdomínios de segurança em Neo4j com API REST de 14 endpoints.</span>
-            </div>
-            <div class="proj-tags"><span>Neo4j 5.18</span><span>Flask REST API</span><span>5 EU Regulations</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- ==================== GROUP IV: GRC, COMPLIANCE & SECURITY REQUIREMENTS ==================== -->
-    <div class="group" data-group="grc">
-      <div class="group-header">
-        <h3><span lang="en">IV. GRC Platforms, Regulatory Compliance &amp; Security Requirements</span><span lang="pt">IV. Plataformas de GRC, Conformidade &amp; Engenharia de Requisitos de Segurança</span></h3>
-        <span class="group-count">9 <span lang="en">projects</span><span lang="pt">projetos</span></span>
-      </div>
-
-      <div class="visual-grid">
-        <article class="vcard" data-category="grc" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/nist-metrics.png" alt="NIST_Assessment — Executive Radar &amp; Audit Grid" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/nist-metrics.png"><img src="assets/img/nist-metrics.png" alt="Metrics"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/nist-grid.png"><img src="assets/img/nist-grid.png" alt="Grid"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/nist-selection.png"><img src="assets/img/nist-selection.png" alt="Selection"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/NIST_Assessment" target="_blank" rel="noopener">NIST_Assessment</a></h4>
-              <span class="scope-pill">NIST CSF 2.0</span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Audit organizational maturity against NIST CSF 2.0 with radar charts, automatic 0–4 rollups, and a live Model Context Protocol (MCP) AI Copilot.</span>
-              <span lang="pt"><b>Propósito:</b> Auditar a maturidade organizacional segundo o NIST CSF 2.0 com gráficos radar, propagação automática de scores 0–4 e Copiloto IA lateral via MCP.</span>
-            </div>
-            <div class="proj-tags"><span>FastAPI</span><span>MCP Copilot</span><span>NIST CSF 2.0</span><span>Ollama RAG</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="grc" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/cyberresilience-home.png" alt="CyberResilience — Phased Risk Management Dashboard" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/cyberresilience-home.png"><img src="assets/img/cyberresilience-home.png" alt="Home"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/cyberresilience-phase1.png"><img src="assets/img/cyberresilience-phase1.png" alt="Phase 1"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/cyberresilience-regs.png"><img src="assets/img/cyberresilience-regs.png" alt="Regulations"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/CyberResilience" target="_blank" rel="noopener">CyberResilience</a> &amp; <a href="https://github.com/pauloribeiro16/Methodology_compact" target="_blank" rel="noopener">Methodology</a></h4>
-              <span class="scope-pill"><span lang="en">2 Public</span><span lang="pt">2 Públicos</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Replace static compliance spreadsheets with a 3-phase risk platform (Context → Goals → Risk) and visual dashboards for GDPR, NIS2, DORA, CRA, AI Act, and QNRCS.</span>
-              <span lang="pt"><b>Propósito:</b> Substituir folhas de cálculo estáticas por uma plataforma faseada de risco (Contexto → Objetivos → Risco) e dashboards visuais para GDPR, NIS2, DORA, CRA, AI Act e QNRCS.</span>
-            </div>
-            <div class="proj-tags"><span>React · Vite</span><span>PlantUML</span><span>QNRCS Reg. 756/2026</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="grc" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/multillms-rag.svg" alt="MultiLLMs, The_Scribe, FileEvaluation &amp; DockerVulnManager" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/multillms-rag.svg"><img src="assets/img/multillms-rag.svg" alt="MultiLLMs"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/dockervuln.svg"><img src="assets/img/dockervuln.svg" alt="DockerVulnManager"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/MultiLLMs" target="_blank" rel="noopener">MultiLLMs</a>, <a href="https://github.com/pauloribeiro16/The_Scribe" target="_blank" rel="noopener">The_Scribe</a>, <a href="https://github.com/pauloribeiro16/DockerVulnManager" target="_blank" rel="noopener">DockerVuln</a> &amp; <a href="https://github.com/pauloribeiro16/FileEvaluation" target="_blank" rel="noopener">GDPR PII</a></h4>
-              <span class="scope-pill"><span lang="en">6 Public</span><span lang="pt">6 Públicos</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Multi-LLM consensus RAG over EU laws (<code>MultiLLMs</code>, <code>RegulationExpert</code>), Socratic SPIDESOFT security requirements co-pilot (<code>The_Scribe</code>), CIS Docker hardening (<code>DockerVulnManager</code>), and GDPR PII detection (<code>FileEvaluation</code>, <code>JsonGDPREvaluationAPI</code>).</span>
-              <span lang="pt"><b>Propósito:</b> Consenso multi-LLM sobre legislação UE (<code>MultiLLMs</code>, <code>RegulationExpert</code>), co-piloto socrático SPIDESOFT para requisitos seguros (<code>The_Scribe</code>), hardening CIS Docker (<code>DockerVulnManager</code>) e deteção de PII RGPD (<code>FileEvaluation</code>, <code>JsonGDPREvaluationAPI</code>).</span>
-            </div>
-            <div class="proj-tags"><span>Qdrant · LlamaIndex</span><span>SPIDESOFT</span><span>Trivy · CIS</span><span>GDPR PII</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- ==================== GROUP V: HACKATHONS, APPS & MOBILE LINUX ==================== -->
-    <div class="group" data-group="apps">
-      <div class="group-header">
-        <h3><span lang="en">V. Hackathons (Hack4Guimarães 2035), Offline-First App Creation &amp; Mobile Linux</span><span lang="pt">V. Hackathons (Hack4Guimarães 2035), Criação de Apps Offline-First &amp; Linux Mobile</span></h3>
-        <span class="group-count">6 <span lang="en">projects</span><span lang="pt">projetos</span></span>
-      </div>
-
-      <div class="visual-grid">
-        <article class="vcard" data-category="apps" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/delegate-header.png" alt="Delegate (Henriques) — Hack4Guimarães 2035 Civic AI" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/delegate-header.png"><img src="assets/img/delegate-header.png" alt="Delegate"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/hack4guimaraes-delegate.svg"><img src="assets/img/hack4guimaraes-delegate.svg" alt="Architecture"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/delegate-henriques.jpg"><img src="assets/img/delegate-henriques.jpg" alt="Henriques"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/delegate" target="_blank" rel="noopener">Delegate — Hack4Guimarães 2035</a></h4>
-              <span class="scope-pill beyond">Hackathon</span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Created for the Hack4Guimarães 2035 municipal challenge — giving every citizen a personal digital representative (<em>Henriques</em>) and the City Council an open MCP Agentic Gateway, technical console, and City Intent Map.</span>
-              <span lang="pt"><b>Propósito:</b> Apresentado no <strong>Hack4Guimarães 2035</strong> («Falar com a Câmara sem Burocracia») — representante digital pessoal (<em>Henriques</em>), Porta Agêntica MCP municipal, Consola para técnicos e Mapa de Intenções da cidade.</span>
-            </div>
-            <div class="proj-tags"><span>Hack4Guimarães 2035</span><span>TypeScript · MCP</span><span>Telegram + Web</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="apps" data-vis="pub">
-          <div class="vcard-media">
-            <img src="assets/img/finflow-preview.svg" alt="Finflow, Piano &amp; Pautas and Pegadas — Offline-First Mobile Apps" loading="lazy">
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="thumb-row">
-              <button type="button" class="thumb-btn active" data-src="assets/img/finflow-preview.svg"><img src="assets/img/finflow-preview.svg" alt="Finflow"></button>
-              <button type="button" class="thumb-btn" data-src="assets/img/piano-pegadas.svg"><img src="assets/img/piano-pegadas.svg" alt="Piano &amp; Pegadas"></button>
-            </div>
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/finflow" target="_blank" rel="noopener">Finflow</a>, Piano &amp; Pautas &amp; Pegadas</h4>
-              <span class="scope-pill beyond"><span lang="en">1 Pub + 2 Priv</span><span lang="pt">1 Púb + 2 Priv</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Build privacy-first daily apps with zero cloud accounts: an AES-256 SQLCipher finance tracker (<code>Finflow</code>), an on-device synthesizer piano tutor (<em>Piano &amp; Pautas</em>), and a zero-copy travel photo journal (<em>Pegadas</em>).</span>
-              <span lang="pt"><b>Propósito:</b> Criar apps do dia a dia sem nuvem nem contas: gestor financeiro cifrado com SQLCipher AES-256 (<code>Finflow</code>), tutor de piano com síntese áudio local (<em>Piano &amp; Pautas</em>) e diário de viagens que nunca duplica fotos (<em>Pegadas</em>).</span>
-            </div>
-            <div class="proj-tags"><span>Kotlin 2.0 · Compose</span><span>SQLCipher AES-256</span><span>Flutter</span></div>
-          </div>
-        </article>
-
-        <article class="vcard" data-category="apps" data-vis="pub">
-          <div class="vcard-media">
-            <div class="phone-strip">
-              <img src="assets/img/omarchy-home.png" alt="Omarchy Mobile Home" loading="lazy">
-              <img src="assets/img/omarchy-quick.png" alt="Omarchy Mobile Quick Settings" loading="lazy">
-              <img src="assets/img/omarchy-keyboard.png" alt="Omarchy Mobile Keyboard" loading="lazy">
-              <img src="assets/img/omarchy-terminal.png" alt="Omarchy Mobile Voice Terminal" loading="lazy">
-            </div>
-            <span class="zoom-hint">🔍 Zoom</span>
-          </div>
-          <div class="vcard-body">
-            <div class="vcard-top">
-              <h4><a href="https://github.com/pauloribeiro16/omarchy-mobile" target="_blank" rel="noopener">omarchy-mobile</a> &amp; <a href="https://github.com/pauloribeiro16/Template_React" target="_blank" rel="noopener">Template_React</a></h4>
-              <span class="scope-pill beyond"><span lang="en">2 Public</span><span lang="pt">2 Públicos</span></span>
-            </div>
-            <div class="purpose-line">
-              <span lang="en"><b>Purpose:</b> Run Arch Linux ARM + Hyprland natively on a Pixel 7 Pro mainline kernel (<code>omarchy-mobile</code>), plus a React 19 + Express + Prisma monorepo starter pre-wired with 9 agent skills (<code>Template_React</code>).</span>
-              <span lang="pt"><b>Propósito:</b> Correr Arch Linux ARM + Hyprland nativamente num kernel mainline no Pixel 7 Pro (<code>omarchy-mobile</code>) + template full-stack React 19 + Prisma pré-configurado com 9 skills de agentes (<code>Template_React</code>).</span>
-            </div>
-            <div class="proj-tags"><span>Arch Linux ARM</span><span>Mainline Kernel</span><span>React 19 · Prisma</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- ==================== GROUP VI: FULL-STACK, CLOUD & LABS ARCHIVE ==================== -->
-    <div class="group" data-group="archive">
-      <div class="group-header">
-        <h3><span lang="en">VI. Full-Stack Engineering, Formal Verification, Pentesting &amp; Cloud Labs</span><span lang="pt">VI. Engenharia Full-Stack, Verificação Formal, Pentesting &amp; Laboratórios Cloud</span></h3>
-        <span class="group-count">13 <span lang="en">projects</span><span lang="pt">projetos</span></span>
-      </div>
-
-      <div class="archive-grid">
-        <article class="archive-card" data-category="archive" data-vis="pub">
-          <h4><a href="https://github.com/pauloribeiro16/Timed-Automata-converter" target="_blank" rel="noopener">Timed-Automata-converter</a></h4>
-          <p lang="en">Haskell parser &amp; converter for formal verification of timed automata models.</p>
-          <p lang="pt">Parser e conversor em Haskell para verificação formal de autómatos temporizados.</p>
-          <div class="archive-meta"><span>Haskell</span><span>Formal Methods</span></div>
-        </article>
-
-        <article class="archive-card" data-category="archive" data-vis="pub">
-          <h4><a href="https://github.com/pauloribeiro16/CyberSecurity" target="_blank" rel="noopener">CyberSecurity</a> &amp; <a href="https://github.com/pauloribeiro16/cyberpath" target="_blank" rel="noopener">cyberpath</a></h4>
-          <p lang="en">Offensive security enumeration, pivoting (Chisel), AD/LDAP &amp; buffer overflow notes.</p>
-          <p lang="pt">Notas práticas de pentesting: enumeração, pivoting (Chisel), AD/LDAP e buffer overflow.</p>
-          <div class="archive-meta"><span>Pentesting</span><span>Linux · Windows</span></div>
-        </article>
-
-        <article class="archive-card" data-category="archive" data-vis="pub">
-          <h4><a href="https://github.com/pauloribeiro16/rentacarproject" target="_blank" rel="noopener">rentacarproject</a></h4>
-          <p lang="en">Car rental management system in Python with fleet, customer, and booking logic.</p>
-          <p lang="pt">Sistema de gestão de rent-a-car em Python (frota, clientes e reservas).</p>
-          <div class="archive-meta"><span>Python</span><span>OOP</span></div>
-        </article>
-
-        <article class="archive-card" data-category="archive" data-vis="pub">
-          <h4><a href="https://github.com/pauloribeiro16/redis_python_lab" target="_blank" rel="noopener">redis_python_lab</a></h4>
-          <p lang="en">In-memory caching, pub/sub messaging, and key-value structures with Redis &amp; Python.</p>
-          <p lang="pt">Laboratório de caching em memória e pub/sub com Redis e Python.</p>
-          <div class="archive-meta"><span>Python · Redis</span><span>NoSQL</span></div>
-        </article>
-
-        <article class="archive-card" data-category="archive" data-vis="pub">
-          <h4><a href="https://github.com/pauloribeiro16/docker-amarante" target="_blank" rel="noopener">docker-amarante</a> &amp; <a href="https://github.com/pauloribeiro16/aws-amt-site-pr" target="_blank" rel="noopener">aws-amt-site-pr</a></h4>
-          <p lang="en">Docker container orchestration and AWS cloud static/CI deployment labs.</p>
-          <p lang="pt">Orquestração de contentores Docker e deployment cloud na AWS com CI/CD.</p>
-          <div class="archive-meta"><span>Docker · AWS</span><span>DevOps</span></div>
-        </article>
-
-        <article class="archive-card" data-category="archive" data-vis="pub">
-          <h4><a href="https://github.com/pauloribeiro16/webapp-aws-v8" target="_blank" rel="noopener">webapp-aws-v8</a>, <a href="https://github.com/pauloribeiro16/webapp-aws-v6" target="_blank" rel="noopener">v6</a>, <a href="https://github.com/pauloribeiro16/webapi08" target="_blank" rel="noopener">webapi08</a>, <a href="https://github.com/pauloribeiro16/webapp06" target="_blank" rel="noopener">webapp06</a>, <a href="https://github.com/pauloribeiro16/webapp-pr" target="_blank" rel="noopener">webapp-pr</a> &amp; <a href="https://github.com/pauloribeiro16/Project" target="_blank" rel="noopener">Project</a></h4>
-          <p lang="en">6 C# / .NET Web APIs, AWS cloud web apps, and Python coursework repositories.</p>
-          <p lang="pt">6 repositórios de APIs REST em C# / .NET, aplicações web AWS e projetos Python.</p>
-          <div class="archive-meta"><span>C# · .NET · AWS</span><span>6 Repos</span></div>
-        </article>
-      </div>
-    </div>
-
-  </div>
-</section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Paulo Ribeiro · Guimarães, Portugal</div>
-    <div class="footer-links">
-      <a href="index.html"><span lang="en">Overview</span><span lang="pt">Visão Geral</span></a>
-      <a href="projects.html"><span lang="en">Projects (45)</span><span lang="pt">Projetos (45)</span></a>
-      <a href="research.html"><span lang="en">AI, Deucalion &amp; Thesis</span><span lang="pt">IA, Deucalion &amp; Tese</span></a>
-      <a href="about.html"><span lang="en">About &amp; CV</span><span lang="pt">Sobre &amp; CV</span></a>
-      <a href="contact.html"><span lang="en">Contact</span><span lang="pt">Contacto</span></a>
-      <a href="https://www.linkedin.com/in/paulo-ribeiro-/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://github.com/pauloribeiro16" target="_blank" rel="noopener">GitHub ↗</a>
-    </div>
+    <span>Paulo Ribeiro · Guimarães</span>
+    <span><a href="mailto:paulo.ribeiro@ccg.pt">paulo.ribeiro@ccg.pt</a> · <a href="https://github.com/pauloribeiro16">GitHub</a> · <a href="https://www.linkedin.com/in/paulo-ribeiro-/">LinkedIn</a></span>
   </div>
 </footer>
 
